@@ -41,3 +41,4 @@ lib/proj.qt/Makefile.libchipmunk.Debug
 lib/proj.qt/Makefile.libchipmunk.Release
 lib/proj.qt/Makefile.libquickqt.Debug
 lib/proj.qt/Makefile.libquickqt.Release
+
