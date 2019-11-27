@@ -47,11 +47,22 @@ function Node:schedule(callback, interval)
     return action
 end
 
-function Node:performWithDelay(callback, delay)
-    local action = transition.sequence({
+function Node:performWithDelay(callback, delay,tag,params)
+    local action
+    if params==nil then
+      action= transition.sequence({
         CCDelayTime:create(delay),
         CCCallFunc:create(callback),
     })
+    else
+      action=transition.sequence({
+        CCDelayTime:create(delay),
+        CCCallFunc:create(callback(params)),
+      })
+    end
+    if tag~=nil then
+      action:setTag(tag)
+    end
     self:runAction(action)
     return action
 end

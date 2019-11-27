@@ -6,6 +6,7 @@ import java.net.URL;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo.State;
+import android.util.Log;
 
 public class PSNetwork {
 	static ConnectivityManager mConnManager = null;
@@ -16,7 +17,9 @@ public class PSNetwork {
 	}
 
 	public static boolean isLocalWiFiAvailable() {
+		Log.d("csj","java isLocalWiFiAvailable");
 		if (mConnManager == null) {
+			Log.d("csj","mConnManager == null");
 			return false;
 		}
 		State state = mConnManager

@@ -1,0 +1,165 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 
+	成就配置表
+	type 0.成长足迹  1.时光碎片
+	rewardT 奖励类型  0.游戏币 1.礼物 2.宝石
+	rewardV 奖励数值
+	nextId 当前任务完成，下个任务的显示
+ -->
+<DataList>
+	<item id="100" type="0" name="小试牛刀" processMax="2" rewardT="0" rewardV="100" nextId="101" desc="任意游戏连胜2局"  /> 
+	<item id="101" type="0" name="不败之地" processMax="3" rewardT="0" rewardV="200" nextId="102" desc="任意游戏连胜3局"  />
+	<item id="102" type="0" name="战无不胜" processMax="5" rewardT="0" rewardV="500" nextId="103" desc="任意游戏连胜5局"  />
+	<item id="103" type="0" name="横扫千军" processMax="10" rewardT="0" rewardV="1000" nextId="104" desc="任意游戏连胜10局"  />
+	<item id="104" type="0" name="常胜将军" processMax="20" rewardT="2" rewardV="102" nextId="0" desc="任意游戏连胜20局"  rewardDesc="绿宝石"/>
+	<item id="110" type="0" name="All-in初胜" processMax="1" rewardT="0" rewardV="100" nextId="111" desc="德州All-in胜利1次"  />
+	<item id="111" type="0" name="All-in连胜" processMax="10" rewardT="0" rewardV="200" nextId="112" desc="德州All-in胜利10次"  />
+	<item id="112" type="0" name="All-in至尊" processMax="50" rewardT="0" rewardV="500" nextId="113" desc="德州All-in胜利50次"  />
+	<item id="113" type="0" name="All-in大师" processMax="200" rewardT="0" rewardV="1000" nextId="114" desc="德州All-in胜利200次"  />
+	<item id="114" type="0" name="All-in之王" processMax="500" rewardT="2" rewardV="102" nextId="0" desc="德州All-in胜利500次" rewardDesc="绿宝石" />
+	<item id="120" type="0" name="白手起家" processMax="10000" rewardT="0" rewardV="100" nextId="121" desc="资产达到1万"  targetCode="1W"/>
+	<item id="121" type="0" name="生财之道" processMax="100000" rewardT="0" rewardV="200" nextId="122" desc="资产达到10万"  targetCode="10W"/>
+	<item id="122" type="0" name="百万富翁" processMax="1000000" rewardT="0" rewardV="500" nextId="123" desc="资产达到100万"  targetCode="100W"/>
+	<item id="123" type="0" name="千万富翁" processMax="10000000" rewardT="0" rewardV="1000" nextId="124" desc="资产达到1000万"  targetCode="1QW"/>
+	<item id="124" type="0" name="亿万富翁" processMax="100000000" rewardT="2" rewardV="102" nextId="0" desc="资产达到1亿"  targetCode="1Y" rewardDesc="绿宝石"/>
+	<item id="130" type="0" name="广交好友" processMax="1" rewardT="0" rewardV="100" nextId="131" desc="拥有1个好友"  /> 
+	<item id="131" type="0" name="结伴而行" processMax="5" rewardT="0" rewardV="200" nextId="132" desc="拥有5个好友"  />
+	<item id="132" type="0" name="座无虚席" processMax="10" rewardT="0" rewardV="500" nextId="133" desc="拥有10个好友"  />
+	<item id="133" type="0" name="高朋满座" processMax="20" rewardT="0" rewardV="1000" nextId="134" desc="拥有20个好友"  />
+	<item id="134" type="0" name="扑克红人" processMax="30" rewardT="2" rewardV="102" nextId="0" desc="拥有30个好友"  rewardDesc="绿宝石"/>
+	<item id="140" type="0" name="一展身手" processMax="100000" rewardT="0" rewardV="100" nextId="141" desc="单局赢得筹码10万"  targetCode="10W"/>
+	<item id="141" type="0" name="英姿飒爽" processMax="300000" rewardT="0" rewardV="200" nextId="142" desc="单局赢得筹码30万"  targetCode="30W"/>
+	<item id="142" type="0" name="气势磅礴" processMax="1000000" rewardT="0" rewardV="500" nextId="143" desc="单局赢得筹码100万"  targetCode="100W"/>
+	<item id="143" type="0" name="牌神降临" processMax="5000000" rewardT="0" rewardV="1000" nextId="144" desc="单局赢得筹码500万"  targetCode="500W"/>
+	<item id="144" type="0" name="传奇大师" processMax="20000000" rewardT="2" rewardV="102" nextId="0" desc="单局赢得筹码2000万"  targetCode="2QW" rewardDesc="绿宝石"/>
+	<item id="150" type="0" name="所向披靡" processMax="10000" rewardT="0" rewardV="100" nextId="151" desc="累计赢得筹码1万"  targetCode="1W"/>
+	<item id="151" type="0" name="盖世无双" processMax="100000" rewardT="0" rewardV="200" nextId="152" desc="累计赢得筹码10万"  targetCode="10W"/>
+	<item id="152" type="0" name="出神入化" processMax="1000000" rewardT="0" rewardV="500" nextId="153" desc="累计赢得筹码100万"  targetCode="100W"/>
+	<item id="153" type="0" name="气吞山河" processMax="10000000" rewardT="0" rewardV="1000" nextId="154" desc="累计赢得筹码1000万"  targetCode="1QW"/>
+	<item id="154" type="0" name="扑克之神" processMax="100000000" rewardT="2" rewardV="102" nextId="0" desc="累计赢得筹码1亿"  targetCode="1Y" rewardDesc="绿宝石"/>
+	<item id="160" type="0" name="勤劳致富" processMax="3" rewardT="0" rewardV="100" nextId="161" desc="累计登录3天"  /> 
+	<item id="161" type="0" name="持之以恒" processMax="7" rewardT="0" rewardV="200" nextId="162" desc="累计登录7天"  />
+	<item id="162" type="0" name="坚持不懈" processMax="15" rewardT="0" rewardV="500" nextId="163" desc="累计登录15天"  />
+	<item id="163" type="0" name="滴水石穿" processMax="30" rewardT="0" rewardV="1000" nextId="164" desc="累计登录30天"  />
+	<item id="164" type="0" name="矢志不渝" processMax="60" rewardT="2" rewardV="102" nextId="0" desc="累计登录60天"  rewardDesc="绿宝石"/>
+	
+	<item id="200" type="0" name="升级之路" processMax="2" rewardT="0" rewardV="200" nextId="201" desc="提升等级到2级"  /> 
+	<item id="201" type="0" name="升级之路" processMax="3" rewardT="1" rewardV="111" nextId="202" desc="提升等级到3级"  rewardDesc="冰淇淋"/>
+	<item id="202" type="0" name="升级之路" processMax="4" rewardT="0" rewardV="300" nextId="203" desc="提升等级到4级"  />
+	<item id="203" type="0" name="升级之路" processMax="5" rewardT="0" rewardV="500" nextId="204" desc="提升等级到5级"  /> 
+	<item id="204" type="0" name="升级之路" processMax="6" rewardT="0" rewardV="800" nextId="205" desc="提升等级到6级"  /> 
+	<item id="205" type="0" name="升级之路" processMax="7" rewardT="0" rewardV="800" nextId="206" desc="提升等级到7级"  /> 
+	<item id="206" type="0" name="升级之路" processMax="8" rewardT="2" rewardV="102" nextId="207" desc="提升等级到8级"  rewardDesc="绿宝石"/>
+	<item id="207" type="0" name="升级之路" processMax="9" rewardT="0" rewardV="1500" nextId="208" desc="提升等级到9级"  /> 
+	<item id="208" type="0" name="升级之路" processMax="10" rewardT="0" rewardV="2000" nextId="209" desc="提升等级到10级"  /> 
+	<item id="209" type="0" name="升级之路" processMax="11" rewardT="0" rewardV="2000" nextId="210" desc="提升等级到11级"  /> 
+	<item id="210" type="0" name="升级之路" processMax="12" rewardT="0" rewardV="2000" nextId="211" desc="提升等级到12级"  /> 
+	<item id="211" type="0" name="升级之路" processMax="13" rewardT="0" rewardV="2000" nextId="212" desc="提升等级到13级"  /> 
+	<item id="212" type="0" name="升级之路" processMax="14" rewardT="0" rewardV="2000" nextId="213" desc="提升等级到14级"  /> 
+	<item id="213" type="0" name="升级之路" processMax="15" rewardT="2" rewardV="103" nextId="214" desc="提升等级到15级"  rewardDesc="蓝宝石"/>
+	<item id="214" type="0" name="升级之路" processMax="16" rewardT="0" rewardV="3000" nextId="215" desc="提升等级到16级"  /> 
+	<item id="215" type="0" name="升级之路" processMax="17" rewardT="0" rewardV="3000" nextId="216" desc="提升等级到17级"  /> 
+	<item id="216" type="0" name="升级之路" processMax="18" rewardT="0" rewardV="3000" nextId="217" desc="提升等级到18级"  /> 
+	<item id="217" type="0" name="升级之路" processMax="19" rewardT="0" rewardV="3000" nextId="218" desc="提升等级到19级"  /> 
+	<item id="218" type="0" name="升级之路" processMax="20" rewardT="0" rewardV="5000" nextId="219" desc="提升等级到20级"  /> 
+	<item id="219" type="0" name="升级之路" processMax="21" rewardT="0" rewardV="5000" nextId="220" desc="提升等级到21级"  /> 
+	<item id="220" type="0" name="升级之路" processMax="22" rewardT="0" rewardV="5000" nextId="221" desc="提升等级到22级"  /> 
+	<item id="221" type="0" name="升级之路" processMax="23" rewardT="0" rewardV="5000" nextId="222" desc="提升等级到23级"  /> 
+	<item id="222" type="0" name="升级之路" processMax="24" rewardT="0" rewardV="5000" nextId="223" desc="提升等级到24级"  /> 
+	<item id="223" type="0" name="升级之路" processMax="25" rewardT="2" rewardV="103" nextId="224" desc="提升等级到25级"  rewardDesc="蓝宝石"/>
+	<item id="224" type="0" name="升级之路" processMax="26" rewardT="0" rewardV="8000" nextId="225" desc="提升等级到26级"  /> 
+	<item id="225" type="0" name="升级之路" processMax="27" rewardT="0" rewardV="8000" nextId="226" desc="提升等级到27级"  /> 
+	<item id="226" type="0" name="升级之路" processMax="28" rewardT="0" rewardV="8000" nextId="227" desc="提升等级到28级"  /> 
+	<item id="227" type="0" name="升级之路" processMax="29" rewardT="0" rewardV="8000" nextId="228" desc="提升等级到29级"  /> 
+	<item id="228" type="0" name="升级之路" processMax="30" rewardT="0" rewardV="15000" nextId="229" desc="提升等级到30级"  /> 
+	<item id="229" type="0" name="升级之路" processMax="31" rewardT="0" rewardV="15000" nextId="230" desc="提升等级到31级"  /> 
+	<item id="230" type="0" name="升级之路" processMax="32" rewardT="0" rewardV="15000" nextId="231" desc="提升等级到32级"  /> 
+	<item id="231" type="0" name="升级之路" processMax="33" rewardT="0" rewardV="15000" nextId="232" desc="提升等级到33级"  /> 
+	<item id="232" type="0" name="升级之路" processMax="34" rewardT="0" rewardV="15000" nextId="233" desc="提升等级到34级"  /> 
+	<item id="233" type="0" name="升级之路" processMax="35" rewardT="2" rewardV="104" nextId="234" desc="提升等级到35级"  rewardDesc="红宝石"/>
+	<item id="234" type="0" name="升级之路" processMax="36" rewardT="0" rewardV="15000" nextId="235" desc="提升等级到36级"  /> 
+	<item id="235" type="0" name="升级之路" processMax="37" rewardT="0" rewardV="15000" nextId="236" desc="提升等级到37级"  /> 
+	<item id="236" type="0" name="升级之路" processMax="38" rewardT="0" rewardV="15000" nextId="237" desc="提升等级到38级"  /> 
+	<item id="237" type="0" name="升级之路" processMax="39" rewardT="0" rewardV="15000" nextId="238" desc="提升等级到39级"  /> 
+	<item id="238" type="0" name="升级之路" processMax="40" rewardT="0" rewardV="30000" nextId="239" desc="提升等级到40级"  /> 
+	<item id="239" type="0" name="升级之路" processMax="41" rewardT="0" rewardV="30000" nextId="240" desc="提升等级到41级"  /> 
+	<item id="240" type="0" name="升级之路" processMax="42" rewardT="0" rewardV="30000" nextId="241" desc="提升等级到42级"  /> 
+	<item id="241" type="0" name="升级之路" processMax="43" rewardT="0" rewardV="30000" nextId="242" desc="提升等级到43级"  /> 
+	<item id="242" type="0" name="升级之路" processMax="44" rewardT="0" rewardV="30000" nextId="243" desc="提升等级到44级"  /> 
+	<item id="243" type="0" name="升级之路" processMax="45" rewardT="2" rewardV="104" nextId="244" desc="提升等级到45级"  rewardDesc="红宝石"/>
+	<item id="244" type="0" name="升级之路" processMax="46" rewardT="0" rewardV="30000" nextId="245" desc="提升等级到46级"  /> 
+	<item id="245" type="0" name="升级之路" processMax="47" rewardT="0" rewardV="30000" nextId="246" desc="提升等级到47级"  /> 
+	<item id="246" type="0" name="升级之路" processMax="48" rewardT="0" rewardV="30000" nextId="247" desc="提升等级到48级"  /> 
+	<item id="247" type="0" name="升级之路" processMax="49" rewardT="0" rewardV="30000" nextId="248" desc="提升等级到49级"  /> 
+	<item id="248" type="0" name="升级之路" processMax="50" rewardT="0" rewardV="50000" nextId="249" desc="提升等级到50级"  /> 
+	<item id="249" type="0" name="升级之路" processMax="51" rewardT="0" rewardV="50000" nextId="250" desc="提升等级到51级"  /> 
+	<item id="250" type="0" name="升级之路" processMax="52" rewardT="0" rewardV="50000" nextId="251" desc="提升等级到52级"  /> 
+	<item id="251" type="0" name="升级之路" processMax="53" rewardT="0" rewardV="50000" nextId="252" desc="提升等级到53级"  /> 
+	<item id="252" type="0" name="升级之路" processMax="54" rewardT="0" rewardV="50000" nextId="253" desc="提升等级到54级"  /> 
+	<item id="253" type="0" name="升级之路" processMax="55" rewardT="2" rewardV="105" nextId="254" desc="提升等级到55级"  rewardDesc="黄宝石"/>
+	<item id="254" type="0" name="升级之路" processMax="56" rewardT="0" rewardV="50000" nextId="255" desc="提升等级到56级"  /> 
+	<item id="255" type="0" name="升级之路" processMax="57" rewardT="0" rewardV="50000" nextId="256" desc="提升等级到57级"  /> 
+	<item id="256" type="0" name="升级之路" processMax="58" rewardT="0" rewardV="50000" nextId="257" desc="提升等级到58级"  /> 
+	<item id="257" type="0" name="升级之路" processMax="59" rewardT="0" rewardV="50000" nextId="258" desc="提升等级到59级"  /> 
+	<item id="258" type="0" name="升级之路" processMax="60" rewardT="0" rewardV="80000" nextId="259" desc="提升等级到60级"  /> 
+	<item id="259" type="0" name="升级之路" processMax="61" rewardT="0" rewardV="80000" nextId="260" desc="提升等级到61级"  /> 
+	<item id="260" type="0" name="升级之路" processMax="62" rewardT="0" rewardV="80000" nextId="261" desc="提升等级到62级"  /> 
+	<item id="261" type="0" name="升级之路" processMax="63" rewardT="0" rewardV="80000" nextId="262" desc="提升等级到63级"  /> 
+	<item id="262" type="0" name="升级之路" processMax="64" rewardT="0" rewardV="80000" nextId="263" desc="提升等级到64级"  /> 
+	<item id="263" type="0" name="升级之路" processMax="65" rewardT="2" rewardV="105" nextId="264" desc="提升等级到65级"  rewardDesc="黄宝石"/>
+	<item id="264" type="0" name="升级之路" processMax="66" rewardT="0" rewardV="80000" nextId="265" desc="提升等级到66级"  /> 
+	<item id="265" type="0" name="升级之路" processMax="67" rewardT="0" rewardV="80000" nextId="266" desc="提升等级到67级"  /> 
+	<item id="266" type="0" name="升级之路" processMax="68" rewardT="0" rewardV="80000" nextId="267" desc="提升等级到68级"  /> 
+	<item id="267" type="0" name="升级之路" processMax="69" rewardT="0" rewardV="80000" nextId="268" desc="提升等级到69级"  /> 
+	<item id="268" type="0" name="升级之路" processMax="70" rewardT="0" rewardV="120000" nextId="269" desc="提升等级到70级"  /> 
+	<item id="269" type="0" name="升级之路" processMax="71" rewardT="0" rewardV="120000" nextId="270" desc="提升等级到71级"  /> 
+	<item id="270" type="0" name="升级之路" processMax="72" rewardT="0" rewardV="120000" nextId="271" desc="提升等级到72级"  /> 
+	<item id="271" type="0" name="升级之路" processMax="73" rewardT="0" rewardV="120000" nextId="272" desc="提升等级到73级"  /> 
+	<item id="272" type="0" name="升级之路" processMax="74" rewardT="0" rewardV="120000" nextId="273" desc="提升等级到74级"  /> 
+	<item id="273" type="0" name="升级之路" processMax="75" rewardT="2" rewardV="106" nextId="274" desc="提升等级到75级"  rewardDesc="紫宝石"/>
+	<item id="274" type="0" name="升级之路" processMax="76" rewardT="0" rewardV="120000" nextId="275" desc="提升等级到76级"  /> 
+	<item id="275" type="0" name="升级之路" processMax="77" rewardT="0" rewardV="120000" nextId="276" desc="提升等级到77级"  /> 
+	<item id="276" type="0" name="升级之路" processMax="78" rewardT="0" rewardV="120000" nextId="277" desc="提升等级到78级"  /> 
+	<item id="277" type="0" name="升级之路" processMax="79" rewardT="0" rewardV="120000" nextId="278" desc="提升等级到79级"  /> 
+	<item id="278" type="0" name="升级之路" processMax="80" rewardT="0" rewardV="150000" nextId="279" desc="提升等级到80级"  /> 
+	<item id="279" type="0" name="升级之路" processMax="81" rewardT="0" rewardV="150000" nextId="280" desc="提升等级到81级"  /> 
+	<item id="280" type="0" name="升级之路" processMax="82" rewardT="0" rewardV="150000" nextId="281" desc="提升等级到82级"  /> 
+	<item id="281" type="0" name="升级之路" processMax="83" rewardT="0" rewardV="150000" nextId="282" desc="提升等级到83级"  /> 
+	<item id="282" type="0" name="升级之路" processMax="84" rewardT="0" rewardV="150000" nextId="283" desc="提升等级到84级"  /> 
+	<item id="283" type="0" name="升级之路" processMax="85" rewardT="2" rewardV="106" nextId="284" desc="提升等级到85级"  rewardDesc="紫宝石"/>
+	<item id="284" type="0" name="升级之路" processMax="86" rewardT="0" rewardV="150000" nextId="285" desc="提升等级到86级"  /> 
+	<item id="285" type="0" name="升级之路" processMax="87" rewardT="0" rewardV="150000" nextId="286" desc="提升等级到87级"  /> 
+	<item id="286" type="0" name="升级之路" processMax="88" rewardT="0" rewardV="150000" nextId="287" desc="提升等级到88级"  /> 
+	<item id="287" type="0" name="升级之路" processMax="89" rewardT="0" rewardV="150000" nextId="288" desc="提升等级到89级"  /> 
+	<item id="288" type="0" name="升级之路" processMax="90" rewardT="0" rewardV="200000" nextId="289" desc="提升等级到90级"  /> 
+	<item id="289" type="0" name="升级之路" processMax="91" rewardT="0" rewardV="200000" nextId="290" desc="提升等级到91级"  /> 
+	<item id="290" type="0" name="升级之路" processMax="92" rewardT="0" rewardV="200000" nextId="291" desc="提升等级到92级"  /> 
+	<item id="291" type="0" name="升级之路" processMax="93" rewardT="0" rewardV="200000" nextId="292" desc="提升等级到93级"  /> 
+	<item id="292" type="0" name="升级之路" processMax="94" rewardT="0" rewardV="200000" nextId="293" desc="提升等级到94级"  /> 
+	<item id="293" type="0" name="升级之路" processMax="95" rewardT="2" rewardV="106" nextId="294" desc="提升等级到95级"  rewardDesc="紫宝石"/> 
+	<item id="294" type="0" name="升级之路" processMax="96" rewardT="0" rewardV="200000" nextId="295" desc="提升等级到96级"  /> 
+	<item id="295" type="0" name="升级之路" processMax="97" rewardT="0" rewardV="200000" nextId="296" desc="提升等级到97级"  /> 
+	<item id="296" type="0" name="升级之路" processMax="98" rewardT="0" rewardV="200000" nextId="297" desc="提升等级到98级"  /> 
+	<item id="297" type="0" name="升级之路" processMax="99" rewardT="0" rewardV="200000" nextId="298" desc="提升等级到99级"  /> 
+	
+	<item id="400" type="1" name="三条初胜" processMax="1" rewardT="0" rewardV="100" nextId="0" desc="通过三条取得一次胜利"  /> 
+	<item id="401" type="1" name="顺子初胜" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="通过顺子取得一次胜利"  />
+	<item id="402" type="1" name="同花初胜" processMax="1" rewardT="0" rewardV="500" nextId="0" desc="通过同花取得一次胜利"  />
+	<item id="403" type="1" name="葫芦初胜" processMax="1" rewardT="0" rewardV="1000" nextId="0" desc="通过葫芦取得一次胜利"  />
+	<item id="404" type="1" name="四条初胜" processMax="1" rewardT="0" rewardV="2000" nextId="0" desc="通过四条取得一次胜利"  />
+	<item id="405" type="1" name="同花顺胜" processMax="1" rewardT="0" rewardV="5000" nextId="0" desc="通过同花顺取得一次胜利"  />
+	<item id="406" type="1" name="皇家之手" processMax="1" rewardT="2" rewardV="102" nextId="0" desc="通过皇家同花顺取得一次胜利"  rewardDesc="绿宝石"/>
+	<item id="407" type="1" name="AK获胜" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="AK手牌获胜一局"  />
+	<item id="408" type="1" name="AA获胜" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="AA手牌获胜一局"  />
+	<item id="409" type="1" name="KK获胜" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="KK手牌获胜一局"  />
+	<item id="410" type="1" name="绝处逢生" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="2、7不同花色获胜一局"  />
+	<item id="411" type="1" name="AA输牌" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="AA手牌输牌一局"  />
+	<item id="412" type="1" name="KK输牌" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="KK手牌输牌一局"  />
+	<item id="413" type="1" name="QQ输牌" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="QQ手牌输牌一局"  />
+	<item id="414" type="1" name="QQ对KK" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="QQ遇到KK手牌"  />
+	<item id="415" type="1" name="KK遇AA" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="KK遇到AA手牌"  />
+	<item id="416" type="1" name="以小赌大" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="玩拼手牌一次"  />
+	<item id="417" type="1" name="出手大方" processMax="1" rewardT="0" rewardV="200" nextId="0" desc="打赏荷官一次"  />
+	<item id="418" type="1" name="时运不济" processMax="5" rewardT="0" rewardV="200" nextId="0" desc="德州连续输牌5次"  />
+	<item id="419" type="1" name="富贵达人" processMax="20" rewardT="0" rewardV="10000" nextId="0" desc="累计充值20元"  />
+</DataList> 

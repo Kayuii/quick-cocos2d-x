@@ -1,0 +1,76 @@
+
+guafeng.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuaFengXiaYu_wind_0
+  rotate: false
+  xy: 2, 628
+  size: 238, 311
+  orig: 238, 311
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_wind_1
+  rotate: false
+  xy: 2, 315
+  size: 238, 311
+  orig: 238, 311
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_wind_2
+  rotate: false
+  xy: 242, 628
+  size: 238, 311
+  orig: 238, 311
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_wind_3
+  rotate: false
+  xy: 2, 2
+  size: 238, 311
+  orig: 238, 311
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_wind_4
+  rotate: false
+  xy: 242, 315
+  size: 238, 311
+  orig: 238, 311
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_wind_5
+  rotate: false
+  xy: 482, 628
+  size: 238, 311
+  orig: 238, 311
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_wind_6
+  rotate: false
+  xy: 242, 2
+  size: 238, 311
+  orig: 238, 311
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_wind_7
+  rotate: false
+  xy: 482, 315
+  size: 238, 311
+  orig: 238, 311
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_wind_8
+  rotate: false
+  xy: 722, 628
+  size: 238, 311
+  orig: 238, 311
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_wind_9
+  rotate: false
+  xy: 482, 2
+  size: 238, 311
+  orig: 238, 311
+  offset: 0, 0
+  index: -1

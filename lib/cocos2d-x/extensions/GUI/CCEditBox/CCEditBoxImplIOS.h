@@ -58,6 +58,7 @@
 -(void) doAnimationWhenKeyboardMoveWithDuration:(float)duration distance:(float)distance;
 -(void) setPosition:(CGPoint) pos;
 -(void) setContentSize:(CGSize) size;
+-(void) setTextAlign:(NSTextAlignment)textAlign;
 -(void) visit;
 -(void) openKeyboard;
 -(void) closeKeyboard;
@@ -101,8 +102,11 @@ public:
     virtual void doAnimationWhenKeyboardMove(float duration, float distance);
     virtual void openKeyboard();
     virtual void closeKeyboard();
-	
+    virtual void setTextAlign(EditBoxTextAlignType align);
 	virtual void onEndEditing();
+    
+    //----
+    void placeInactiveLabelsAlignLeft();
     
 private:
 	void			initInactiveLabels(const CCSize& size);

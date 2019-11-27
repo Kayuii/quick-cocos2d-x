@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 
+    taskType  0.每日任务   1.每周任务
+    sceneId   0.所有地方   1.德州  2.斗地主 3.中发白  
+
+ -->
+<DataList>
+    <item taskType="0" fuLIId="310" reward="500" name="加入官方QQ群(414653199)" desc="赠送5万游戏币，实际充值满10元再送10万！" />
+    <item taskType="0" fuLIId="311" reward="500" name="每日累计可获得24,000游戏币" desc="VIP奖励最高*1300%" />
+    <item taskType="0" fuLIId="312" reward="500" name="签到抽奖，VIP奖励最高*1300%" desc="连续签到3、5、7天可额外获得奖励" />
+    <item taskType="0" fuLIId="313" reward="500" name="修改游戏昵称" desc="第一次修改奖励：500游戏币" />
+    <item taskType="0" fuLIId="314" reward="1000" name="修改游戏头像" desc="第一次修改奖励：1000游戏币" />
+    <item taskType="0" fuLIId="315" reward="500" name="苹果商店，五星好评后" desc="评论奖励：20000游戏币" />
+    <item taskType="0" fuLIId="316" reward="500" name="您的钱太多了，留给更有需要的童鞋吧" desc="今日可领取：0/3次" />         
+</DataList> 

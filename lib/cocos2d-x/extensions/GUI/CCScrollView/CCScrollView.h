@@ -31,7 +31,7 @@
 
 NS_CC_EXT_BEGIN
 
-/**
+/**S
  * @addtogroup GUI
  * @{
  */
@@ -39,10 +39,10 @@ NS_CC_EXT_BEGIN
 typedef enum {
 	kCCScrollViewDirectionNone = -1,
     kCCScrollViewDirectionHorizontal = 0,
-    kCCScrollViewDirectionVertical,
+    kCCScrollViewDirectionVertical=1,
+    kCCScrollViewDirectionTopToDown=2,
     kCCScrollViewDirectionBoth
 } CCScrollViewDirection;
-
 class CCScrollView;
 /**
  *  @js NA
@@ -84,7 +84,7 @@ public:
      * @param container parent object
      * @return autoreleased scroll view object
      */
-    static CCScrollView* create(CCSize size, CCNode* container = NULL);
+    static CCScrollView* create(CCSize , CCNode* container = NULL);
 
     /**
      * Returns an autoreleased scroll view object.
@@ -168,6 +168,7 @@ public:
     bool isTouchMoved() { return m_bTouchMoved; }
     bool isBounceable() { return m_bBounceable; }
     void setBounceable(bool bBounceable) { m_bBounceable = bBounceable; }
+    void setScrollable(bool bScrollable){ m_bScroll=bScrollable; }
 
     /**
      * size to clip. CCNode boundingBox uses contentSize directly.
@@ -179,7 +180,9 @@ public:
 
     CCNode * getContainer();
     void setContainer(CCNode * pContainer);
-
+    //add by shi
+    void sendScrollEvent(const char * eventName);
+    //----------
     /**
      * direction allowed to scroll. CCScrollViewDirectionBoth by default.
      */
@@ -274,6 +277,8 @@ protected:
      * If YES, the view is being dragged.
      */
     bool m_bDragging;
+    
+    bool m_bScroll;
 
     /**
      * Content offset. Note that left-bottom point is the origin

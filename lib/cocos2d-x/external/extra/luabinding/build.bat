@@ -13,4 +13,10 @@ echo.
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo.
 call %MAKE_LUABINDING% -d %OUTPUT_DIR% CZHelperFunc_luabinding.tolua
+echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+echo.
+call %MAKE_LUABINDING% -d %OUTPUT_DIR% SkeletonAnimation_luabinding.tolua
+echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+echo.
+call %MAKE_LUABINDING% -d %OUTPUT_DIR% SkeletonRenderer_luabinding.tolua
 popd

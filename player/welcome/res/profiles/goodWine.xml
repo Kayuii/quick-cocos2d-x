@@ -1,0 +1,17 @@
+<!--
+美酒商品配置表
+price售价（五币）
+getChip获得游戏币
+
+ -->
+
+<DataList>
+    
+    <item id="100" name="红酒" price="50" getChip="50000"/>
+    <item id="101" name="威士忌" price="180" getChip="180000"/>
+    <item id="102" name="伏特加" price="500" getChip="500000"/>
+    <item id="103" name="人头马" price="1000" getChip="1000000"/>
+    <item id="104" name="轩尼诗" price="2000" getChip="2000000"/>
+    <item id="105" name="天堂马爹利" price="5000" getChip="5000000"/>
+    
+</DataList>

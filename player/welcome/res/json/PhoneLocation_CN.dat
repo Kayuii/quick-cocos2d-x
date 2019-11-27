@@ -1,0 +1,326 @@
+{
+  "Location": {
+    "Country": [
+      {
+        "-areaCode": "54",
+        "-name": "阿根廷",
+        "-code": "AR"
+      },
+      {
+        "-areaCode": "374",
+        "-name": "亚美尼亚",
+        "-code": "AM"
+      },
+      {
+        "-areaCode": "61",
+        "-name": "澳大利亚",
+        "-code": "AU"
+      },
+      {
+        "-areaCode": "43",
+        "-name": "奥地利",
+        "-code": "AT"
+      },
+      {
+        "-areaCode": "973",
+        "-name": "巴林",
+        "-code": "BH"
+      },
+      {
+        "-areaCode": "375",
+        "-name": "白俄罗斯",
+        "-code": "BY"
+      },
+      {
+        "-areaCode": "32",
+        "-name": "比利时",
+        "-code": "BE"
+      },
+      {
+        "-areaCode": "55",
+        "-name": "巴西",
+        "-code": "BR"
+      },
+      {
+        "-areaCode": "673",
+        "-name": "文莱",
+        "-code": "BN"
+      },
+      {
+        "-areaCode": "359",
+        "-name": "保加利亚",
+        "-code": "BG"
+      },
+      {
+        "-areaCode": "1",
+        "-name": "加拿大",
+        "-code": "CA"
+      },
+      {
+        "-areaCode": "86",
+        "-name": "中国",
+        "-code": "CN"
+      },
+      {
+        "-areaCode": "357",
+        "-name": "塞浦路斯",
+        "-code": "CY"
+      },
+      {
+        "-areaCode": "420",
+        "-name": "捷克共和国",
+        "-code": "CZ"
+      },
+      {
+        "-areaCode": "45",
+        "-name": "丹麦",
+        "-code": "DK"
+      },
+      {
+        "-areaCode": "20",
+        "-name": "埃及",
+        "-code": "EG"
+      },
+      {
+        "-areaCode": "372",
+        "-name": "爱沙尼亚",
+        "-code": "EE"
+      },
+      {
+        "-areaCode": "358",
+        "-name": "芬兰",
+        "-code": "FI"
+      },
+      {
+        "-areaCode": "33",
+        "-name": "法国",
+        "-code": "FR"
+      },
+      {
+        "-areaCode": "49",
+        "-name": "德国",
+        "-code": "DE"
+      },
+      {
+        "-areaCode": "30",
+        "-name": "希腊",
+        "-code": "GR"
+      },
+      {
+        "-areaCode": "852",
+        "-name": "香港",
+        "-code": "HK"
+      },
+      {
+        "-areaCode": "36",
+        "-name": "匈牙利",
+        "-code": "HU"
+      },
+      {
+        "-areaCode": "354",
+        "-name": "冰岛",
+        "-code": "IS"
+      },
+      {
+        "-areaCode": "62",
+        "-name": "印度尼西亚",
+        "-code": "ID"
+      },
+      {
+        "-areaCode": "353",
+        "-name": "爱尔兰",
+        "-code": "IE"
+      },
+      {
+        "-areaCode": "972",
+        "-name": "以色列",
+        "-code": "IL"
+      },
+      {
+        "-areaCode": "39",
+        "-name": "意大利",
+        "-code": "IT"
+      },
+      {
+        "-areaCode": "81",
+        "-name": "日本",
+        "-code": "JP"
+      },
+      {
+        "-areaCode": "962",
+        "-name": "约旦",
+        "-code": "JO"
+      },
+      {
+        "-areaCode": "7",
+        "-name": "哈萨克斯坦",
+        "-code": "KZ"
+      },
+      {
+        "-areaCode": "965",
+        "-name": "科威特",
+        "-code": "KW"
+      },
+      {
+        "-areaCode": "370",
+        "-name": "立陶宛",
+        "-code": "LT"
+      },
+      {
+        "-areaCode": "352",
+        "-name": "卢森堡",
+        "-code": "LU"
+      },
+      {
+        "-areaCode": "853",
+        "-name": "澳门",
+        "-code": "MO"
+      },
+      {
+        "-areaCode": "60",
+        "-name": "马来西亚",
+        "-code": "MY"
+      },
+      {
+        "-areaCode": "356",
+        "-name": "马耳他",
+        "-code": "MT"
+      },
+      {
+        "-areaCode": "52",
+        "-name": "墨西哥",
+        "-code": "MX"
+      },
+      {
+        "-areaCode": "31",
+        "-name": "荷兰",
+        "-code": "NL"
+      },
+      {
+        "-areaCode": "64",
+        "-name": "新西兰",
+        "-code": "NZ"
+      },
+      {
+        "-areaCode": "47",
+        "-name": "挪威",
+        "-code": "NO"
+      },
+      {
+        "-areaCode": "63",
+        "-name": "菲律宾",
+        "-code": "PH"
+      },
+      {
+        "-areaCode": "48",
+        "-name": "波兰",
+        "-code": "PL"
+      },
+      {
+        "-areaCode": "351",
+        "-name": "葡萄牙",
+        "-code": "PT"
+      },
+      {
+        "-areaCode": "974",
+        "-name": "卡塔尔",
+        "-code": "QA"
+      },
+      {
+        "-areaCode": "40",
+        "-name": "罗马尼亚",
+        "-code": "RO"
+      },
+      {
+        "-areaCode": "7",
+        "-name": "俄罗斯",
+        "-code": "RU"
+      },
+      {
+        "-areaCode": "378",
+        "-name": "圣马力诺",
+        "-code": "SM"
+      },
+      {
+        "-areaCode": "966",
+        "-name": "沙特阿拉伯",
+        "-code": "SA"
+      },
+      {
+        "-areaCode": "65",
+        "-name": "新加坡",
+        "-code": "SG"
+      },
+      {
+        "-areaCode": "421",
+        "-name": "斯洛伐克",
+        "-code": "SK"
+      },
+      {
+        "-areaCode": "386",
+        "-name": "斯洛文尼亚",
+        "-code": "SI"
+      },
+      {
+        "-areaCode": "27",
+        "-name": "南非",
+        "-code": "ZA"
+      },
+      {
+        "-areaCode": "82",
+        "-name": "韩国",
+        "-code": "KR"
+      },
+      {
+        "-areaCode": "34",
+        "-name": "西班牙",
+        "-code": "ES"
+      },
+      {
+        "-areaCode": "46",
+        "-name": "瑞典",
+        "-code": "SE"
+      },
+      {
+        "-areaCode": "41",
+        "-name": "瑞士",
+        "-code": "CH"
+      },
+      {
+        "-areaCode": "886",
+        "-name": "台湾",
+        "-code": "TW"
+      },
+      {
+        "-areaCode": "66",
+        "-name": "泰国",
+        "-code": "TH"
+      },
+      {
+        "-areaCode": "90",
+        "-name": "土耳其",
+        "-code": "TR"
+      },
+      {
+        "-areaCode": "971",
+        "-name": "阿拉伯联合酋长国",
+        "-code": "AE"
+      },
+      {
+        "-areaCode": "44",
+        "-name": "英国",
+        "-code": "GB"
+      },
+      {
+        "-areaCode": "1",
+        "-name": "美国",
+        "-code": "US"
+      },
+      {
+        "-areaCode": "84",
+        "-name": "越南",
+        "-code": "VN"
+      }
+    ]
+  }
+}

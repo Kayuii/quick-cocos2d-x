@@ -195,7 +195,7 @@ void CCEditBoxImplAndroid::setText(const char* pText)
     }
 }
 
-const char*  CCEditBoxImplAndroid::getText(void)
+const char* CCEditBoxImplAndroid::getText(void)
 {
     return m_strText.c_str();
 }
@@ -263,29 +263,43 @@ static void editBoxCallbackFunc(const char* pText, void* ctx)
 
         cocos2d::extension::KeyboardReturnType returnType = pEditBox->getReturnType();
         int handler = pEditBox->getScriptEditBoxHandler();
-        pEngine->executeEvent(handler, "changed",pEditBox);
-
-        if (returnType == cocos2d::extension::kKeyboardReturnTypeDone)
-        {
-            pEngine->executeEvent(handler, "returnDone", pEditBox);
-    }
-        else if (returnType == cocos2d::extension::kKeyboardReturnTypeSend)
-        {
-            pEngine->executeEvent(handler, "returnSend", pEditBox);
-}
-        else if (returnType == cocos2d::extension::kKeyboardReturnTypeSearch)
-        {
-            pEngine->executeEvent(handler, "returnSearch", pEditBox);
-        }
-        else if (returnType == cocos2d::extension::kKeyboardReturnTypeGo)
-        {
-            pEngine->executeEvent(handler, "returnGo", pEditBox);
-        }
-        else
-        {
-            pEngine->executeEvent(handler, "return", pEditBox);
-        }
+//        pEngine->executeEvent(handler, "changed",pEditBox);
+//
+//        if (returnType == cocos2d::extension::kKeyboardReturnTypeDone)
+//        {
+//            pEngine->executeEvent(handler, "returnDone", pEditBox);
+//    }
+//        else if (returnType == cocos2d::extension::kKeyboardReturnTypeSend)
+//        {
+//            pEngine->executeEvent(handler, "returnSend", pEditBox);
+//}
+//        else if (returnType == cocos2d::extension::kKeyboardReturnTypeSearch)
+//        {
+//            pEngine->executeEvent(handler, "returnSearch", pEditBox);
+//        }
+//        else if (returnType == cocos2d::extension::kKeyboardReturnTypeGo)
+//        {
+//            pEngine->executeEvent(handler, "returnGo", pEditBox);
+//        }
+//        else
+//        {
+//            pEngine->executeEvent(handler, "return", pEditBox);
+//        }
         pEngine->executeEvent(handler, "ended",pEditBox);
+    }
+}
+
+static void editBoxCallbackActionSend(void* ctx){
+    CCEditBoxImplAndroid* thiz = (CCEditBoxImplAndroid*)ctx;
+    if (thiz) {
+        CCEditBox* pEditBox = thiz->getCCEditBox();
+        if (pEditBox) {
+            int handler = pEditBox->getScriptEditBoxHandler();
+            if (handler) {
+                cocos2d::CCScriptEngineProtocol* pEngine = cocos2d::CCScriptEngineManager::sharedManager()->getScriptEngine();
+                pEngine->executeEvent(handler, "returnSend",pEditBox);
+            }
+        }
     }
 }
 
@@ -309,6 +323,7 @@ void CCEditBoxImplAndroid::openKeyboard()
 						  m_eKeyboardReturnType,
 						  m_nMaxLength,
 						  editBoxCallbackFunc,
+                          editBoxCallbackActionSend,
 						  (void*)this  );
 	
 }
@@ -317,6 +332,17 @@ void CCEditBoxImplAndroid::closeKeyboard()
 {
 	releaseEdit();
 }
+
+
+void CCEditBoxImplAndroid::setTextAlign(EditBoxTextAlignType align)
+{
+    // if(m_pEditBoxImpl!=NULL)
+    // {
+    //     m_pEditBoxImpl->setTextAlign(align);
+    // }
+
+}
+
 
 NS_CC_EXT_END
 

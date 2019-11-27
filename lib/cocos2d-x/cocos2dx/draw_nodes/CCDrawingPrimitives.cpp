@@ -247,7 +247,7 @@ void ccDrawPoly( const CCPoint *poli, unsigned int numberOfPoints, bool closePol
     s_pShader->setUniformLocationWith4fv(s_nColorLocation, (GLfloat*) &s_tColor.r, 1);
 
     ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
-
+    
     // iPhone and 32-bit machines optimization
     if( sizeof(CCPoint) == sizeof(ccVertex2F) )
     {
@@ -257,11 +257,12 @@ void ccDrawPoly( const CCPoint *poli, unsigned int numberOfPoints, bool closePol
 #else
         glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, GL_FALSE, 0, poli);
 #endif // EMSCRIPTEN
-
+        //glHint(GL_GENERATE_MIPMAP_HINT, GL_NICEST);
         if( closePolygon )
             glDrawArrays(GL_LINE_LOOP, 0, (GLsizei) numberOfPoints);
         else
             glDrawArrays(GL_LINE_STRIP, 0, (GLsizei) numberOfPoints);
+        //glDisable(GL_LINE_SMOOTH);
     }
     else
     {
@@ -279,6 +280,7 @@ void ccDrawPoly( const CCPoint *poli, unsigned int numberOfPoints, bool closePol
         glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, GL_FALSE, 0, newPoli);
 #endif // EMSCRIPTEN
 
+       // glHint(GL_GENERATE_MIPMAP_HINT, GL_NICEST);
         if( closePolygon )
             glDrawArrays(GL_LINE_LOOP, 0, (GLsizei) numberOfPoints);
         else
@@ -316,7 +318,7 @@ void ccDrawSolidPoly( const CCPoint *poli, unsigned int numberOfPoints, ccColor4
     else
     {
         // Mac on 64-bit
-        for( unsigned int i=0; i<numberOfPoints;i++)
+        for( unsigned int i=0; i<numberOfPoints;i++)\ 
         {
             newPoli[i] = vertex2( poli[i].x, poli[i].y );
         }
@@ -363,7 +365,7 @@ void ccDrawCircle(const CCPoint& center, float radius, float angle, unsigned int
     s_pShader->setUniformsForBuiltins();
     s_pShader->setUniformLocationWith4fv(s_nColorLocation, (GLfloat*) &s_tColor.r, 1);
 
-    ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+    ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );        
 
 #ifdef EMSCRIPTEN
     setGLBufferData(vertices, sizeof(GLfloat)*2*(segments+2));

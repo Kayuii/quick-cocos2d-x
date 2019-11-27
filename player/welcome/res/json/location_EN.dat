@@ -1,0 +1,6216 @@
+{
+  "Location": {
+    "CountryRegion": [
+      {
+        "-name": "Micronesia",
+        "-code": "FSM"
+      },
+      {
+        "-name": "Jamaica",
+        "-code": "JAM"
+      },
+      {
+        "-name": "St.Helena",
+        "-code": "SHN"
+      },
+      {
+        "-name": "Christmas Island",
+        "-code": "CXR"
+      },
+      {
+        "-name": "Timor-Leste",
+        "-code": "TLS"
+      },
+      {
+        "-name": "Bhutan",
+        "-code": "BTN"
+      },
+      {
+        "-name": "Romania",
+        "-code": "ROU"
+      },
+      {
+        "-name": "Djibouti",
+        "-code": "DJI"
+      },
+      {
+        "-name": "Kyrgyzstan",
+        "-code": "KGZ"
+      },
+      {
+        "-name": "Mozambique",
+        "-code": "MOZ"
+      },
+      {
+        "-name": "Norway",
+        "-code": "NOR"
+      },
+      {
+        "-name": "Syria",
+        "-code": "SYR"
+      },
+      {
+        "-name": "Japan",
+        "-code": "JPN"
+      },
+      {
+        "-name": "Uzbekistan",
+        "-code": "UZB"
+      },
+      {
+        "-name": "Faroe Islands",
+        "-code": "FRO"
+      },
+      {
+        "-name": "India",
+        "-code": "IND"
+      },
+      {
+        "-name": "United Arab Emirates",
+        "-code": "ARE"
+      },
+      {
+        "-name": "Seychelles",
+        "-code": "SYC"
+      },
+      {
+        "-name": "Northern Mariana Islands",
+        "-code": "MNP"
+      },
+      {
+        "-name": "Argentina",
+        "-code": "ARG"
+      },
+      {
+        "-name": "Armenia",
+        "-code": "ARM"
+      },
+      {
+        "-name": "Mongolia",
+        "-code": "MNG"
+      },
+      {
+        "-name": "China",
+        "-code": "1",
+        "State": [
+          {
+            "-name": "Fujian",
+            "-code": "35",
+            "City": [
+              {
+                "-name": "Putian",
+                "-code": "3"
+              },
+              {
+                "-name": "Xiamen",
+                "-code": "2"
+              },
+              {
+                "-name": "Fuzhou",
+                "-code": "1"
+              },
+              {
+                "-name": "Nanping",
+                "-code": "7"
+              },
+              {
+                "-name": "Zhangzhou",
+                "-code": "6"
+              },
+              {
+                "-name": "Quanzhou",
+                "-code": "5"
+              },
+              {
+                "-name": "Sanming",
+                "-code": "4"
+              },
+              {
+                "-name": "Ningde",
+                "-code": "9"
+              },
+              {
+                "-name": "Longyan",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Jiangxi",
+            "-code": "36",
+            "City": [
+              {
+                "-name": "Pingxiang",
+                "-code": "3"
+              },
+              {
+                "-name": "Jingdezhen",
+                "-code": "2"
+              },
+              {
+                "-name": "Nanchang",
+                "-code": "1"
+              },
+              {
+                "-name": "Fuzhou",
+                "-code": "10"
+              },
+              {
+                "-name": "Ganzhou",
+                "-code": "7"
+              },
+              {
+                "-name": "Yingtan",
+                "-code": "6"
+              },
+              {
+                "-name": "Xinyu",
+                "-code": "5"
+              },
+              {
+                "-name": "Jiujiang",
+                "-code": "4"
+              },
+              {
+                "-name": "Yichun",
+                "-code": "9"
+              },
+              {
+                "-name": "Ji'an",
+                "-code": "8"
+              },
+              {
+                "-name": "Shangrao",
+                "-code": "11"
+              }
+            ]
+          },
+          {
+            "-name": "Zhejiang",
+            "-code": "33",
+            "City": [
+              {
+                "-name": "Wenzhou",
+                "-code": "3"
+              },
+              {
+                "-name": "Ningbo",
+                "-code": "2"
+              },
+              {
+                "-name": "Taizhou",
+                "-code": "10"
+              },
+              {
+                "-name": "Hangzhou",
+                "-code": "1"
+              },
+              {
+                "-name": "Jinhua",
+                "-code": "7"
+              },
+              {
+                "-name": "Shaoxing",
+                "-code": "6"
+              },
+              {
+                "-name": "Huzhou",
+                "-code": "5"
+              },
+              {
+                "-name": "Jiaxing",
+                "-code": "4"
+              },
+              {
+                "-name": "Zhoushan",
+                "-code": "9"
+              },
+              {
+                "-name": "Quzhou",
+                "-code": "8"
+              },
+              {
+                "-name": "Lishui",
+                "-code": "11"
+              }
+            ]
+          },
+          {
+            "-name": "Inner Mongolia",
+            "-code": "15",
+            "City": [
+              {
+                "-name": "Wuhai",
+                "-code": "3"
+              },
+              {
+                "-name": "Baotou",
+                "-code": "2"
+              },
+              {
+                "-name": "Hohhot",
+                "-code": "1"
+              },
+              {
+                "-name": "Hulun Buir",
+                "-code": "7"
+              },
+              {
+                "-name": "Ordos",
+                "-code": "6"
+              },
+              {
+                "-name": "Tongliao",
+                "-code": "5"
+              },
+              {
+                "-name": "Chifeng",
+                "-code": "4"
+              },
+              {
+                "-name": "Xing'an",
+                "-code": "22"
+              },
+              {
+                "-name": "Ulan Qab",
+                "-code": "9"
+              },
+              {
+                "-name": "Xilin Gol",
+                "-code": "25"
+              },
+              {
+                "-name": "Bayannur",
+                "-code": "8"
+              },
+              {
+                "-name": "Alxa",
+                "-code": "29"
+              }
+            ]
+          },
+          {
+            "-name": "Anhui",
+            "-code": "34",
+            "City": [
+              {
+                "-name": "Bengbu",
+                "-code": "3"
+              },
+              {
+                "-name": "Wuhu",
+                "-code": "2"
+              },
+              {
+                "-name": "Huangshan",
+                "-code": "10"
+              },
+              {
+                "-name": "Hefei",
+                "-code": "1"
+              },
+              {
+                "-name": "Tongling",
+                "-code": "7"
+              },
+              {
+                "-name": "Huaibei",
+                "-code": "6"
+              },
+              {
+                "-name": "Ma'anshan",
+                "-code": "5"
+              },
+              {
+                "-name": "Huainan",
+                "-code": "4"
+              },
+              {
+                "-name": "Chizhou",
+                "-code": "17"
+              },
+              {
+                "-name": "Xuancheng",
+                "-code": "18"
+              },
+              {
+                "-name": "Lu'an",
+                "-code": "15"
+              },
+              {
+                "-name": "Bozhou",
+                "-code": "16"
+              },
+              {
+                "-name": "Anqing",
+                "-code": "8"
+              },
+              {
+                "-name": "Suzhou",
+                "-code": "13"
+              },
+              {
+                "-name": "Chaohu",
+                "-code": "14"
+              },
+              {
+                "-name": "Chuzhou",
+                "-code": "11"
+              },
+              {
+                "-name": "Fuyang",
+                "-code": "12"
+              }
+            ]
+          },
+          {
+            "-name": "Hebei",
+            "-code": "13",
+            "City": [
+              {
+                "-name": "Qinhuangdao",
+                "-code": "3"
+              },
+              {
+                "-name": "Tangshan",
+                "-code": "2"
+              },
+              {
+                "-name": "Shijiazhuang",
+                "-code": "1"
+              },
+              {
+                "-name": "Langfang",
+                "-code": "10"
+              },
+              {
+                "-name": "Zhangjiakou",
+                "-code": "7"
+              },
+              {
+                "-name": "Baoding",
+                "-code": "6"
+              },
+              {
+                "-name": "Xingtai",
+                "-code": "5"
+              },
+              {
+                "-name": "Handan",
+                "-code": "4"
+              },
+              {
+                "-name": "Cangzhou",
+                "-code": "9"
+              },
+              {
+                "-name": "Chengde",
+                "-code": "8"
+              },
+              {
+                "-name": "Hengshui",
+                "-code": "11"
+              }
+            ]
+          },
+          {
+            "-name": "Shanxi",
+            "-code": "14",
+            "City": [
+              {
+                "-name": "Yangquan",
+                "-code": "3"
+              },
+              {
+                "-name": "Datong",
+                "-code": "2"
+              },
+              {
+                "-name": "Taiyuan",
+                "-code": "1"
+              },
+              {
+                "-name": "Linfen",
+                "-code": "10"
+              },
+              {
+                "-name": "Jinzhong",
+                "-code": "7"
+              },
+              {
+                "-name": "Shuozhou",
+                "-code": "6"
+              },
+              {
+                "-name": "Jincheng",
+                "-code": "5"
+              },
+              {
+                "-name": "Changzhi",
+                "-code": "4"
+              },
+              {
+                "-name": "Xinzhou",
+                "-code": "9"
+              },
+              {
+                "-name": "Yuncheng",
+                "-code": "8"
+              },
+              {
+                "-name": "luliang",
+                "-code": "11"
+              }
+            ]
+          },
+          {
+            "-name": "Shandong",
+            "-code": "37",
+            "City": [
+              {
+                "-name": "Heze",
+                "-code": "17"
+              },
+              {
+                "-name": "Liaocheng",
+                "-code": "15"
+              },
+              {
+                "-name": "Binzhou",
+                "-code": "16"
+              },
+              {
+                "-name": "Linyi",
+                "-code": "13"
+              },
+              {
+                "-name": "Dezhou",
+                "-code": "14"
+              },
+              {
+                "-name": "Rizhao",
+                "-code": "11"
+              },
+              {
+                "-name": "Laiwu",
+                "-code": "12"
+              },
+              {
+                "-name": "Zibo",
+                "-code": "3"
+              },
+              {
+                "-name": "Qingdao",
+                "-code": "2"
+              },
+              {
+                "-name": "Weihai",
+                "-code": "10"
+              },
+              {
+                "-name": "Jinan",
+                "-code": "1"
+              },
+              {
+                "-name": "Weifang",
+                "-code": "7"
+              },
+              {
+                "-name": "Yantai",
+                "-code": "6"
+              },
+              {
+                "-name": "Dongying",
+                "-code": "5"
+              },
+              {
+                "-name": "Zaozhuang",
+                "-code": "4"
+              },
+              {
+                "-name": "Tai'an",
+                "-code": "9"
+              },
+              {
+                "-name": "Jining",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Beijing",
+            "-code": "11",
+            "City": [
+              {
+                "-name": "Daxing",
+                "-code": "24"
+              },
+              {
+                "-name": "Shunyi",
+                "-code": "13"
+              },
+              {
+                "-name": "Pinggu",
+                "-code": "26"
+              },
+              {
+                "-name": "Huairou",
+                "-code": "27"
+              },
+              {
+                "-name": "Fangshan",
+                "-code": "11"
+              },
+              {
+                "-name": "Miyun",
+                "-code": "28"
+              },
+              {
+                "-name": "Yanqing",
+                "-code": "29"
+              },
+              {
+                "-name": "Tongzhou",
+                "-code": "12"
+              },
+              {
+                "-name": "Changping",
+                "-code": "21"
+              },
+              {
+                "-name": "Xicheng",
+                "-code": "2"
+              },
+              {
+                "-name": "Dongcheng",
+                "-code": "1"
+              },
+              {
+                "-name": "Shijingshan",
+                "-code": "7"
+              },
+              {
+                "-name": "Fengtai",
+                "-code": "6"
+              },
+              {
+                "-name": "Chaoyang",
+                "-code": "5"
+              },
+              {
+                "-name": "Mentougou",
+                "-code": "9"
+              },
+              {
+                "-name": "Haidian",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Tianjin",
+            "-code": "12",
+            "City": [
+              {
+                "-name": "Wuqing",
+                "-code": "22"
+              },
+              {
+                "-name": "Jinghai",
+                "-code": "23"
+              },
+              {
+                "-name": "Baodi",
+                "-code": "24"
+              },
+              {
+                "-name": "Jixian",
+                "-code": "25"
+              },
+              {
+                "-name": "Beichen",
+                "-code": "13"
+              },
+              {
+                "-name": "Xiqing",
+                "-code": "11"
+              },
+              {
+                "-name": "Jinnan",
+                "-code": "12"
+              },
+              {
+                "-name": "Ninghe",
+                "-code": "21"
+              },
+              {
+                "-name": "Hexi",
+                "-code": "3"
+              },
+              {
+                "-name": "Hedong",
+                "-code": "2"
+              },
+              {
+                "-name": "Dongli",
+                "-code": "10"
+              },
+              {
+                "-name": "Heping",
+                "-code": "1"
+              },
+              {
+                "-name": "Hongqiao",
+                "-code": "6"
+              },
+              {
+                "-name": "Hebei",
+                "-code": "5"
+              },
+              {
+                "-name": "Nankai",
+                "-code": "4"
+              }
+            ]
+          },
+          {
+            "-name": "Liaoning",
+            "-code": "21",
+            "City": [
+              {
+                "-name": "Anshan",
+                "-code": "3"
+              },
+              {
+                "-name": "Dalian",
+                "-code": "2"
+              },
+              {
+                "-name": "Shenyang",
+                "-code": "1"
+              },
+              {
+                "-name": "Liaoyang",
+                "-code": "10"
+              },
+              {
+                "-name": "Jinzhou",
+                "-code": "7"
+              },
+              {
+                "-name": "Dandong",
+                "-code": "6"
+              },
+              {
+                "-name": "Benxi",
+                "-code": "5"
+              },
+              {
+                "-name": "Fushun",
+                "-code": "4"
+              },
+              {
+                "-name": "Fuxin",
+                "-code": "9"
+              },
+              {
+                "-name": "Yingkou",
+                "-code": "8"
+              },
+              {
+                "-name": "Chaoyang",
+                "-code": "13"
+              },
+              {
+                "-name": "Huludao",
+                "-code": "14"
+              },
+              {
+                "-name": "Panjin",
+                "-code": "11"
+              },
+              {
+                "-name": "Tieling",
+                "-code": "12"
+              }
+            ]
+          },
+          {
+            "-name": "Hunan",
+            "-code": "43",
+            "City": [
+              {
+                "-name": "Xiangtan",
+                "-code": "3"
+              },
+              {
+                "-name": "Zhuzhou",
+                "-code": "2"
+              },
+              {
+                "-name": "Chenzhou",
+                "-code": "10"
+              },
+              {
+                "-name": "Changsha",
+                "-code": "1"
+              },
+              {
+                "-name": "Changde",
+                "-code": "7"
+              },
+              {
+                "-name": "Yueyang",
+                "-code": "6"
+              },
+              {
+                "-name": "Shaoyang",
+                "-code": "5"
+              },
+              {
+                "-name": "Xiangxi Tujia-Miao Autonomous Prefecture",
+                "-code": "31"
+              },
+              {
+                "-name": "Hengyang",
+                "-code": "4"
+              },
+              {
+                "-name": "Yiyang",
+                "-code": "9"
+              },
+              {
+                "-name": "Zhangjiajie",
+                "-code": "8"
+              },
+              {
+                "-name": "Loudi",
+                "-code": "13"
+              },
+              {
+                "-name": "Yongzhou",
+                "-code": "11"
+              },
+              {
+                "-name": "Huaihua",
+                "-code": "12"
+              }
+            ]
+          },
+          {
+            "-name": "Hubei",
+            "-code": "42",
+            "City": [
+              {
+                "-name": "Tianmen",
+                "-code": "96"
+              },
+              {
+                "-name": "Qianjiang",
+                "-code": "95"
+              },
+              {
+                "-name": "Xiantao",
+                "-code": "94"
+              },
+              {
+                "-name": "Suizhou",
+                "-code": "13"
+              },
+              {
+                "-name": "Enshi Tujia-Miao Autonomous Prefecture",
+                "-code": "28"
+              },
+              {
+                "-name": "Huanggang",
+                "-code": "11"
+              },
+              {
+                "-name": "Xianning",
+                "-code": "12"
+              },
+              {
+                "-name": "Shiyan",
+                "-code": "3"
+              },
+              {
+                "-name": "Huangshi",
+                "-code": "2"
+              },
+              {
+                "-name": "Jingzhou",
+                "-code": "10"
+              },
+              {
+                "-name": "Wuhan",
+                "-code": "1"
+              },
+              {
+                "-name": "Ezhou",
+                "-code": "7"
+              },
+              {
+                "-name": "Xiangfan",
+                "-code": "6"
+              },
+              {
+                "-name": "Yichang",
+                "-code": "5"
+              },
+              {
+                "-name": "Xiaogan",
+                "-code": "9"
+              },
+              {
+                "-name": "Jingmen",
+                "-code": "8"
+              },
+              {
+                "-name": "Shennongjia",
+                "-code": "A21"
+              }
+            ]
+          },
+          {
+            "-name": "Henan",
+            "-code": "41",
+            "City": [
+              {
+                "-name": "Zhumadian",
+                "-code": "17"
+              },
+              {
+                "-name": "Jiyuan",
+                "-code": "18"
+              },
+              {
+                "-name": "Xinyang",
+                "-code": "15"
+              },
+              {
+                "-name": "Zhoukou",
+                "-code": "16"
+              },
+              {
+                "-name": "Nanyang",
+                "-code": "13"
+              },
+              {
+                "-name": "Shangqiu",
+                "-code": "14"
+              },
+              {
+                "-name": "Luohe",
+                "-code": "11"
+              },
+              {
+                "-name": "Sanmenxia",
+                "-code": "12"
+              },
+              {
+                "-name": "Luoyang",
+                "-code": "3"
+              },
+              {
+                "-name": "Kaifeng",
+                "-code": "2"
+              },
+              {
+                "-name": "Zhengzhou",
+                "-code": "1"
+              },
+              {
+                "-name": "Xuchang",
+                "-code": "10"
+              },
+              {
+                "-name": "Xinxiang",
+                "-code": "7"
+              },
+              {
+                "-name": "Hebi",
+                "-code": "6"
+              },
+              {
+                "-name": "Anyang",
+                "-code": "5"
+              },
+              {
+                "-name": "Pingdingshan",
+                "-code": "4"
+              },
+              {
+                "-name": "Puyang",
+                "-code": "9"
+              },
+              {
+                "-name": "Jiaozuo",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Macao SAR",
+            "-code": "82"
+          },
+          {
+            "-name": "Ningxia",
+            "-code": "64",
+            "City": [
+              {
+                "-name": "Wuzhong",
+                "-code": "3"
+              },
+              {
+                "-name": "Shizuishan",
+                "-code": "2"
+              },
+              {
+                "-name": "Yinchuan",
+                "-code": "1"
+              },
+              {
+                "-name": "Zhongwei",
+                "-code": "5"
+              },
+              {
+                "-name": "Guyuan",
+                "-code": "4"
+              }
+            ]
+          },
+          {
+            "-name": "Xinjiang",
+            "-code": "65",
+            "City": [
+              {
+                "-name": "Wujiaqu",
+                "-code": "94"
+              },
+              {
+                "-name": "Tumsuk",
+                "-code": "93"
+              },
+              {
+                "-name": "Alar",
+                "-code": "92"
+              },
+              {
+                "-name": "Shihezi",
+                "-code": "91"
+              },
+              {
+                "-name": "Hami",
+                "-code": "22"
+              },
+              {
+                "-name": "Changji Hui Autonomous Prefecture",
+                "-code": "23"
+              },
+              {
+                "-name": "Bortala Mongol Autonomous Prefecture",
+                "-code": "27"
+              },
+              {
+                "-name": "Bayingolin Mongol Autonomous Prefecture",
+                "-code": "28"
+              },
+              {
+                "-name": "Aksu",
+                "-code": "29"
+              },
+              {
+                "-name": "Turpan",
+                "-code": "21"
+              },
+              {
+                "-name": "Karamay",
+                "-code": "2"
+              },
+              {
+                "-name": "Urumqi",
+                "-code": "1"
+              },
+              {
+                "-name": "Altay",
+                "-code": "43"
+              },
+              {
+                "-name": "Kizilsu Kirgiz Autonomous Prefecture",
+                "-code": "30"
+              },
+              {
+                "-name": "Tacheng",
+                "-code": "42"
+              },
+              {
+                "-name": "Hotan",
+                "-code": "32"
+              },
+              {
+                "-name": "Ili Kazakh Autonomous Prefecture",
+                "-code": "40"
+              },
+              {
+                "-name": "Kashi",
+                "-code": "31"
+              }
+            ]
+          },
+          {
+            "-name": "Gansu",
+            "-code": "62",
+            "City": [
+              {
+                "-name": "Dingxi",
+                "-code": "11"
+              },
+              {
+                "-name": "Linxia Hui Autonomous Prefecture",
+                "-code": "29"
+              },
+              {
+                "-name": "Longnan",
+                "-code": "12"
+              },
+              {
+                "-name": "Baiyin",
+                "-code": "3"
+              },
+              {
+                "-name": "Jinchang",
+                "-code": "2"
+              },
+              {
+                "-name": "Lanzhou",
+                "-code": "1"
+              },
+              {
+                "-name": "Qingyang",
+                "-code": "10"
+              },
+              {
+                "-name": "Zhangye",
+                "-code": "7"
+              },
+              {
+                "-name": "Gannan Tibetan Autonomous Prefecture",
+                "-code": "30"
+              },
+              {
+                "-name": "Wuwei",
+                "-code": "6"
+              },
+              {
+                "-name": "Jiayuguan",
+                "-code": "5"
+              },
+              {
+                "-name": "Tianshui",
+                "-code": "4"
+              },
+              {
+                "-name": "Jiuquan",
+                "-code": "9"
+              },
+              {
+                "-name": "Pingliang",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Hongkong SAR",
+            "-code": "81"
+          },
+          {
+            "-name": "Qinghai",
+            "-code": "63",
+            "City": [
+              {
+                "-name": "Haidong",
+                "-code": "21"
+              },
+              {
+                "-name": "Xining",
+                "-code": "1"
+              },
+              {
+                "-name": "Haibei Tibetan Autonomous Prefecture",
+                "-code": "22"
+              },
+              {
+                "-name": "Huangnan Tibetan Autonomous Prefecture",
+                "-code": "23"
+              },
+              {
+                "-name": "Hainan Tibetan Autonomous Prefecture",
+                "-code": "25"
+              },
+              {
+                "-name": "Guoluo Tibetan Autonomous Prefecture",
+                "-code": "26"
+              },
+              {
+                "-name": "Yushu Tibetan Autonomous Prefecture",
+                "-code": "27"
+              },
+              {
+                "-name": "Haixi Mongol-Tibetan Autonomous Prefecture",
+                "-code": "28"
+              }
+            ]
+          },
+          {
+            "-name": "Shaanxi",
+            "-code": "61",
+            "City": [
+              {
+                "-name": "Baoji",
+                "-code": "3"
+              },
+              {
+                "-name": "Tongchuan",
+                "-code": "2"
+              },
+              {
+                "-name": "Xi'an",
+                "-code": "1"
+              },
+              {
+                "-name": "Shangluo",
+                "-code": "10"
+              },
+              {
+                "-name": "Hanzhong",
+                "-code": "7"
+              },
+              {
+                "-name": "Yan'an",
+                "-code": "6"
+              },
+              {
+                "-name": "Weinan",
+                "-code": "5"
+              },
+              {
+                "-name": "Xianyang",
+                "-code": "4"
+              },
+              {
+                "-name": "Ankang",
+                "-code": "9"
+              },
+              {
+                "-name": "Yulin",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Guangxi",
+            "-code": "45",
+            "City": [
+              {
+                "-name": "Guilin",
+                "-code": "3"
+              },
+              {
+                "-name": "Liuzhou",
+                "-code": "2"
+              },
+              {
+                "-name": "Nanning",
+                "-code": "1"
+              },
+              {
+                "-name": "Baise",
+                "-code": "10"
+              },
+              {
+                "-name": "Qinzhou",
+                "-code": "7"
+              },
+              {
+                "-name": "Fangchenggang",
+                "-code": "6"
+              },
+              {
+                "-name": "Beihai",
+                "-code": "5"
+              },
+              {
+                "-name": "Wuzhou",
+                "-code": "4"
+              },
+              {
+                "-name": "Yulin",
+                "-code": "9"
+              },
+              {
+                "-name": "Guigang",
+                "-code": "8"
+              },
+              {
+                "-name": "Laibin",
+                "-code": "13"
+              },
+              {
+                "-name": "Chongzuo",
+                "-code": "14"
+              },
+              {
+                "-name": "Hezhou",
+                "-code": "11"
+              },
+              {
+                "-name": "Hechi",
+                "-code": "12"
+              }
+            ]
+          },
+          {
+            "-name": "Guangdong",
+            "-code": "44",
+            "City": [
+              {
+                "-name": "Dongguan",
+                "-code": "19"
+              },
+              {
+                "-name": "Yangjiang",
+                "-code": "17"
+              },
+              {
+                "-name": "Qingyuan",
+                "-code": "18"
+              },
+              {
+                "-name": "Shanwei",
+                "-code": "15"
+              },
+              {
+                "-name": "Heyuan",
+                "-code": "16"
+              },
+              {
+                "-name": "Huizhou",
+                "-code": "13"
+              },
+              {
+                "-name": "Meizhou",
+                "-code": "14"
+              },
+              {
+                "-name": "Zhaoqing",
+                "-code": "12"
+              },
+              {
+                "-name": "Shenzhen",
+                "-code": "3"
+              },
+              {
+                "-name": "Zhongshan",
+                "-code": "20"
+              },
+              {
+                "-name": "Shaoguan",
+                "-code": "2"
+              },
+              {
+                "-name": "Guangzhou",
+                "-code": "1"
+              },
+              {
+                "-name": "Jiangmen",
+                "-code": "7"
+              },
+              {
+                "-name": "Foshan",
+                "-code": "6"
+              },
+              {
+                "-name": "Shantou",
+                "-code": "5"
+              },
+              {
+                "-name": "Zhuhai",
+                "-code": "4"
+              },
+              {
+                "-name": "Chaozhou",
+                "-code": "51"
+              },
+              {
+                "-name": "Jieyang",
+                "-code": "52"
+              },
+              {
+                "-name": "Yunfu",
+                "-code": "53"
+              },
+              {
+                "-name": "Maoming",
+                "-code": "9"
+              },
+              {
+                "-name": "Zhanjiang",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Hainan",
+            "-code": "46",
+            "City": [
+              {
+                "-name": "Baisha Li Autonomous County",
+                "-code": "A30"
+              },
+              {
+                "-name": "Dongfang",
+                "-code": "97"
+              },
+              {
+                "-name": "Jiang Li Autonomous County",
+                "-code": "A31"
+              },
+              {
+                "-name": "Wanning",
+                "-code": "96"
+              },
+              {
+                "-name": "Wenchang",
+                "-code": "95"
+              },
+              {
+                "-name": "Danzhou",
+                "-code": "93"
+              },
+              {
+                "-name": "Qionghai",
+                "-code": "92"
+              },
+              {
+                "-name": "Wuzhishan",
+                "-code": "91"
+              },
+              {
+                "-name": "Sanya",
+                "-code": "2"
+              },
+              {
+                "-name": "Haikou",
+                "-code": "1"
+              },
+              {
+                "-name": "Xisha Qundao",
+                "-code": "A37"
+              },
+              {
+                "-name": "Lingao",
+                "-code": "A28"
+              },
+              {
+                "-name": "Qiongzhong Li-Miao Autonomous County",
+                "-code": "A36"
+              },
+              {
+                "-name": "Cengmai",
+                "-code": "A27"
+              },
+              {
+                "-name": "Zhongsha Qundao",
+                "-code": "A39"
+              },
+              {
+                "-name": "Tunchang",
+                "-code": "A26"
+              },
+              {
+                "-name": "Ding'an",
+                "-code": "A25"
+              },
+              {
+                "-name": "Nansha Qundao",
+                "-code": "A38"
+              },
+              {
+                "-name": "Ledong Li Autonomous County",
+                "-code": "A33"
+              },
+              {
+                "-name": "Baoting Li-Miao Autonomous County",
+                "-code": "A35"
+              },
+              {
+                "-name": "Lingshui Li Autonomous County",
+                "-code": "A34"
+              }
+            ]
+          },
+          {
+            "-name": "Jilin",
+            "-code": "22",
+            "City": [
+              {
+                "-name": "Siping",
+                "-code": "3"
+              },
+              {
+                "-name": "Jilin",
+                "-code": "2"
+              },
+              {
+                "-name": "Changchun",
+                "-code": "1"
+              },
+              {
+                "-name": "Songyuan",
+                "-code": "7"
+              },
+              {
+                "-name": "Baishan",
+                "-code": "6"
+              },
+              {
+                "-name": "Tonghua",
+                "-code": "5"
+              },
+              {
+                "-name": "Liaoyuan",
+                "-code": "4"
+              },
+              {
+                "-name": "Yanbian Korean Autonomous Prefecture",
+                "-code": "24"
+              },
+              {
+                "-name": "Baicheng",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Heilongjiang",
+            "-code": "23",
+            "City": [
+              {
+                "-name": "Jixi",
+                "-code": "3"
+              },
+              {
+                "-name": "Qiqihar",
+                "-code": "2"
+              },
+              {
+                "-name": "Mudanjiang",
+                "-code": "10"
+              },
+              {
+                "-name": "Harbin",
+                "-code": "1"
+              },
+              {
+                "-name": "Yichun",
+                "-code": "7"
+              },
+              {
+                "-name": "Daqing",
+                "-code": "6"
+              },
+              {
+                "-name": "Shuangyashan",
+                "-code": "5"
+              },
+              {
+                "-name": "Hegang",
+                "-code": "4"
+              },
+              {
+                "-name": "Qitaihe",
+                "-code": "9"
+              },
+              {
+                "-name": "Jiamusi",
+                "-code": "8"
+              },
+              {
+                "-name": "Da Hinggan Ling",
+                "-code": "27"
+              },
+              {
+                "-name": "Heihe",
+                "-code": "11"
+              },
+              {
+                "-name": "Suihua",
+                "-code": "12"
+              }
+            ]
+          },
+          {
+            "-name": "Jiangsu",
+            "-code": "32",
+            "City": [
+              {
+                "-name": "Xuzhou",
+                "-code": "3"
+              },
+              {
+                "-name": "Wuxi",
+                "-code": "2"
+              },
+              {
+                "-name": "Yangzhou",
+                "-code": "10"
+              },
+              {
+                "-name": "Nanjing",
+                "-code": "1"
+              },
+              {
+                "-name": "Lianyungang",
+                "-code": "7"
+              },
+              {
+                "-name": "Nantong",
+                "-code": "6"
+              },
+              {
+                "-name": "Suzhou",
+                "-code": "5"
+              },
+              {
+                "-name": "Changzhou",
+                "-code": "4"
+              },
+              {
+                "-name": "Yancheng",
+                "-code": "9"
+              },
+              {
+                "-name": "Huai'an",
+                "-code": "8"
+              },
+              {
+                "-name": "Suqian",
+                "-code": "13"
+              },
+              {
+                "-name": "Zhenjiang",
+                "-code": "11"
+              },
+              {
+                "-name": "Taizhou",
+                "-code": "12"
+              }
+            ]
+          },
+          {
+            "-name": "Shanghai",
+            "-code": "31",
+            "City": [
+              {
+                "-name": "Songjiang",
+                "-code": "17"
+              },
+              {
+                "-name": "Pudongxin",
+                "-code": "15"
+              },
+              {
+                "-name": "Jinshan",
+                "-code": "16"
+              },
+              {
+                "-name": "Baoshan",
+                "-code": "13"
+              },
+              {
+                "-name": "Fengxian",
+                "-code": "26"
+              },
+              {
+                "-name": "Jiading",
+                "-code": "14"
+              },
+              {
+                "-name": "Yangpu",
+                "-code": "11"
+              },
+              {
+                "-name": "Qingpu",
+                "-code": "29"
+              },
+              {
+                "-name": "Minhang",
+                "-code": "12"
+              },
+              {
+                "-name": "Luwan",
+                "-code": "3"
+              },
+              {
+                "-name": "Huangpu",
+                "-code": "1"
+              },
+              {
+                "-name": "Putuo",
+                "-code": "7"
+              },
+              {
+                "-name": "Chongming",
+                "-code": "30"
+              },
+              {
+                "-name": "Jing'an",
+                "-code": "6"
+              },
+              {
+                "-name": "Changning",
+                "-code": "5"
+              },
+              {
+                "-name": "Xuhui",
+                "-code": "4"
+              },
+              {
+                "-name": "Hongkou",
+                "-code": "9"
+              },
+              {
+                "-name": "Zhabei",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Sichuan",
+            "-code": "51",
+            "City": [
+              {
+                "-name": "Bazhong",
+                "-code": "19"
+              },
+              {
+                "-name": "Dazhou",
+                "-code": "17"
+              },
+              {
+                "-name": "Ya'an",
+                "-code": "18"
+              },
+              {
+                "-name": "Yibin",
+                "-code": "15"
+              },
+              {
+                "-name": "Garze Tibetan Autonomous Prefecture",
+                "-code": "33"
+              },
+              {
+                "-name": "Guang'an",
+                "-code": "16"
+              },
+              {
+                "-name": "Liangshan Yi Autonomous Prefecture",
+                "-code": "34"
+              },
+              {
+                "-name": "Nancong",
+                "-code": "13"
+              },
+              {
+                "-name": "Meishan",
+                "-code": "14"
+              },
+              {
+                "-name": "Leshan",
+                "-code": "11"
+              },
+              {
+                "-name": "Zigong",
+                "-code": "3"
+              },
+              {
+                "-name": "Ziyang",
+                "-code": "20"
+              },
+              {
+                "-name": "Neijiang",
+                "-code": "10"
+              },
+              {
+                "-name": "Chengdu",
+                "-code": "1"
+              },
+              {
+                "-name": "Mianyang",
+                "-code": "7"
+              },
+              {
+                "-name": "Deyang",
+                "-code": "6"
+              },
+              {
+                "-name": "Aba Tibetan-Qiang Autonomous Prefecture",
+                "-code": "32"
+              },
+              {
+                "-name": "Luzhou",
+                "-code": "5"
+              },
+              {
+                "-name": "Panzhihua",
+                "-code": "4"
+              },
+              {
+                "-name": "Suining",
+                "-code": "9"
+              },
+              {
+                "-name": "Guangyuan",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Guizhou",
+            "-code": "52",
+            "City": [
+              {
+                "-name": "Zunyi",
+                "-code": "3"
+              },
+              {
+                "-name": "Liupanshui",
+                "-code": "2"
+              },
+              {
+                "-name": "Guiyang",
+                "-code": "1"
+              },
+              {
+                "-name": "Anshun",
+                "-code": "4"
+              },
+              {
+                "-name": "Tongren",
+                "-code": "22"
+              },
+              {
+                "-name": "Qianxinan Buyi-Miao Autonomous Prefecture",
+                "-code": "23"
+              },
+              {
+                "-name": "Bijie",
+                "-code": "24"
+              },
+              {
+                "-name": "Qiandongnan Miao-Dong Autonomous Prefecture",
+                "-code": "26"
+              },
+              {
+                "-name": "Qiannan Buyi Autonomous Prefecture",
+                "-code": "27"
+              }
+            ]
+          },
+          {
+            "-name": "Yunnan",
+            "-code": "53",
+            "City": [
+              {
+                "-name": "Chuxiong Yi Autonomous Prefecture",
+                "-code": "23"
+              },
+              {
+                "-name": "Nujiang Lisu Autonomous Prefecture",
+                "-code": "33"
+              },
+              {
+                "-name": "Diqing Tibetan Autonomous Prefecture",
+                "-code": "34"
+              },
+              {
+                "-name": "Honghe Hani-Yi Autonomous Prefecture",
+                "-code": "25"
+              },
+              {
+                "-name": "Wenshan Zhuang-Miao Autonomous Prefecture",
+                "-code": "26"
+              },
+              {
+                "-name": "Xishuangbanna Dai Autonomous Prefecture",
+                "-code": "28"
+              },
+              {
+                "-name": "Dali Bai Autonomous Prefecture",
+                "-code": "29"
+              },
+              {
+                "-name": "Qujing",
+                "-code": "3"
+              },
+              {
+                "-name": "Kunming",
+                "-code": "1"
+              },
+              {
+                "-name": "Lijiang",
+                "-code": "7"
+              },
+              {
+                "-name": "Zhaotong",
+                "-code": "6"
+              },
+              {
+                "-name": "Baoshan",
+                "-code": "5"
+              },
+              {
+                "-name": "Yuxi",
+                "-code": "4"
+              },
+              {
+                "-name": "Dehong Dai-Jingpo Autonomous Prefecture",
+                "-code": "31"
+              },
+              {
+                "-name": "Lincang",
+                "-code": "9"
+              },
+              {
+                "-name": "Pu'er",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Taiwan",
+            "-code": "71",
+            "City": [
+              {
+                "-name": "Kaohsiung County",
+                "-code": "19"
+              },
+              {
+                "-name": "Taitung County",
+                "-code": "22"
+              },
+              {
+                "-name": "Chiayi County",
+                "-code": "17"
+              },
+              {
+                "-name": "Tainan County",
+                "-code": "18"
+              },
+              {
+                "-name": "Hualian County",
+                "-code": "23"
+              },
+              {
+                "-name": "Nantou County",
+                "-code": "15"
+              },
+              {
+                "-name": "Yunnlin County",
+                "-code": "16"
+              },
+              {
+                "-name": "Taichung County",
+                "-code": "13"
+              },
+              {
+                "-name": "Changhwa County",
+                "-code": "14"
+              },
+              {
+                "-name": "Hsinchu County",
+                "-code": "11"
+              },
+              {
+                "-name": "Miaoli County",
+                "-code": "12"
+              },
+              {
+                "-name": "Penghu County",
+                "-code": "21"
+              },
+              {
+                "-name": "Keelung City",
+                "-code": "3"
+              },
+              {
+                "-name": "Pingtung County",
+                "-code": "20"
+              },
+              {
+                "-name": "Kaohsiung City",
+                "-code": "2"
+              },
+              {
+                "-name": "Taoyuan County",
+                "-code": "10"
+              },
+              {
+                "-name": "Taipei City",
+                "-code": "1"
+              },
+              {
+                "-name": "Chiayi City",
+                "-code": "7"
+              },
+              {
+                "-name": "Hsinchu City",
+                "-code": "6"
+              },
+              {
+                "-name": "Tainan City",
+                "-code": "5"
+              },
+              {
+                "-name": "Taichung City",
+                "-code": "4"
+              },
+              {
+                "-name": "Ilan County",
+                "-code": "9"
+              },
+              {
+                "-name": "Taipei County",
+                "-code": "8"
+              }
+            ]
+          },
+          {
+            "-name": "Tibet",
+            "-code": "54",
+            "City": [
+              {
+                "-name": "Qamdo",
+                "-code": "21"
+              },
+              {
+                "-name": "Lhasa",
+                "-code": "1"
+              },
+              {
+                "-name": "Shannan",
+                "-code": "22"
+              },
+              {
+                "-name": "Xigaze",
+                "-code": "23"
+              },
+              {
+                "-name": "Nagqu",
+                "-code": "24"
+              },
+              {
+                "-name": "Ngari",
+                "-code": "25"
+              },
+              {
+                "-name": "Nyingchi",
+                "-code": "26"
+              }
+            ]
+          },
+          {
+            "-name": "Chongqing",
+            "-code": "50",
+            "City": [
+              {
+                "-name": "Yunyang",
+                "-code": "35"
+              },
+              {
+                "-name": "Fengjie",
+                "-code": "36"
+              },
+              {
+                "-name": "Zhongxian",
+                "-code": "33"
+              },
+              {
+                "-name": "Kaixian",
+                "-code": "34"
+              },
+              {
+                "-name": "Ba'nan",
+                "-code": "13"
+              },
+              {
+                "-name": "Qianjiang",
+                "-code": "39"
+              },
+              {
+                "-name": "Wushan",
+                "-code": "37"
+              },
+              {
+                "-name": "Shuangqiao",
+                "-code": "11"
+              },
+              {
+                "-name": "Yubei",
+                "-code": "12"
+              },
+              {
+                "-name": "Wuxi",
+                "-code": "38"
+              },
+              {
+                "-name": "Changshou",
+                "-code": "21"
+              },
+              {
+                "-name": "Pengshui Miao-Tujia Autonomous Country",
+                "-code": "43"
+              },
+              {
+                "-name": "Youyang Tujia-Miao Autonomous Country",
+                "-code": "42"
+              },
+              {
+                "-name": "Xiushan Tujia-Miao Autonomous Country",
+                "-code": "41"
+              },
+              {
+                "-name": "Shizhu Tujia Autonomous Country",
+                "-code": "40"
+              },
+              {
+                "-name": "Hechuan",
+                "-code": "82"
+              },
+              {
+                "-name": "Yongchuan",
+                "-code": "83"
+              },
+              {
+                "-name": "Jiangjin",
+                "-code": "81"
+              },
+              {
+                "-name": "Nanchuan",
+                "-code": "84"
+              },
+              {
+                "-name": "Qijiang",
+                "-code": "22"
+              },
+              {
+                "-name": "Tongnan",
+                "-code": "23"
+              },
+              {
+                "-name": "Tongliang",
+                "-code": "24"
+              },
+              {
+                "-name": "Dazu",
+                "-code": "25"
+              },
+              {
+                "-name": "Rongchang",
+                "-code": "26"
+              },
+              {
+                "-name": "Bishan",
+                "-code": "27"
+              },
+              {
+                "-name": "Liangping",
+                "-code": "28"
+              },
+              {
+                "-name": "Chengkou",
+                "-code": "29"
+              },
+              {
+                "-name": "Yuzhong",
+                "-code": "3"
+              },
+              {
+                "-name": "Fuling",
+                "-code": "2"
+              },
+              {
+                "-name": "Wanzhou",
+                "-code": "1"
+              },
+              {
+                "-name": "Wansheng",
+                "-code": "10"
+              },
+              {
+                "-name": "Fengdu",
+                "-code": "30"
+              },
+              {
+                "-name": "Jiulongpo",
+                "-code": "7"
+              },
+              {
+                "-name": "Shapingba",
+                "-code": "6"
+              },
+              {
+                "-name": "Wulong",
+                "-code": "32"
+              },
+              {
+                "-name": "Jiangbei",
+                "-code": "5"
+              },
+              {
+                "-name": "Dianjiang",
+                "-code": "31"
+              },
+              {
+                "-name": "Dadukou",
+                "-code": "4"
+              },
+              {
+                "-name": "Beibei",
+                "-code": "9"
+              },
+              {
+                "-name": "Nan'an",
+                "-code": "8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "-name": "Georgia",
+        "-code": "GEO"
+      },
+      {
+        "-name": "Isle of Man",
+        "-code": "IMN"
+      },
+      {
+        "-name": "Tajikistan",
+        "-code": "TJK"
+      },
+      {
+        "-name": "Kenya",
+        "-code": "KEN"
+      },
+      {
+        "-name": "Guyana",
+        "-code": "GUY"
+      },
+      {
+        "-name": "Ascension Island",
+        "-code": "ASC"
+      },
+      {
+        "-name": "American Samoa",
+        "-code": "ASM"
+      },
+      {
+        "-name": "Svalbard and Jan Mayen",
+        "-code": "SJM"
+      },
+      {
+        "-name": "Liechtenstein",
+        "-code": "LIE"
+      },
+      {
+        "-name": "Burundi",
+        "-code": "BDI"
+      },
+      {
+        "-name": "Frech Polynesia",
+        "-code": "PYF"
+      },
+      {
+        "-name": "Dominica",
+        "-code": "DMA"
+      },
+      {
+        "-name": "Saudi Arabia",
+        "-code": "SAU"
+      },
+      {
+        "-name": "Myanmar",
+        "-code": "MMR"
+      },
+      {
+        "-name": "Antigua and Barbuda",
+        "-code": "ATG"
+      },
+      {
+        "-name": "Turkmenistan",
+        "-code": "TKM"
+      },
+      {
+        "-name": "Tokelau",
+        "-code": "TKL"
+      },
+      {
+        "-name": "Aruba",
+        "-code": "ABW"
+      },
+      {
+        "-name": "Mali",
+        "-code": "MLI"
+      },
+      {
+        "-name": "Serbia,Montenegro",
+        "-code": "SCG"
+      },
+      {
+        "-name": "French Southern and Antarctic Lands",
+        "-code": "ATF"
+      },
+      {
+        "-name": "Nepal",
+        "-code": "NPL"
+      },
+      {
+        "-name": "Guatemala",
+        "-code": "GTM"
+      },
+      {
+        "-name": "Burkina Faso",
+        "-code": "BFA"
+      },
+      {
+        "-name": "Cuba",
+        "-code": "CUB"
+      },
+      {
+        "-name": "French Guiana",
+        "-code": "GUF"
+      },
+      {
+        "-name": "Guam",
+        "-code": "GUM"
+      },
+      {
+        "-name": "Kuwait",
+        "-code": "KWT"
+      },
+      {
+        "-name": "British Indian Ocean Territory",
+        "-code": "IOT"
+      },
+      {
+        "-name": "Guernsey",
+        "-code": "GGY"
+      },
+      {
+        "-name": "Jordan",
+        "-code": "JOR"
+      },
+      {
+        "-name": "Philippines",
+        "-code": "PHL"
+      },
+      {
+        "-name": "Malta",
+        "-code": "MLT"
+      },
+      {
+        "-name": "Zambia",
+        "-code": "ZMB"
+      },
+      {
+        "-name": "Antarctica",
+        "-code": "ATA"
+      },
+      {
+        "-name": "Benin",
+        "-code": "BEN"
+      },
+      {
+        "-name": "Ukraine",
+        "-code": "UKR"
+      },
+      {
+        "-name": "Belgium",
+        "-code": "BEL"
+      },
+      {
+        "-name": "Namibia",
+        "-code": "NAM"
+      },
+      {
+        "-name": "Suriname",
+        "-code": "SUR"
+      },
+      {
+        "-name": "Australia",
+        "-code": "AUS",
+        "State": [
+          {
+            "-name": "Queensland",
+            "-code": "QLD",
+            "City": [
+              {
+                "-name": "Townsville",
+                "-code": "TSV"
+              },
+              {
+                "-name": "Toowoomba",
+                "-code": "TWB"
+              },
+              {
+                "-name": "Cairns",
+                "-code": "CNS"
+              },
+              {
+                "-name": "Gold Coast",
+                "-code": "OOL"
+              },
+              {
+                "-name": "Brisbane",
+                "-code": "BNE"
+              },
+              {
+                "-name": "Caloundra",
+                "-code": "CUD"
+              }
+            ]
+          },
+          {
+            "-name": "Canberra",
+            "-code": "ACT",
+            "City": {
+              "-name": "Canberra",
+              "-code": "CBR"
+            }
+          },
+          {
+            "-name": "Western Australia",
+            "-code": "WA",
+            "City": [
+              {
+                "-name": "Geraldton",
+                "-code": "GET"
+              },
+              {
+                "-name": "Bunbury",
+                "-code": "BUY"
+              },
+              {
+                "-name": "Mandurah",
+                "-code": "MDU"
+              },
+              {
+                "-name": "Fremantle",
+                "-code": "FRE"
+              },
+              {
+                "-name": "Perth",
+                "-code": "PER"
+              },
+              {
+                "-name": "Kalgoorlie",
+                "-code": "KGI"
+              },
+              {
+                "-name": "Albany",
+                "-code": "ALH"
+              }
+            ]
+          },
+          {
+            "-name": "Northern Territory",
+            "-code": "NT",
+            "City": [
+              {
+                "-name": "Darwin",
+                "-code": "DRW"
+              },
+              {
+                "-name": "Palmerston",
+                "-code": "PAL"
+              }
+            ]
+          },
+          {
+            "-name": "Tasmania",
+            "-code": "TAS",
+            "City": [
+              {
+                "-name": "Hobart",
+                "-code": "HBA"
+              },
+              {
+                "-name": "Burnie",
+                "-code": "BWT"
+              },
+              {
+                "-name": "Devonport",
+                "-code": "DPO"
+              },
+              {
+                "-name": "Launceston",
+                "-code": "LST"
+              }
+            ]
+          },
+          {
+            "-name": "New South Wales",
+            "-code": "NSW",
+            "City": [
+              {
+                "-name": "Wollongong",
+                "-code": "WOL"
+              },
+              {
+                "-name": "Sydney",
+                "-code": "HBS"
+              },
+              {
+                "-name": "Newcastle",
+                "-code": "NTL"
+              }
+            ]
+          },
+          {
+            "-name": "Victoria",
+            "-code": "VIC",
+            "City": [
+              {
+                "-name": "Melbourne",
+                "-code": "MEL"
+              },
+              {
+                "-name": "Geelong",
+                "-code": "GEX"
+              }
+            ]
+          },
+          {
+            "-name": "South Australia",
+            "-code": "SA",
+            "City": [
+              {
+                "-name": "Victor Harbor",
+                "-code": "VHA"
+              },
+              {
+                "-name": "Port Pirie",
+                "-code": "PPI"
+              },
+              {
+                "-name": "Port Augusta",
+                "-code": "PUG"
+              },
+              {
+                "-name": "Mount Gambier",
+                "-code": "MGB"
+              },
+              {
+                "-name": "Port Lincoln",
+                "-code": "PLO"
+              },
+              {
+                "-name": "Adelaide",
+                "-code": "ADL"
+              },
+              {
+                "-name": "Whyalla",
+                "-code": "WAY"
+              },
+              {
+                "-name": "Murray Bridge",
+                "-code": "MYB"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "-name": "Tanzania",
+        "-code": "TZA"
+      },
+      {
+        "-name": "Bangladesh",
+        "-code": "BGD"
+      },
+      {
+        "-name": "Macedonia,Former Yugoslav Republic of",
+        "-code": "MKD"
+      },
+      {
+        "-name": "Sudan",
+        "-code": "SDN"
+      },
+      {
+        "-name": "Ghana",
+        "-code": "GHA"
+      },
+      {
+        "-name": "Thailand",
+        "-code": "THA"
+      },
+      {
+        "-name": "Sri Lanka",
+        "-code": "LKA"
+      },
+      {
+        "-name": "Heard Island and McDonald Islands",
+        "-code": "HMD"
+      },
+      {
+        "-name": "Guinea",
+        "-code": "GIN"
+      },
+      {
+        "-name": "Mayotte",
+        "-code": "MYT"
+      },
+      {
+        "-name": "Senegal",
+        "-code": "SEN"
+      },
+      {
+        "-name": "Gibraltar",
+        "-code": "GIB"
+      },
+      {
+        "-name": "Malaysia",
+        "-code": "MYS",
+        "State": [
+          {
+            "-name": "Kuala Lumpur",
+            "-code": "KL",
+            "City": {
+              "-name": "Kuala Lumpur",
+              "-code": "KUL"
+            }
+          },
+          {
+            "-name": "Kelantan",
+            "-code": "KN",
+            "City": [
+              {
+                "-name": "Pasir Mas",
+                "-code": "PMA"
+              },
+              {
+                "-name": "Gua Musang",
+                "-code": "GMU"
+              },
+              {
+                "-name": "Kota Bharu",
+                "-code": "KBR"
+              },
+              {
+                "-name": "Kuala Krai",
+                "-code": "KUG"
+              },
+              {
+                "-name": "Tanah Merah",
+                "-code": "TMR"
+              },
+              {
+                "-name": "Jeli",
+                "-code": "JEL"
+              },
+              {
+                "-name": "Bachok",
+                "-code": "BAC"
+              },
+              {
+                "-name": "Tumpat",
+                "-code": "TUM"
+              },
+              {
+                "-name": "Machang",
+                "-code": "MAC"
+              },
+              {
+                "-name": "Pasir Putih",
+                "-code": "PPU"
+              }
+            ]
+          },
+          {
+            "-name": "Selangor",
+            "-code": "SL",
+            "City": [
+              {
+                "-name": "Kuala Langat",
+                "-code": "KLG"
+              },
+              {
+                "-name": "Hulu Langat",
+                "-code": "HUL"
+              },
+              {
+                "-name": "Petaling",
+                "-code": "PJA"
+              },
+              {
+                "-name": "Sepang",
+                "-code": "SEP"
+              },
+              {
+                "-name": "Hulu Selangor",
+                "-code": "HUS"
+              },
+              {
+                "-name": "Gombak",
+                "-code": "GOM"
+              },
+              {
+                "-name": "Sabak Bernam",
+                "-code": "SBM"
+              },
+              {
+                "-name": "Kuala Selangor",
+                "-code": "KSL"
+              }
+            ]
+          },
+          {
+            "-name": "Negeri Sembilan",
+            "-code": "NS",
+            "City": [
+              {
+                "-name": "Port Dickson",
+                "-code": "PDI"
+              },
+              {
+                "-name": "Rembau",
+                "-code": "REM"
+              },
+              {
+                "-name": "Tampin",
+                "-code": "TAI"
+              },
+              {
+                "-name": "Kuala Pilah",
+                "-code": "KPI"
+              },
+              {
+                "-name": "Seremban",
+                "-code": "SRB"
+              },
+              {
+                "-name": "Jelebu",
+                "-code": "JEL"
+              },
+              {
+                "-name": "Jempol",
+                "-code": "JEP"
+              }
+            ]
+          },
+          {
+            "-name": "Terengganu",
+            "-code": "TR",
+            "City": [
+              {
+                "-name": "Setiu",
+                "-code": "SET"
+              },
+              {
+                "-name": "Hulu",
+                "-code": "HUL"
+              },
+              {
+                "-name": "Besut",
+                "-code": "BES"
+              },
+              {
+                "-name": "Kemaman",
+                "-code": "KEM"
+              },
+              {
+                "-name": "Dungun",
+                "-code": "DGN"
+              },
+              {
+                "-name": "Kuala Terengganu",
+                "-code": "TGG"
+              },
+              {
+                "-name": "Marang",
+                "-code": "MAR"
+              }
+            ]
+          },
+          {
+            "-name": "Sarawak",
+            "-code": "SR",
+            "City": [
+              {
+                "-name": "Bintulu",
+                "-code": "BTU"
+              },
+              {
+                "-name": "Betong",
+                "-code": "BTG"
+              },
+              {
+                "-name": "Miri",
+                "-code": "MYY"
+              },
+              {
+                "-name": "Sarikei",
+                "-code": "SAR"
+              },
+              {
+                "-name": "Kapit",
+                "-code": "KPI"
+              },
+              {
+                "-name": "Sri Aman",
+                "-code": "SAM"
+              },
+              {
+                "-name": "Sibu",
+                "-code": "SBW"
+              },
+              {
+                "-name": "Samarahan",
+                "-code": "SMH"
+              },
+              {
+                "-name": "Limbang",
+                "-code": "LMN"
+              },
+              {
+                "-name": "Mukah",
+                "-code": "MKM"
+              },
+              {
+                "-name": "Kuching",
+                "-code": "KCH"
+              }
+            ]
+          },
+          {
+            "-name": "Labuan",
+            "-code": "LB",
+            "City": [
+              {
+                "-name": "Victoria",
+                "-code": "VIC"
+              },
+              {
+                "-name": "Labuan",
+                "-code": "LBU"
+              }
+            ]
+          },
+          {
+            "-name": "Pulau Pinang",
+            "-code": "PH",
+            "City": [
+              {
+                "-name": "Nibong Tebal",
+                "-code": "NTE"
+              },
+              {
+                "-name": "Bukit Mertajam",
+                "-code": "BMJ"
+              },
+              {
+                "-name": "George Town",
+                "-code": "PEN"
+              },
+              {
+                "-name": "Butterworth",
+                "-code": "BWH"
+              }
+            ]
+          },
+          {
+            "-name": "Malacca",
+            "-code": "ML",
+            "City": [
+              {
+                "-name": "Alor Gajah",
+                "-code": "AOG"
+              },
+              {
+                "-name": "Jasin",
+                "-code": "JAS"
+              },
+              {
+                "-name": "Melaka",
+                "-code": "MEL"
+              }
+            ]
+          },
+          {
+            "-name": "Perak",
+            "-code": "PK",
+            "City": [
+              {
+                "-name": "Taiping",
+                "-code": "TPG"
+              },
+              {
+                "-name": "Batu Gajah",
+                "-code": "BGA"
+              },
+              {
+                "-name": "Lumut",
+                "-code": "LUM"
+              },
+              {
+                "-name": "Kuala Kangsar",
+                "-code": "KAR"
+              },
+              {
+                "-name": "Sungai Siput",
+                "-code": "SSP"
+              },
+              {
+                "-name": "Ipoh",
+                "-code": "IPH"
+              },
+              {
+                "-name": "Tanjung Malim",
+                "-code": "TAM"
+              },
+              {
+                "-name": "Teluk Intan",
+                "-code": "TAS"
+              }
+            ]
+          },
+          {
+            "-name": "Perlis",
+            "-code": "PS",
+            "City": {
+              "-name": "Kangar",
+              "-code": "KGR"
+            }
+          },
+          {
+            "-name": "Pahang",
+            "-code": "PG",
+            "City": [
+              {
+                "-name": "Temerloh",
+                "-code": "TEM"
+              },
+              {
+                "-name": "Pekan",
+                "-code": "PEK"
+              },
+              {
+                "-name": "Cameron Highlands",
+                "-code": "CAH"
+              },
+              {
+                "-name": "Bera",
+                "-code": "BER"
+              },
+              {
+                "-name": "Kuala Lipis",
+                "-code": "KUL"
+              },
+              {
+                "-name": "Raub",
+                "-code": "RAU"
+              },
+              {
+                "-name": "Maran",
+                "-code": "MAR"
+              },
+              {
+                "-name": "Jerantut",
+                "-code": "JER"
+              },
+              {
+                "-name": "Bentong",
+                "-code": "BEN"
+              },
+              {
+                "-name": "Kuantan",
+                "-code": "KUA"
+              },
+              {
+                "-name": "Rompin",
+                "-code": "TOM"
+              }
+            ]
+          },
+          {
+            "-name": "Kedah",
+            "-code": "KD",
+            "City": [
+              {
+                "-name": "Bandar Baharu",
+                "-code": "BMA"
+              },
+              {
+                "-name": "Kuala Muda",
+                "-code": "KMU"
+              },
+              {
+                "-name": "Padang Terap",
+                "-code": "PGT"
+              },
+              {
+                "-name": "Baling",
+                "-code": "BLZ"
+              },
+              {
+                "-name": "Kulim",
+                "-code": "KLM"
+              },
+              {
+                "-name": "Langkawi",
+                "-code": "LGK"
+              },
+              {
+                "-name": "Pendang",
+                "-code": "PEN"
+              },
+              {
+                "-name": "Kota Setar",
+                "-code": "KOR"
+              },
+              {
+                "-name": "Kubang Pasu",
+                "-code": "KPA"
+              }
+            ]
+          },
+          {
+            "-name": "Johor",
+            "-code": "JH",
+            "City": [
+              {
+                "-name": "Mersing",
+                "-code": "MEP"
+              },
+              {
+                "-name": "Muar",
+                "-code": "MUA"
+              },
+              {
+                "-name": "Pontian",
+                "-code": "POW"
+              },
+              {
+                "-name": "Kluang",
+                "-code": "KLA"
+              },
+              {
+                "-name": "Johor Bahru",
+                "-code": "JHB"
+              },
+              {
+                "-name": "Batu Pahat",
+                "-code": "BAT"
+              },
+              {
+                "-name": "Segamat",
+                "-code": "SGM"
+              },
+              {
+                "-name": "Kota Tinggi",
+                "-code": "KTI"
+              }
+            ]
+          },
+          {
+            "-name": "Sabah",
+            "-code": "SB",
+            "City": [
+              {
+                "-name": "Tawau",
+                "-code": "TAW"
+              },
+              {
+                "-name": "Kudat",
+                "-code": "KUD"
+              },
+              {
+                "-name": "Kota Belud",
+                "-code": "KBD"
+              },
+              {
+                "-name": "Kota Kinabalu",
+                "-code": "BKI"
+              },
+              {
+                "-name": "Papar",
+                "-code": "PAP"
+              },
+              {
+                "-name": "Ranau",
+                "-code": "RNU"
+              },
+              {
+                "-name": "Nabawan",
+                "-code": "NAB"
+              },
+              {
+                "-name": "Sandakan",
+                "-code": "SDK"
+              },
+              {
+                "-name": "Tuaran",
+                "-code": "TUR"
+              },
+              {
+                "-name": "Tenom",
+                "-code": "TEN"
+              },
+              {
+                "-name": "Kinabatangan",
+                "-code": "KBT"
+              },
+              {
+                "-name": "Tambunan",
+                "-code": "TAB"
+              },
+              {
+                "-name": "Pitas",
+                "-code": "PIT"
+              },
+              {
+                "-name": "Beaufort",
+                "-code": "BEF"
+              },
+              {
+                "-name": "Penampang",
+                "-code": "PMP"
+              },
+              {
+                "-name": "Kota Marudu",
+                "-code": "KMU"
+              },
+              {
+                "-name": "Semporna",
+                "-code": "SMM"
+              },
+              {
+                "-name": "Sipitang",
+                "-code": "SPT"
+              },
+              {
+                "-name": "Keningau",
+                "-code": "KEG"
+              },
+              {
+                "-name": "Lahad Datu",
+                "-code": "LDU"
+              },
+              {
+                "-name": "Kuala Penyu",
+                "-code": "KPU"
+              },
+              {
+                "-name": "Kunak",
+                "-code": "KUN"
+              },
+              {
+                "-name": "Beluran",
+                "-code": "BEL"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "-name": "Botswana",
+        "-code": "BWA"
+      },
+      {
+        "-name": "Bulgaria",
+        "-code": "BGR"
+      },
+      {
+        "-name": "Austria",
+        "-code": "AUT"
+      },
+      {
+        "-name": "Bouvet Island",
+        "-code": "BVT"
+      },
+      {
+        "-name": "United States Minor Outlying Islands",
+        "-code": "UMI"
+      },
+      {
+        "-name": "Honduras",
+        "-code": "HND"
+      },
+      {
+        "-name": "Sao Tome and Principe",
+        "-code": "STP"
+      },
+      {
+        "-name": "Swaziland",
+        "-code": "SWZ"
+      },
+      {
+        "-name": "South Africa",
+        "-code": "ZAF"
+      },
+      {
+        "-name": "Algeria",
+        "-code": "DZA"
+      },
+      {
+        "-name": "Kiribati",
+        "-code": "KIR"
+      },
+      {
+        "-name": "Vietnam",
+        "-code": "VNM"
+      },
+      {
+        "-name": "Switzerland",
+        "-code": "CHE"
+      },
+      {
+        "-name": "Bahrain",
+        "-code": "BHR"
+      },
+      {
+        "-name": "Bahamas",
+        "-code": "BHS"
+      },
+      {
+        "-name": "Angola",
+        "-code": "AGO"
+      },
+      {
+        "-name": "Sweden",
+        "-code": "SWE"
+      },
+      {
+        "-name": "Chile",
+        "-code": "CHL"
+      },
+      {
+        "-name": "Czech Republic",
+        "-code": "CZE"
+      },
+      {
+        "-name": "Togo",
+        "-code": "TGO"
+      },
+      {
+        "-name": "Cayman Islands",
+        "-code": "CYM"
+      },
+      {
+        "-name": "Cote d'Ivoire",
+        "-code": "CIV"
+      },
+      {
+        "-name": "South Georgia and South Sandwich Islands",
+        "-code": "SGS"
+      },
+      {
+        "-name": "Netherlands",
+        "-code": "NLD"
+      },
+      {
+        "-name": "Singapore",
+        "-code": "SGP"
+      },
+      {
+        "-name": "Cyprus",
+        "-code": "CYP"
+      },
+      {
+        "-name": "Cambodia",
+        "-code": "KHM"
+      },
+      {
+        "-name": "Marshall Islands",
+        "-code": "MHL"
+      },
+      {
+        "-name": "Afghanistan",
+        "-code": "AFG"
+      },
+      {
+        "-name": "Slovakia",
+        "-code": "SVK"
+      },
+      {
+        "-name": "Slovenia",
+        "-code": "SVN"
+      },
+      {
+        "-name": "Bosnia and Herzegovina",
+        "-code": "BIH"
+      },
+      {
+        "-name": "Palau",
+        "-code": "PLW"
+      },
+      {
+        "-name": "Norfolk Island",
+        "-code": "NFK"
+      },
+      {
+        "-name": "Uganda",
+        "-code": "UGA"
+      },
+      {
+        "-name": "Trinidad and Tobago",
+        "-code": "TTO"
+      },
+      {
+        "-name": "Korea",
+        "-code": "KOR",
+        "State": [
+          {
+            "-name": "Jeju-do",
+            "-code": "49",
+            "City": [
+              {
+                "-name": "Yangju",
+                "-code": "YYU"
+              },
+              {
+                "-name": "Gapyeong County",
+                "-code": "GPG"
+              },
+              {
+                "-name": "Anseong",
+                "-code": "ASG"
+              },
+              {
+                "-name": "Gunpo",
+                "-code": "GUN"
+              },
+              {
+                "-name": "Ansan",
+                "-code": "ASN"
+              },
+              {
+                "-name": "Guri",
+                "-code": "GRI"
+              },
+              {
+                "-name": "Siheung",
+                "-code": "SHE"
+              },
+              {
+                "-name": "Gimpo",
+                "-code": "GMP"
+              },
+              {
+                "-name": "Yongin",
+                "-code": "YNG"
+              },
+              {
+                "-name": "Pyeongtaek",
+                "-code": "PTK"
+              },
+              {
+                "-name": "Yeoncheon County",
+                "-code": "YCN"
+              },
+              {
+                "-name": "Namyangju",
+                "-code": "NYU"
+              },
+              {
+                "-name": "Gwangmyeong",
+                "-code": "GMG"
+              },
+              {
+                "-name": "Suwon",
+                "-code": "SUO"
+              },
+              {
+                "-name": "Dongducheon",
+                "-code": "DDC"
+              },
+              {
+                "-name": "Anyang",
+                "-code": "ANY"
+              },
+              {
+                "-name": "Hanam",
+                "-code": "HNM"
+              },
+              {
+                "-name": "Yeoju County",
+                "-code": "YJU"
+              },
+              {
+                "-name": "Gwacheon",
+                "-code": "GCN"
+              },
+              {
+                "-name": "Icheon",
+                "-code": "ICE"
+              },
+              {
+                "-name": "Seongnam",
+                "-code": "SEO"
+              },
+              {
+                "-name": "Uijeongbu",
+                "-code": "UIJ"
+              },
+              {
+                "-name": "Osan",
+                "-code": "OSN"
+              },
+              {
+                "-name": "Uiwang",
+                "-code": "UWN"
+              },
+              {
+                "-name": "Gwangju",
+                "-code": "KWU"
+              },
+              {
+                "-name": "Yangpyeong County",
+                "-code": "YPG"
+              },
+              {
+                "-name": "Goyang",
+                "-code": "GYG"
+              },
+              {
+                "-name": "Pocheon",
+                "-code": "POC"
+              },
+              {
+                "-name": "Hwaseong",
+                "-code": "HCH"
+              },
+              {
+                "-name": "Paju",
+                "-code": "PJU"
+              },
+              {
+                "-name": "Bucheon",
+                "-code": "BCN"
+              }
+            ]
+          },
+          {
+            "-name": "Gyeongsangnam-do",
+            "-code": "48",
+            "City": [
+              {
+                "-name": "Gangjin County",
+                "-code": "GJN"
+              },
+              {
+                "-name": "Mokpo",
+                "-code": "MOK"
+              },
+              {
+                "-name": "Boseong County",
+                "-code": "BSG"
+              },
+              {
+                "-name": "Muan County",
+                "-code": "MAN"
+              },
+              {
+                "-name": "Gurye County",
+                "-code": "GRE"
+              },
+              {
+                "-name": "Hwasun County",
+                "-code": "HSN"
+              },
+              {
+                "-name": "Jangheung County",
+                "-code": "JHG"
+              },
+              {
+                "-name": "Goheung County",
+                "-code": "GHG"
+              },
+              {
+                "-name": "Damyang County",
+                "-code": "DYA"
+              },
+              {
+                "-name": "Gokseong County",
+                "-code": "GSE"
+              },
+              {
+                "-name": "Yeonggwang County",
+                "-code": "YGG"
+              },
+              {
+                "-name": "Sinan County",
+                "-code": "SAN"
+              },
+              {
+                "-name": "Gwangyang",
+                "-code": "KAN"
+              },
+              {
+                "-name": "Jangseong County",
+                "-code": "JSN"
+              },
+              {
+                "-name": "Haenam County",
+                "-code": "HAE"
+              },
+              {
+                "-name": "Suncheon",
+                "-code": "SYS"
+              },
+              {
+                "-name": "Naju",
+                "-code": "NJU"
+              },
+              {
+                "-name": "Yeosu",
+                "-code": "YOS"
+              },
+              {
+                "-name": "Yeongam County",
+                "-code": "YAM"
+              },
+              {
+                "-name": "Jindo County",
+                "-code": "JDO"
+              },
+              {
+                "-name": "Hampyeong County",
+                "-code": "HPG"
+              },
+              {
+                "-name": "Wando County",
+                "-code": "WND"
+              }
+            ]
+          },
+          {
+            "-name": "Jeollabuk-do",
+            "-code": "45",
+            "City": [
+              {
+                "-name": "Jecheon",
+                "-code": "JCH"
+              },
+              {
+                "-name": "Chungju",
+                "-code": "CHU"
+              },
+              {
+                "-name": "Danyang County",
+                "-code": "DYG"
+              },
+              {
+                "-name": "Cheongwon County",
+                "-code": "CWO"
+              },
+              {
+                "-name": "Goesan County",
+                "-code": "GSN"
+              },
+              {
+                "-name": "Okcheon County",
+                "-code": "OCN"
+              },
+              {
+                "-name": "Jeungpyeong County",
+                "-code": "JYG"
+              },
+              {
+                "-name": "Eumseong County",
+                "-code": "ESG"
+              },
+              {
+                "-name": "Cheongju",
+                "-code": "CJJ"
+              },
+              {
+                "-name": "Jincheon County",
+                "-code": "JCN"
+              },
+              {
+                "-name": "Yeongdong County",
+                "-code": "YDG"
+              },
+              {
+                "-name": "Boeun County",
+                "-code": "BEN"
+              }
+            ]
+          },
+          {
+            "-name": "Chungcheongnam-do",
+            "-code": "44",
+            "City": [
+              {
+                "-name": "Gimhae",
+                "-code": "KMH"
+              },
+              {
+                "-name": "Hamyang County",
+                "-code": "HYG"
+              },
+              {
+                "-name": "Changwon",
+                "-code": "CHW"
+              },
+              {
+                "-name": "Jinju",
+                "-code": "HIN"
+              },
+              {
+                "-name": "Sancheong County",
+                "-code": "SCH"
+              },
+              {
+                "-name": "Sacheon",
+                "-code": "SAH"
+              },
+              {
+                "-name": "Masan",
+                "-code": "MAS"
+              },
+              {
+                "-name": "Haman County",
+                "-code": "HAN"
+              },
+              {
+                "-name": "Jinhae",
+                "-code": "CHF"
+              },
+              {
+                "-name": "Miryang",
+                "-code": "MIR"
+              },
+              {
+                "-name": "Changnyeong County",
+                "-code": "CNG"
+              },
+              {
+                "-name": "Goseong County",
+                "-code": "GSO"
+              },
+              {
+                "-name": "Yangsan",
+                "-code": "YSN"
+              },
+              {
+                "-name": "Geochang County",
+                "-code": "GCH"
+              },
+              {
+                "-name": "Uiryeong County",
+                "-code": "URG"
+              },
+              {
+                "-name": "Hadong County",
+                "-code": "HDG"
+              },
+              {
+                "-name": "Geoje",
+                "-code": "KJE"
+              },
+              {
+                "-name": "Tongyeong",
+                "-code": "TYG"
+              },
+              {
+                "-name": "Hapcheon County",
+                "-code": "HCE"
+              },
+              {
+                "-name": "Namhae County",
+                "-code": "NHE"
+              }
+            ]
+          },
+          {
+            "-name": "Gyeongsangbuk-do",
+            "-code": "47",
+            "City": [
+              {
+                "-name": "Iksan",
+                "-code": "IKS"
+              },
+              {
+                "-name": "Jinan County",
+                "-code": "JAN"
+              },
+              {
+                "-name": "Wanju County",
+                "-code": "WAJ"
+              },
+              {
+                "-name": "Sunchang County",
+                "-code": "SCG"
+              },
+              {
+                "-name": "Gimje",
+                "-code": "GJE"
+              },
+              {
+                "-name": "Imsil County",
+                "-code": "ISL"
+              },
+              {
+                "-name": "Gochang County",
+                "-code": "GCG"
+              },
+              {
+                "-name": "Jeonju",
+                "-code": "JNJ"
+              },
+              {
+                "-name": "Namwon",
+                "-code": "NWN"
+              },
+              {
+                "-name": "Gunsan",
+                "-code": "KUV"
+              },
+              {
+                "-name": "Muju County",
+                "-code": "MJU"
+              },
+              {
+                "-name": "Jangsu County",
+                "-code": "JSU"
+              },
+              {
+                "-name": "Buan County",
+                "-code": "PUS"
+              },
+              {
+                "-name": "Jeongeup",
+                "-code": "JEO"
+              }
+            ]
+          },
+          {
+            "-name": "Jeollanam-do",
+            "-code": "46",
+            "City": [
+              {
+                "-name": "Buyeo County",
+                "-code": "BYO"
+              },
+              {
+                "-name": "Geumsan County",
+                "-code": "GSA"
+              },
+              {
+                "-name": "Cheongyang County",
+                "-code": "CYG"
+              },
+              {
+                "-name": "Dangjin County",
+                "-code": "TJI"
+              },
+              {
+                "-name": "Seocheon County",
+                "-code": "SCE"
+              },
+              {
+                "-name": "Seosan",
+                "-code": "SSA"
+              },
+              {
+                "-name": "Taean County",
+                "-code": "TAN"
+              },
+              {
+                "-name": "Yeongi County",
+                "-code": "YGI"
+              },
+              {
+                "-name": "Boryeong",
+                "-code": "BOR"
+              },
+              {
+                "-name": "Gyeryong",
+                "-code": "GYE"
+              },
+              {
+                "-name": "Hongseong County",
+                "-code": "HSE"
+              },
+              {
+                "-name": "Nonsan",
+                "-code": "NSN"
+              },
+              {
+                "-name": "Asan",
+                "-code": "ASA"
+              },
+              {
+                "-name": "Yesan County",
+                "-code": "YOS"
+              },
+              {
+                "-name": "Cheonan",
+                "-code": "CHO"
+              },
+              {
+                "-name": "Gongju",
+                "-code": "GOJ"
+              }
+            ]
+          },
+          {
+            "-name": "Busan",
+            "-code": "26"
+          },
+          {
+            "-name": "Daegu",
+            "-code": "27",
+            "City": [
+              {
+                "-name": "Suseong-gu",
+                "-code": "SUS"
+              },
+              {
+                "-name": "Dalseong-gun",
+                "-code": "DSG"
+              },
+              {
+                "-name": "Daegu",
+                "-code": "TAE"
+              }
+            ]
+          },
+          {
+            "-name": "Seoul",
+            "-code": "11"
+          },
+          {
+            "-name": "Incheon",
+            "-code": "28"
+          },
+          {
+            "-name": "Gwangju",
+            "-code": "29"
+          },
+          {
+            "-name": "Chungcheongbuk-do",
+            "-code": "43",
+            "City": [
+              {
+                "-name": "Bonghwa County",
+                "-code": "BHA"
+              },
+              {
+                "-name": "Gyeongsan",
+                "-code": "GYS"
+              },
+              {
+                "-name": "Yeongcheon",
+                "-code": "YCH"
+              },
+              {
+                "-name": "Yecheon County",
+                "-code": "YEC"
+              },
+              {
+                "-name": "Pohang",
+                "-code": "KPO"
+              },
+              {
+                "-name": "Gimcheon",
+                "-code": "KMC"
+              },
+              {
+                "-name": "Sangju",
+                "-code": "SJU"
+              },
+              {
+                "-name": "Yeongju",
+                "-code": "YEJ"
+              },
+              {
+                "-name": "Seongju County",
+                "-code": "SEJ"
+              },
+              {
+                "-name": "Goryeong County",
+                "-code": "GRG"
+              },
+              {
+                "-name": "Cheongsong County",
+                "-code": "CSG"
+              },
+              {
+                "-name": "Yeongyang County",
+                "-code": "YYG"
+              },
+              {
+                "-name": "Yeongdeok County",
+                "-code": "YDK"
+              },
+              {
+                "-name": "Mungyeong",
+                "-code": "MGG"
+              },
+              {
+                "-name": "Gunwi County",
+                "-code": "GWI"
+              },
+              {
+                "-name": "Cheongdo County",
+                "-code": "CDO"
+              },
+              {
+                "-name": "Uiseong County",
+                "-code": "USG"
+              },
+              {
+                "-name": "Chilgok County",
+                "-code": "CGK"
+              },
+              {
+                "-name": "Gyeongju",
+                "-code": "GJU"
+              },
+              {
+                "-name": "Uljin County",
+                "-code": "UJN"
+              },
+              {
+                "-name": "Andong",
+                "-code": "ADG"
+              },
+              {
+                "-name": "Gumi",
+                "-code": "KUM"
+              },
+              {
+                "-name": "Ulleung County",
+                "-code": "ULG"
+              }
+            ]
+          },
+          {
+            "-name": "Daejeon",
+            "-code": "30"
+          },
+          {
+            "-name": "Gangwon-do",
+            "-code": "42",
+            "City": [
+              {
+                "-name": "Chuncheon",
+                "-code": "CHC"
+              },
+              {
+                "-name": "Yangyang County",
+                "-code": "YNY"
+              },
+              {
+                "-name": "Cheorwon County",
+                "-code": "CWN"
+              },
+              {
+                "-name": "Yeongwol County",
+                "-code": "YWL"
+              },
+              {
+                "-name": "Hongcheon County",
+                "-code": "HCN"
+              },
+              {
+                "-name": "Sokcho",
+                "-code": "SHO"
+              },
+              {
+                "-name": "Donghae",
+                "-code": "TGH"
+              },
+              {
+                "-name": "Yanggu County",
+                "-code": "YGU"
+              },
+              {
+                "-name": "Jeongseon County",
+                "-code": "JSE"
+              },
+              {
+                "-name": "Goseong County",
+                "-code": "GSG"
+              },
+              {
+                "-name": "Hoengseong County",
+                "-code": "HSG"
+              },
+              {
+                "-name": "Pyeongchang County",
+                "-code": "POG"
+              },
+              {
+                "-name": "Wonju",
+                "-code": "WJU"
+              },
+              {
+                "-name": "Taebaek",
+                "-code": "TBK"
+              },
+              {
+                "-name": "Inje County",
+                "-code": "IJE"
+              },
+              {
+                "-name": "Gangneung",
+                "-code": "KAG"
+              },
+              {
+                "-name": "Hwacheon County",
+                "-code": "HCH"
+              },
+              {
+                "-name": "Samcheok",
+                "-code": "SUK"
+              }
+            ]
+          },
+          {
+            "-name": "Gyeonggi-do",
+            "-code": "41"
+          },
+          {
+            "-name": "Ulsan",
+            "-code": "31"
+          }
+        ]
+      },
+      {
+        "-name": "Cook Islands",
+        "-code": "COK"
+      },
+      {
+        "-name": "Yemen",
+        "-code": "YEM"
+      },
+      {
+        "-name": "Congo",
+        "-code": "COG"
+      },
+      {
+        "-name": "Congo(DRC)",
+        "-code": "COD"
+      },
+      {
+        "-name": "Haiti",
+        "-code": "HTI"
+      },
+      {
+        "-name": "Papua New Guinea",
+        "-code": "PNG"
+      },
+      {
+        "-name": "Rwanda",
+        "-code": "RWA"
+      },
+      {
+        "-name": "Turks and Caicos Islands",
+        "-code": "TCA"
+      },
+      {
+        "-name": "Finland",
+        "-code": "FIN"
+      },
+      {
+        "-name": "Chad",
+        "-code": "TCD"
+      },
+      {
+        "-name": "Mexico",
+        "-code": "MEX"
+      },
+      {
+        "-name": "St.Pierre and Miquelon",
+        "-code": "SPM"
+      },
+      {
+        "-name": "Indonesia",
+        "-code": "IDN"
+      },
+      {
+        "-name": "Reunion",
+        "-code": "REU"
+      },
+      {
+        "-name": "Croatia",
+        "-code": "HRV"
+      },
+      {
+        "-name": "Malawi",
+        "-code": "MWI"
+      },
+      {
+        "-name": "Comoros",
+        "-code": "COM"
+      },
+      {
+        "-name": "Vanuatu",
+        "-code": "VUT"
+      },
+      {
+        "-name": "Tunisia",
+        "-code": "TUN"
+      },
+      {
+        "-name": "Colombia",
+        "-code": "COL"
+      },
+      {
+        "-name": "Azerbaijan",
+        "-code": "AZE"
+      },
+      {
+        "-name": "Turkey",
+        "-code": "TUR"
+      },
+      {
+        "-name": "Poland",
+        "-code": "POL"
+      },
+      {
+        "-name": "Tuvalu",
+        "-code": "TUV"
+      },
+      {
+        "-name": "Fiji Islands",
+        "-code": "FJI"
+      },
+      {
+        "-name": "Vatican City",
+        "-code": "VAT"
+      },
+      {
+        "-name": "Nigeria",
+        "-code": "NGA"
+      },
+      {
+        "-name": "Anguilla",
+        "-code": "AIA"
+      },
+      {
+        "-name": "Guinea-Bissau",
+        "-code": "GNB"
+      },
+      {
+        "-name": "Panama",
+        "-code": "PAN"
+      },
+      {
+        "-name": "Maldives",
+        "-code": "MDV"
+      },
+      {
+        "-name": "Pakistan",
+        "-code": "PAK"
+      },
+      {
+        "-name": "Madagascar",
+        "-code": "MDG"
+      },
+      {
+        "-name": "Venezuela",
+        "-code": "VEN"
+      },
+      {
+        "-name": "Samoa",
+        "-code": "WSM"
+      },
+      {
+        "-name": "Uruguay",
+        "-code": "URY"
+      },
+      {
+        "-name": "Hungary",
+        "-code": "HUN"
+      },
+      {
+        "-name": "Egypt",
+        "-code": "EGY"
+      },
+      {
+        "-name": "White Russia",
+        "-code": "BLR"
+      },
+      {
+        "-name": "Moldova",
+        "-code": "MDA"
+      },
+      {
+        "-name": "Aland lslands",
+        "-code": "ALA"
+      },
+      {
+        "-name": "Albania",
+        "-code": "ALB"
+      },
+      {
+        "-name": "Mauritius",
+        "-code": "MUS"
+      },
+      {
+        "-name": "Belize",
+        "-code": "BLZ"
+      },
+      {
+        "-name": "St.Kitts and Nevis",
+        "-code": "KNA"
+      },
+      {
+        "-name": "Cameroon",
+        "-code": "CMR"
+      },
+      {
+        "-name": "Gambia",
+        "-code": "GMB"
+      },
+      {
+        "-name": "Oman",
+        "-code": "OMN"
+      },
+      {
+        "-name": "Niue",
+        "-code": "NIU"
+      },
+      {
+        "-name": "Bermuda",
+        "-code": "BMU"
+      },
+      {
+        "-name": "St.Vincent and the Grenadines",
+        "-code": "VCT"
+      },
+      {
+        "-name": "Falkland Islands",
+        "-code": "FLK"
+      },
+      {
+        "-name": "United States",
+        "-code": "USA",
+        "State": [
+          {
+            "-name": "Rhode Island",
+            "-code": "RI",
+            "City": [
+              {
+                "-name": "Westerly",
+                "-code": "WST"
+              },
+              {
+                "-name": "Pawtucket",
+                "-code": "PAW"
+              },
+              {
+                "-name": "Cranston",
+                "-code": "CQH"
+              },
+              {
+                "-name": "Woonsocket",
+                "-code": "SFN"
+              },
+              {
+                "-name": "Providence",
+                "-code": "PVD"
+              },
+              {
+                "-name": "Warwick",
+                "-code": "UZO"
+              },
+              {
+                "-name": "Newport",
+                "-code": "NPO"
+              }
+            ]
+          },
+          {
+            "-name": "Vermont",
+            "-code": "VT",
+            "City": [
+              {
+                "-name": "Burlington",
+                "-code": "BTV"
+              },
+              {
+                "-name": "South Burlington",
+                "-code": "ZBR"
+              },
+              {
+                "-name": "Rutland",
+                "-code": "RUT"
+              }
+            ]
+          },
+          {
+            "-name": "Hawaii",
+            "-code": "HI",
+            "City": [
+              {
+                "-name": "Kailua",
+                "-code": "KHH"
+              },
+              {
+                "-name": "Hilo",
+                "-code": "ITO"
+              },
+              {
+                "-name": "Honolulu",
+                "-code": "HNL"
+              }
+            ]
+          },
+          {
+            "-name": "Maine",
+            "-code": "ME",
+            "City": [
+              {
+                "-name": "Portland",
+                "-code": "POL"
+              },
+              {
+                "-name": "Lewiston",
+                "-code": "QLW"
+              },
+              {
+                "-name": "Bangor",
+                "-code": "BNQ"
+              }
+            ]
+          },
+          {
+            "-name": "Virginia",
+            "-code": "VA",
+            "City": [
+              {
+                "-name": "Chesapeake",
+                "-code": "HTW"
+              },
+              {
+                "-name": "Virginia Beach",
+                "-code": "VAB"
+              },
+              {
+                "-name": "Norfolk",
+                "-code": "ORF"
+              }
+            ]
+          },
+          {
+            "-name": "Michigan",
+            "-code": "MI",
+            "City": [
+              {
+                "-name": "Ann Arbor",
+                "-code": "ARB"
+              },
+              {
+                "-name": "Sault Ste Marie",
+                "-code": "SSM"
+              },
+              {
+                "-name": "Warren",
+                "-code": "WAM"
+              },
+              {
+                "-name": "Muskegon",
+                "-code": "MKG"
+              },
+              {
+                "-name": "Bay City",
+                "-code": "BCY"
+              },
+              {
+                "-name": "Saginaw",
+                "-code": "SGM"
+              },
+              {
+                "-name": "Battle Creek",
+                "-code": "BTL"
+              },
+              {
+                "-name": "Dearborn",
+                "-code": "DEO"
+              },
+              {
+                "-name": "Wyandotte",
+                "-code": "WYD"
+              },
+              {
+                "-name": "Detroit",
+                "-code": "DET"
+              },
+              {
+                "-name": "Grand Rapids",
+                "-code": "GRR"
+              },
+              {
+                "-name": "Kalamazoo",
+                "-code": "AZO"
+              },
+              {
+                "-name": "Pontiac",
+                "-code": "PTK"
+              },
+              {
+                "-name": "Flint",
+                "-code": "FNT"
+              },
+              {
+                "-name": "Lansing",
+                "-code": "LAN"
+              },
+              {
+                "-name": "Port Huron",
+                "-code": "PHN"
+              }
+            ]
+          },
+          {
+            "-name": "Idaho",
+            "-code": "ID",
+            "City": [
+              {
+                "-name": "Pocatello",
+                "-code": "PIH"
+              },
+              {
+                "-name": "Sun Valley",
+                "-code": "SVY"
+              },
+              {
+                "-name": "Ketchum",
+                "-code": "QKM"
+              },
+              {
+                "-name": "American Falls",
+                "-code": "YAF"
+              },
+              {
+                "-name": "Blackfoot",
+                "-code": "BLK"
+              },
+              {
+                "-name": "Coeur d'Alene",
+                "-code": "COE"
+              },
+              {
+                "-name": "Boise",
+                "-code": "BOI"
+              },
+              {
+                "-name": "Murphy",
+                "-code": "ZMU"
+              },
+              {
+                "-name": "Lewiston",
+                "-code": "LWS"
+              },
+              {
+                "-name": "Nampa",
+                "-code": "NPA"
+              },
+              {
+                "-name": "Idaho Falls",
+                "-code": "IDA"
+              },
+              {
+                "-name": "Moscow",
+                "-code": "MJL"
+              }
+            ]
+          },
+          {
+            "-name": "Delaware",
+            "-code": "DE",
+            "City": [
+              {
+                "-name": "Newark",
+                "-code": "NWK"
+              },
+              {
+                "-name": "Dover",
+                "-code": "DOR"
+              },
+              {
+                "-name": "Wilmington",
+                "-code": "ILG"
+              }
+            ]
+          },
+          {
+            "-name": "Iowa",
+            "-code": "IA",
+            "City": [
+              {
+                "-name": "Davenport",
+                "-code": "DVN"
+              },
+              {
+                "-name": "Des Moines",
+                "-code": "DSM"
+              },
+              {
+                "-name": "Cedar Rapids",
+                "-code": "CID"
+              }
+            ]
+          },
+          {
+            "-name": "Maryland",
+            "-code": "MD",
+            "City": [
+              {
+                "-name": "Gaithersburg",
+                "-code": "GAI"
+              },
+              {
+                "-name": "Balitmore",
+                "-code": "BAL"
+              },
+              {
+                "-name": "Rockville",
+                "-code": "RKV"
+              }
+            ]
+          },
+          {
+            "-name": "Massachusetts",
+            "-code": "MA",
+            "City": [
+              {
+                "-name": "Springfield",
+                "-code": "SFY"
+              },
+              {
+                "-name": "Boston",
+                "-code": "BZD"
+              },
+              {
+                "-name": "Worcester",
+                "-code": "ORH"
+              }
+            ]
+          },
+          {
+            "-name": "Arkansas",
+            "-code": "AR",
+            "City": [
+              {
+                "-name": "Fort Smith",
+                "-code": "FSM"
+              },
+              {
+                "-name": "Fayetteville",
+                "-code": "FYV"
+              },
+              {
+                "-name": "Little Rock",
+                "-code": "LIT"
+              }
+            ]
+          },
+          {
+            "-name": "Illinois",
+            "-code": "IL",
+            "City": [
+              {
+                "-name": "Peoria",
+                "-code": "PLA"
+              },
+              {
+                "-name": "East St Louis",
+                "-code": "ESL"
+              },
+              {
+                "-name": "Springfield",
+                "-code": "SPI"
+              },
+              {
+                "-name": "Bloomington",
+                "-code": "BLO"
+              },
+              {
+                "-name": "Decatur",
+                "-code": "DEC"
+              },
+              {
+                "-name": "Normal",
+                "-code": "NOM"
+              },
+              {
+                "-name": "Carbondale",
+                "-code": "MDH"
+              },
+              {
+                "-name": "Danville",
+                "-code": "DVI"
+              },
+              {
+                "-name": "De Kalb",
+                "-code": "DEK"
+              },
+              {
+                "-name": "Rock Island",
+                "-code": "RKI"
+              },
+              {
+                "-name": "Alton",
+                "-code": "ALN"
+              },
+              {
+                "-name": "Rockford",
+                "-code": "RFD"
+              },
+              {
+                "-name": "Centralia",
+                "-code": "CRA"
+              },
+              {
+                "-name": "Chicago",
+                "-code": "CHI"
+              },
+              {
+                "-name": "Champaign-Urbana",
+                "-code": "CMI"
+              },
+              {
+                "-name": "Waukegan",
+                "-code": "UGN"
+              },
+              {
+                "-name": "Aurora",
+                "-code": "AUZ"
+              },
+              {
+                "-name": "Galesburg",
+                "-code": "GSU"
+              }
+            ]
+          },
+          {
+            "-name": "Utah",
+            "-code": "UT",
+            "City": [
+              {
+                "-name": "Layton",
+                "-code": "LTJ"
+              },
+              {
+                "-name": "Provo",
+                "-code": "PVU"
+              },
+              {
+                "-name": "West Valley City",
+                "-code": "WVC"
+              },
+              {
+                "-name": "Ogden",
+                "-code": "OGD"
+              },
+              {
+                "-name": "Orem",
+                "-code": "OEU"
+              },
+              {
+                "-name": "St.George",
+                "-code": "SGU"
+              },
+              {
+                "-name": "Salt Lake City",
+                "-code": "SLC"
+              },
+              {
+                "-name": "Park City",
+                "-code": "PAC"
+              }
+            ]
+          },
+          {
+            "-name": "Indiana",
+            "-code": "IN",
+            "City": [
+              {
+                "-name": "Indianapolis",
+                "-code": "IND"
+              },
+              {
+                "-name": "Evansville",
+                "-code": "EVV"
+              },
+              {
+                "-name": "Fort Wayne",
+                "-code": "FWA"
+              }
+            ]
+          },
+          {
+            "-name": "Minnesota",
+            "-code": "MN",
+            "City": [
+              {
+                "-name": "Minneapolis",
+                "-code": "MES"
+              },
+              {
+                "-name": "Saint Paul",
+                "-code": "STP"
+              },
+              {
+                "-name": "Rochester",
+                "-code": "RST"
+              }
+            ]
+          },
+          {
+            "-name": "Arizona",
+            "-code": "AZ",
+            "City": [
+              {
+                "-name": "Tucson",
+                "-code": "TUC"
+              },
+              {
+                "-name": "Tempe",
+                "-code": "TPE"
+              },
+              {
+                "-name": "Glendale",
+                "-code": "GDA"
+              },
+              {
+                "-name": "Scottsdale",
+                "-code": "STZ"
+              },
+              {
+                "-name": "Mesa",
+                "-code": "MQA"
+              },
+              {
+                "-name": "Phoenix",
+                "-code": "PHX"
+              },
+              {
+                "-name": "Yuma",
+                "-code": "YUM"
+              }
+            ]
+          },
+          {
+            "-name": "Missouri",
+            "-code": "MO",
+            "City": [
+              {
+                "-name": "Springfield",
+                "-code": "SGF"
+              },
+              {
+                "-name": "Jefferson City",
+                "-code": "JEF"
+              },
+              {
+                "-name": "Kansas City",
+                "-code": "MKC"
+              },
+              {
+                "-name": "Columbia",
+                "-code": "COV"
+              },
+              {
+                "-name": "Sanit Louis",
+                "-code": "STL"
+              }
+            ]
+          },
+          {
+            "-name": "Montana",
+            "-code": "MT",
+            "City": [
+              {
+                "-name": "Billings",
+                "-code": "BGS"
+              },
+              {
+                "-name": "Missoula",
+                "-code": "MSO"
+              },
+              {
+                "-name": "Great Falls",
+                "-code": "GTF"
+              }
+            ]
+          },
+          {
+            "-name": "Mississippi",
+            "-code": "MS",
+            "City": [
+              {
+                "-name": "Vicksburg",
+                "-code": "VKS"
+              },
+              {
+                "-name": "Jackson",
+                "-code": "JAN"
+              },
+              {
+                "-name": "Hattiesburg",
+                "-code": "HBG"
+              },
+              {
+                "-name": "Meridian",
+                "-code": "MEI"
+              },
+              {
+                "-name": "Gulfport",
+                "-code": "GPT"
+              },
+              {
+                "-name": "Greenville",
+                "-code": "GLH"
+              },
+              {
+                "-name": "Biloxi",
+                "-code": "BIX"
+              }
+            ]
+          },
+          {
+            "-name": "New Hampshire",
+            "-code": "NH",
+            "City": [
+              {
+                "-name": "Nashua",
+                "-code": "ASH"
+              },
+              {
+                "-name": "Manchester",
+                "-code": "MHT"
+              },
+              {
+                "-name": "Concord",
+                "-code": "CON"
+              }
+            ]
+          },
+          {
+            "-name": "New Jersey",
+            "-code": "NJ",
+            "City": [
+              {
+                "-name": "Paterson",
+                "-code": "PAT"
+              },
+              {
+                "-name": "Jersey City",
+                "-code": "JEC"
+              },
+              {
+                "-name": "Newark",
+                "-code": "NRK"
+              }
+            ]
+          },
+          {
+            "-name": "New Mexico",
+            "-code": "NM",
+            "City": [
+              {
+                "-name": "Albuquerque",
+                "-code": "ABQ"
+              },
+              {
+                "-name": "Roswell",
+                "-code": "ROW"
+              },
+              {
+                "-name": "Las Cruces",
+                "-code": "LRU"
+              },
+              {
+                "-name": "Santa Fe",
+                "-code": "SAF"
+              }
+            ]
+          },
+          {
+            "-name": "Alaska",
+            "-code": "AK",
+            "City": [
+              {
+                "-name": "Juneau",
+                "-code": "JNU"
+              },
+              {
+                "-name": "Anchorage",
+                "-code": "ANC"
+              },
+              {
+                "-name": "Fairbanks",
+                "-code": "FAI"
+              }
+            ]
+          },
+          {
+            "-name": "Alabama",
+            "-code": "AL",
+            "City": [
+              {
+                "-name": "Mobile",
+                "-code": "MOB"
+              },
+              {
+                "-name": "Birmingham",
+                "-code": "BHM"
+              },
+              {
+                "-name": "Montgomery",
+                "-code": "MGM"
+              }
+            ]
+          },
+          {
+            "-name": "Texas",
+            "-code": "TX",
+            "City": [
+              {
+                "-name": "Laredo",
+                "-code": "LRD"
+              },
+              {
+                "-name": "Austin",
+                "-code": "AUS"
+              },
+              {
+                "-name": "McAllen",
+                "-code": "TXC"
+              },
+              {
+                "-name": "Galveston",
+                "-code": "GLS"
+              },
+              {
+                "-name": "Dallas",
+                "-code": "DAL"
+              },
+              {
+                "-name": "San Antonio",
+                "-code": "SAT"
+              },
+              {
+                "-name": "Corpus Christi",
+                "-code": "CRP"
+              },
+              {
+                "-name": "El Paso",
+                "-code": "ELP"
+              },
+              {
+                "-name": "Houston",
+                "-code": "HOU"
+              }
+            ]
+          },
+          {
+            "-name": "North Carolina",
+            "-code": "NC",
+            "City": [
+              {
+                "-name": "Chapel Hill",
+                "-code": "CHE"
+              },
+              {
+                "-name": "Durham",
+                "-code": "DHH"
+              },
+              {
+                "-name": "Raleigh",
+                "-code": "RAG"
+              },
+              {
+                "-name": "Charlotte",
+                "-code": "CRQ"
+              },
+              {
+                "-name": "Greensboro",
+                "-code": "GBO"
+              },
+              {
+                "-name": "Raleigh-Durham",
+                "-code": "RDU"
+              },
+              {
+                "-name": "Asheville",
+                "-code": "AEV"
+              }
+            ]
+          },
+          {
+            "-name": "North Dakota",
+            "-code": "ND",
+            "City": [
+              {
+                "-name": "Bismarck",
+                "-code": "BIS"
+              },
+              {
+                "-name": "Fargo",
+                "-code": "FAR"
+              },
+              {
+                "-name": "Minot",
+                "-code": "MOT"
+              },
+              {
+                "-name": "Grand Forks",
+                "-code": "GFK"
+              }
+            ]
+          },
+          {
+            "-name": "Nebraska",
+            "-code": "NE",
+            "City": [
+              {
+                "-name": "Lincoln",
+                "-code": "LNK"
+              },
+              {
+                "-name": "Bellevue",
+                "-code": "XDE"
+              },
+              {
+                "-name": "Omaha",
+                "-code": "OMA"
+              }
+            ]
+          },
+          {
+            "-name": "New York",
+            "-code": "NY",
+            "City": [
+              {
+                "-name": "Rochester",
+                "-code": "ROC"
+              },
+              {
+                "-name": "New York",
+                "-code": "QEE"
+              },
+              {
+                "-name": "Buffalo",
+                "-code": "FFO"
+              }
+            ]
+          },
+          {
+            "-name": "Georgia",
+            "-code": "GA",
+            "City": [
+              {
+                "-name": "Columbus",
+                "-code": "CZX"
+              },
+              {
+                "-name": "Augusta",
+                "-code": "AUT"
+              },
+              {
+                "-name": "Savannah",
+                "-code": "SAV"
+              },
+              {
+                "-name": "Atlanta",
+                "-code": "TAT"
+              },
+              {
+                "-name": "Macon",
+                "-code": "MCN"
+              }
+            ]
+          },
+          {
+            "-name": "Nevada",
+            "-code": "NV",
+            "City": [
+              {
+                "-name": "Sparks",
+                "-code": "SPK"
+              },
+              {
+                "-name": "Las Vegas",
+                "-code": "LAS"
+              },
+              {
+                "-name": "Virginia City",
+                "-code": "VGI"
+              },
+              {
+                "-name": "Reno",
+                "-code": "RNO"
+              },
+              {
+                "-name": "Henderson",
+                "-code": "HNZ"
+              },
+              {
+                "-name": "Elko",
+                "-code": "EKO"
+              },
+              {
+                "-name": "Carson City",
+                "-code": "CSN"
+              },
+              {
+                "-name": "North Las Vegas",
+                "-code": "NVS"
+              }
+            ]
+          },
+          {
+            "-name": "Tennessee",
+            "-code": "TN",
+            "City": [
+              {
+                "-name": "Nashville",
+                "-code": "BNA"
+              },
+              {
+                "-name": "Knoxville",
+                "-code": "TYS"
+              },
+              {
+                "-name": "Chattanooga",
+                "-code": "CHA"
+              },
+              {
+                "-name": "Smyrna",
+                "-code": "MQY"
+              },
+              {
+                "-name": "Spring Hill",
+                "-code": "RGI"
+              },
+              {
+                "-name": "Tri-City Area",
+                "-code": "YTC"
+              },
+              {
+                "-name": "Johnson City",
+                "-code": "JCY"
+              },
+              {
+                "-name": "Kingsport",
+                "-code": "TRI"
+              },
+              {
+                "-name": "Bristol",
+                "-code": "BSJ"
+              },
+              {
+                "-name": "Memphis",
+                "-code": "MEM"
+              }
+            ]
+          },
+          {
+            "-name": "California",
+            "-code": "CA",
+            "City": [
+              {
+                "-name": "San Diego",
+                "-code": "SAN"
+              },
+              {
+                "-name": "Los Angeles",
+                "-code": "LAX"
+              },
+              {
+                "-name": "San Jose",
+                "-code": "SJC"
+              },
+              {
+                "-name": "San Francisco",
+                "-code": "SFO"
+              }
+            ]
+          },
+          {
+            "-name": "Oklahoma",
+            "-code": "OK",
+            "City": [
+              {
+                "-name": "Oklahoma City",
+                "-code": "OKC"
+              },
+              {
+                "-name": "Tulsa",
+                "-code": "TUL"
+              },
+              {
+                "-name": "Norman",
+                "-code": "OUN"
+              }
+            ]
+          },
+          {
+            "-name": "Ohio",
+            "-code": "OH",
+            "City": [
+              {
+                "-name": "Columbus",
+                "-code": "CZX"
+              },
+              {
+                "-name": "Cincinnati",
+                "-code": "CVG"
+              },
+              {
+                "-name": "Cleveland",
+                "-code": "CLE"
+              },
+              {
+                "-name": "Toledo",
+                "-code": "TOL"
+              },
+              {
+                "-name": "Dayton",
+                "-code": "DYT"
+              }
+            ]
+          },
+          {
+            "-name": "Wyoming",
+            "-code": "WY",
+            "City": [
+              {
+                "-name": "Sheridan",
+                "-code": "SHR"
+              },
+              {
+                "-name": "Rock Springs",
+                "-code": "RKS"
+              },
+              {
+                "-name": "Evanston",
+                "-code": "EVD"
+              },
+              {
+                "-name": "Laramie",
+                "-code": "LAR"
+              },
+              {
+                "-name": "Casper",
+                "-code": "CPR"
+              },
+              {
+                "-name": "Cheyenne",
+                "-code": "CYS"
+              }
+            ]
+          },
+          {
+            "-name": "Florida",
+            "-code": "FL",
+            "City": [
+              {
+                "-name": "Miami",
+                "-code": "MIA"
+              },
+              {
+                "-name": "Tallahassee",
+                "-code": "TLH"
+              },
+              {
+                "-name": "St. Petersburg",
+                "-code": "PIE"
+              },
+              {
+                "-name": "Orlando",
+                "-code": "ORL"
+              },
+              {
+                "-name": "Fort Lauderdale",
+                "-code": "FLL"
+              },
+              {
+                "-name": "Cape Canaveral",
+                "-code": "CPV"
+              },
+              {
+                "-name": "Key West",
+                "-code": "EYW"
+              },
+              {
+                "-name": "Jacksonville",
+                "-code": "JAX"
+              },
+              {
+                "-name": "Tampa",
+                "-code": "TPA"
+              }
+            ]
+          },
+          {
+            "-name": "South Dakota",
+            "-code": "SD",
+            "City": [
+              {
+                "-name": "Sioux Falls",
+                "-code": "FSD"
+              },
+              {
+                "-name": "Aberdeen",
+                "-code": "ABK"
+              },
+              {
+                "-name": "Rapid City",
+                "-code": "RAP"
+              }
+            ]
+          },
+          {
+            "-name": "South Carolina",
+            "-code": "SC",
+            "City": [
+              {
+                "-name": "North Charleston",
+                "-code": "NTS"
+              },
+              {
+                "-name": "Columbia",
+                "-code": "COV"
+              },
+              {
+                "-name": "Charleston",
+                "-code": "CHS"
+              }
+            ]
+          },
+          {
+            "-name": "Connecticut",
+            "-code": "CT",
+            "City": [
+              {
+                "-name": "New Haven",
+                "-code": "HVN"
+              },
+              {
+                "-name": "Bridgeport",
+                "-code": "BDR"
+              },
+              {
+                "-name": "Westport",
+                "-code": "WPT"
+              },
+              {
+                "-name": "Middletown",
+                "-code": "XIN"
+              },
+              {
+                "-name": "Hartford",
+                "-code": "HFD"
+              },
+              {
+                "-name": "Darien",
+                "-code": "DAQ"
+              },
+              {
+                "-name": "New Britain",
+                "-code": "NWT"
+              },
+              {
+                "-name": "Waterbury",
+                "-code": "WAT"
+              },
+              {
+                "-name": "Greenwich",
+                "-code": "GRH"
+              }
+            ]
+          },
+          {
+            "-name": "West Virginia",
+            "-code": "WV",
+            "City": [
+              {
+                "-name": "Parkersburg",
+                "-code": "PKB"
+              },
+              {
+                "-name": "Charleston",
+                "-code": "CRW"
+              },
+              {
+                "-name": "Huntington",
+                "-code": "HNU"
+              }
+            ]
+          },
+          {
+            "-name": "District of Columbia",
+            "-code": "DC",
+            "City": {
+              "-name": "Washington D.C.",
+              "-code": "WAS"
+            }
+          },
+          {
+            "-name": "Wisconsin",
+            "-code": "WI",
+            "City": [
+              {
+                "-name": "Madison",
+                "-code": "QMD"
+              },
+              {
+                "-name": "Milwaukee",
+                "-code": "MKE"
+              },
+              {
+                "-name": "Green Bay",
+                "-code": "GBK"
+              },
+              {
+                "-name": "Kenosha",
+                "-code": "ENW"
+              },
+              {
+                "-name": "Wausau",
+                "-code": "AUW"
+              },
+              {
+                "-name": "LaCrosse",
+                "-code": "LSE"
+              },
+              {
+                "-name": "Oshkosh",
+                "-code": "OSH"
+              },
+              {
+                "-name": "Manitowoc",
+                "-code": "MTW"
+              },
+              {
+                "-name": "Eau Claire",
+                "-code": "EAU"
+              },
+              {
+                "-name": "Sheboygan",
+                "-code": "SBM"
+              },
+              {
+                "-name": "Racine",
+                "-code": "RAC"
+              },
+              {
+                "-name": "Appleton",
+                "-code": "ATW"
+              }
+            ]
+          },
+          {
+            "-name": "Kentucky",
+            "-code": "KY",
+            "City": [
+              {
+                "-name": "Louisville",
+                "-code": "LUI"
+              },
+              {
+                "-name": "Lexington",
+                "-code": "LEX"
+              },
+              {
+                "-name": "Owensboro",
+                "-code": "OWB"
+              }
+            ]
+          },
+          {
+            "-name": "Kansas",
+            "-code": "KS",
+            "City": [
+              {
+                "-name": "Overland Park",
+                "-code": "OVL"
+              },
+              {
+                "-name": "Leavenworth",
+                "-code": "XIA"
+              },
+              {
+                "-name": "Manhattan",
+                "-code": "MHK"
+              },
+              {
+                "-name": "Wichita",
+                "-code": "ICT"
+              },
+              {
+                "-name": "Topeka",
+                "-code": "TOP"
+              },
+              {
+                "-name": "Lawrence",
+                "-code": "LWC"
+              },
+              {
+                "-name": "Hutchinson",
+                "-code": "HCH"
+              },
+              {
+                "-name": "Abilene",
+                "-code": "ABZ"
+              },
+              {
+                "-name": "Kansas City",
+                "-code": "KCK"
+              }
+            ]
+          },
+          {
+            "-name": "Oregon",
+            "-code": "OR",
+            "City": [
+              {
+                "-name": "Tillamook",
+                "-code": "TLM"
+              },
+              {
+                "-name": "Eugene",
+                "-code": "EUG"
+              },
+              {
+                "-name": "Medford",
+                "-code": "MFR"
+              },
+              {
+                "-name": "The Dalles",
+                "-code": "DLS"
+              },
+              {
+                "-name": "Grant's Pass",
+                "-code": "XFX"
+              },
+              {
+                "-name": "Salem",
+                "-code": "SLE"
+              },
+              {
+                "-name": "Bend",
+                "-code": "BZO"
+              },
+              {
+                "-name": "Hood River",
+                "-code": "HDX"
+              },
+              {
+                "-name": "Dallas",
+                "-code": "DAC"
+              },
+              {
+                "-name": "Portland",
+                "-code": "PDX"
+              },
+              {
+                "-name": "Springfield",
+                "-code": "SPY"
+              },
+              {
+                "-name": "St Helens",
+                "-code": "STH"
+              },
+              {
+                "-name": "Coos Bay",
+                "-code": "COB"
+              },
+              {
+                "-name": "Crater Lake",
+                "-code": "CTR"
+              },
+              {
+                "-name": "Corvallis",
+                "-code": "YCV"
+              }
+            ]
+          },
+          {
+            "-name": "Louisiana",
+            "-code": "LA",
+            "City": [
+              {
+                "-name": "New Orleans",
+                "-code": "MSY"
+              },
+              {
+                "-name": "Baton Rouge",
+                "-code": "BTR"
+              },
+              {
+                "-name": "Shreveport",
+                "-code": "SHV"
+              }
+            ]
+          },
+          {
+            "-name": "Washington",
+            "-code": "WA",
+            "City": [
+              {
+                "-name": "Tacoma",
+                "-code": "TTW"
+              },
+              {
+                "-name": "Seattle",
+                "-code": "SEA"
+              },
+              {
+                "-name": "Spokane",
+                "-code": "GEG"
+              }
+            ]
+          },
+          {
+            "-name": "Colorado",
+            "-code": "CO",
+            "City": [
+              {
+                "-name": "Aspen",
+                "-code": "ASE"
+              },
+              {
+                "-name": "Vail",
+                "-code": "VAC"
+              },
+              {
+                "-name": "Colorado Springs",
+                "-code": "COS"
+              },
+              {
+                "-name": "Grand Junction",
+                "-code": "GJT"
+              },
+              {
+                "-name": "Boulder",
+                "-code": "WBU"
+              },
+              {
+                "-name": "Aurora",
+                "-code": "AUX"
+              },
+              {
+                "-name": "Fort Collins",
+                "-code": "FNL"
+              },
+              {
+                "-name": "Denver",
+                "-code": "DEN"
+              }
+            ]
+          },
+          {
+            "-name": "Pennsylvania",
+            "-code": "PA",
+            "City": [
+              {
+                "-name": "Pittsburgh",
+                "-code": "PIT"
+              },
+              {
+                "-name": "Philadephia",
+                "-code": "PHL"
+              },
+              {
+                "-name": "Allentown",
+                "-code": "AEW"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "-name": "New Zealand",
+        "-code": "NZL"
+      },
+      {
+        "-name": "Guadeloupe",
+        "-code": "GLP"
+      },
+      {
+        "-name": "Laos",
+        "-code": "LAO"
+      },
+      {
+        "-name": "Martinique",
+        "-code": "MTQ"
+      },
+      {
+        "-name": "Nicaragua",
+        "-code": "NIC"
+      },
+      {
+        "-name": "Paraguay",
+        "-code": "PRY"
+      },
+      {
+        "-name": "Central African Republic",
+        "-code": "CAF"
+      },
+      {
+        "-name": "Portugal",
+        "-code": "PRT"
+      },
+      {
+        "-name": "Israel",
+        "-code": "ISR"
+      },
+      {
+        "-name": "Virgin Islands,British",
+        "-code": "VGB"
+      },
+      {
+        "-name": "Kazakhstan",
+        "-code": "KAZ"
+      },
+      {
+        "-name": "Pitcairn Islands",
+        "-code": "PCN"
+      },
+      {
+        "-name": "Sierra Leone",
+        "-code": "SLE"
+      },
+      {
+        "-name": "Iceland",
+        "-code": "ISL"
+      },
+      {
+        "-name": "Lesotho",
+        "-code": "LSO"
+      },
+      {
+        "-name": "Solomon Islands",
+        "-code": "SLB"
+      },
+      {
+        "-name": "Puerto Rico",
+        "-code": "PRI"
+      },
+      {
+        "-name": "Denmark",
+        "-code": "DNK"
+      },
+      {
+        "-name": "Bolivia",
+        "-code": "BOL"
+      },
+      {
+        "-name": "Germany",
+        "-code": "DEU"
+      },
+      {
+        "-name": "Andorra",
+        "-code": "AND"
+      },
+      {
+        "-name": "Italy",
+        "-code": "ITA"
+      },
+      {
+        "-name": "Lebanon",
+        "-code": "LBN"
+      },
+      {
+        "-name": "El Salvador",
+        "-code": "SLV"
+      },
+      {
+        "-name": "Canada",
+        "-code": "CAN"
+      },
+      {
+        "-name": "Liberia",
+        "-code": "LBR"
+      },
+      {
+        "-name": "North Korea",
+        "-code": "PRK"
+      },
+      {
+        "-name": "Montserrat",
+        "-code": "MSR"
+      },
+      {
+        "-name": "Libya",
+        "-code": "LBY"
+      },
+      {
+        "-name": "Qatar",
+        "-code": "QAT"
+      },
+      {
+        "-name": "Wallis and Futuna",
+        "-code": "WLF"
+      },
+      {
+        "-name": "Iraq",
+        "-code": "IRQ"
+      },
+      {
+        "-name": "Ethiopia",
+        "-code": "ETH"
+      },
+      {
+        "-name": "St.Lucia",
+        "-code": "LCA"
+      },
+      {
+        "-name": "Iran",
+        "-code": "IRN"
+      },
+      {
+        "-name": "Nauru",
+        "-code": "NRU"
+      },
+      {
+        "-name": "New Caledonia",
+        "-code": "NCL"
+      },
+      {
+        "-name": "Ireland",
+        "-code": "IRL"
+      },
+      {
+        "-name": "Monaco",
+        "-code": "MCO"
+      },
+      {
+        "-name": "Dominican Republic",
+        "-code": "DOM"
+      },
+      {
+        "-name": "Greenland",
+        "-code": "GRL"
+      },
+      {
+        "-name": "Jersey",
+        "-code": "JEY"
+      },
+      {
+        "-name": "Gabon",
+        "-code": "GAB"
+      },
+      {
+        "-name": "Palestinian Authority",
+        "-code": "PSE"
+      },
+      {
+        "-name": "Estonia",
+        "-code": "EST"
+      },
+      {
+        "-name": "San Marino",
+        "-code": "SMR"
+      },
+      {
+        "-name": "Mauritania",
+        "-code": "MRT"
+      },
+      {
+        "-name": "Spain",
+        "-code": "ESP"
+      },
+      {
+        "-name": "Virgin Islands",
+        "-code": "VIR"
+      },
+      {
+        "-name": "Cocos(Keeling)Islands",
+        "-code": "CCK"
+      },
+      {
+        "-name": "Ecuador",
+        "-code": "ECU"
+      },
+      {
+        "-name": "Peru",
+        "-code": "PER"
+      },
+      {
+        "-name": "Greece",
+        "-code": "GRC"
+      },
+      {
+        "-name": "Grenada",
+        "-code": "GRD"
+      },
+      {
+        "-name": "France",
+        "-code": "FRA"
+      },
+      {
+        "-name": "Cape Verde",
+        "-code": "CPV"
+      },
+      {
+        "-name": "Luxembourg",
+        "-code": "LUX"
+      },
+      {
+        "-name": "Zimbabwe",
+        "-code": "ZWE"
+      },
+      {
+        "-name": "United Kingdom",
+        "-code": "GBR",
+        "State": [
+          {
+            "-name": "Northern Ireland",
+            "-code": "NIR",
+            "City": [
+              {
+                "-name": "Newry",
+                "-code": "NYM"
+              },
+              {
+                "-name": "Derry",
+                "-code": "DRY"
+              },
+              {
+                "-name": "Belfast",
+                "-code": "BFS"
+              },
+              {
+                "-name": "Lisburn",
+                "-code": "LSB"
+              }
+            ]
+          },
+          {
+            "-name": "Scotland",
+            "-code": "SCT",
+            "City": [
+              {
+                "-name": "Aberdeen",
+                "-code": "ABD"
+              },
+              {
+                "-name": "Dundee",
+                "-code": "DND"
+              },
+              {
+                "-name": "Stirling",
+                "-code": "STG"
+              },
+              {
+                "-name": "Edinburgh",
+                "-code": "EDH"
+              },
+              {
+                "-name": "Glasgow",
+                "-code": "GLG"
+              },
+              {
+                "-name": "Inverness",
+                "-code": "INV"
+              }
+            ]
+          },
+          {
+            "-name": "Wales",
+            "-code": "WLS",
+            "City": [
+              {
+                "-name": "Newport",
+                "-code": "NWP"
+              },
+              {
+                "-name": "Bangor",
+                "-code": "BAN"
+              },
+              {
+                "-name": "Swansea",
+                "-code": "SWA"
+              },
+              {
+                "-name": "Cardiff",
+                "-code": "CDF"
+              }
+            ]
+          },
+          {
+            "-name": "England",
+            "-code": "ENG",
+            "City": [
+              {
+                "-name": "Cambridge",
+                "-code": "CAM"
+              },
+              {
+                "-name": "Kingston upon Hull",
+                "-code": "KUH"
+              },
+              {
+                "-name": "Wakefield",
+                "-code": "WKF"
+              },
+              {
+                "-name": "Salford",
+                "-code": "SLF"
+              },
+              {
+                "-name": "Sheffield",
+                "-code": "SHE"
+              },
+              {
+                "-name": "Derby",
+                "-code": "DER"
+              },
+              {
+                "-name": "Bristol",
+                "-code": "BST"
+              },
+              {
+                "-name": "Preston",
+                "-code": "PRE"
+              },
+              {
+                "-name": "Carlisle",
+                "-code": "CAX"
+              },
+              {
+                "-name": "Salisbury",
+                "-code": "SLS"
+              },
+              {
+                "-name": "Sunderland",
+                "-code": "SUN"
+              },
+              {
+                "-name": "Chichester",
+                "-code": "CST"
+              },
+              {
+                "-name": "Exeter",
+                "-code": "EXE"
+              },
+              {
+                "-name": "Coventry",
+                "-code": "COV"
+              },
+              {
+                "-name": "Nottingham",
+                "-code": "NGM"
+              },
+              {
+                "-name": "Wells",
+                "-code": "WLS"
+              },
+              {
+                "-name": "Leicester",
+                "-code": "LCE"
+              },
+              {
+                "-name": "Newcastle",
+                "-code": "NCL"
+              },
+              {
+                "-name": "Portsmouth",
+                "-code": "POR"
+              },
+              {
+                "-name": "London",
+                "-code": "LND"
+              },
+              {
+                "-name": "Norwich",
+                "-code": "NRW"
+              },
+              {
+                "-name": "Lincoln",
+                "-code": "LCN"
+              },
+              {
+                "-name": "Saint Albans",
+                "-code": "TBL"
+              },
+              {
+                "-name": "Southampton",
+                "-code": "STH"
+              },
+              {
+                "-name": "Hereford",
+                "-code": "HAF"
+              },
+              {
+                "-name": "York",
+                "-code": "YOR"
+              },
+              {
+                "-name": "Oxford",
+                "-code": "OXF"
+              },
+              {
+                "-name": "Liverpool",
+                "-code": "LIV"
+              },
+              {
+                "-name": "Worcester",
+                "-code": "WOR"
+              },
+              {
+                "-name": "Wolverhampton",
+                "-code": "WOV"
+              },
+              {
+                "-name": "Truro",
+                "-code": "TRU"
+              },
+              {
+                "-name": "Peterborough",
+                "-code": "PTE"
+              },
+              {
+                "-name": "Ely",
+                "-code": "ELY"
+              },
+              {
+                "-name": "Ripon",
+                "-code": "RIP"
+              },
+              {
+                "-name": "Leeds",
+                "-code": "LDS"
+              },
+              {
+                "-name": "Manchester",
+                "-code": "MAN"
+              },
+              {
+                "-name": "Lichfield",
+                "-code": "LHF"
+              },
+              {
+                "-name": "Gloucester",
+                "-code": "GLO"
+              },
+              {
+                "-name": "Canterbury",
+                "-code": "CNG"
+              },
+              {
+                "-name": "Birmingham",
+                "-code": "BIR"
+              },
+              {
+                "-name": "Lancaster",
+                "-code": "LAN"
+              },
+              {
+                "-name": "Brighton & Hove",
+                "-code": "BNH"
+              },
+              {
+                "-name": "Stoke-on-Trent",
+                "-code": "SOT"
+              },
+              {
+                "-name": "Bradford",
+                "-code": "BRD"
+              },
+              {
+                "-name": "Plymouth",
+                "-code": "PLY"
+              },
+              {
+                "-name": "Bath",
+                "-code": "BAS"
+              },
+              {
+                "-name": "Durham",
+                "-code": "DUR"
+              },
+              {
+                "-name": "Chester",
+                "-code": "CEG"
+              },
+              {
+                "-name": "Winchester",
+                "-code": "WNE"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "-name": "Tristan da Cunha",
+        "-code": "TAA"
+      },
+      {
+        "-name": "Latvia",
+        "-code": "LVA"
+      },
+      {
+        "-name": "Eritrea",
+        "-code": "ERI"
+      },
+      {
+        "-name": "Niger",
+        "-code": "NER"
+      },
+      {
+        "-name": "Morocco",
+        "-code": "MAR"
+      },
+      {
+        "-name": "Lithuania",
+        "-code": "LTU"
+      },
+      {
+        "-name": "Netherlands Antilles",
+        "-code": "ANT"
+      },
+      {
+        "-name": "Somalia",
+        "-code": "SOM"
+      },
+      {
+        "-name": "Brunei",
+        "-code": "BRN"
+      },
+      {
+        "-name": "Russia",
+        "-code": "RUS"
+      },
+      {
+        "-name": "Costa Rica",
+        "-code": "CRI"
+      },
+      {
+        "-name": "Brazil",
+        "-code": "BRA"
+      },
+      {
+        "-name": "Tonga",
+        "-code": "TON"
+      },
+      {
+        "-name": "Barbados",
+        "-code": "BRB"
+      }
+    ]
+  }
+}

@@ -31,6 +31,13 @@ enum KeyboardReturnType {
     kKeyboardReturnTypeGo
 };
 
+enum EditBoxTextAlignType{
+    kEditBoxTextAlignLeft=0,
+    kEditBoxTextAlignRight,
+    kEditBoxTextAlignCenter
+};
+
+
 /**
  * \brief The EditBoxInputMode defines the type of text that the user is allowed
  * to enter.
@@ -161,6 +168,12 @@ class CCEditBox : public CCControlButton
     void unregisterScriptEditBoxHandler(void);
     void unregisterScriptEditBoxHandler @ removeEditBoxEventListener (void);
 
+
+    /**
+     *Set the text align:left,right,center
+     */
+    void setTextAlign(EditBoxTextAlignType align);
+    
     /**
      * Set the text entered in the edit box.
      * @param pText The given text.
@@ -269,8 +282,14 @@ class CCEditBox : public CCControlButton
      */
     void setReturnType(KeyboardReturnType returnType);
     KeyboardReturnType getReturnType();
-    /** callback funtions 
-     *  @js NA
-     */
-    void touchDownAction(CCObject *sender, CCControlEvent controlEvent);
+    void openKeyboard();
+    void hideKeyboard();
+
+    void delayOpen();
+    bool isEditing();
+
+    // csj 2017.5.11
+    void setPosition(float x, float y);
+    void setPosition(CCPoint point);
+
 };

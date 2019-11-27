@@ -324,6 +324,8 @@ public:
     */
     void setContentScaleFactor(float scaleFactor);
     float getContentScaleFactor(void);
+    
+    void setIsEnterBack(bool flag);
 
 public:
     /** CCScheduler associated with this director
@@ -389,6 +391,8 @@ protected:
     bool m_bDisplayStats;
     float m_fAccumDt;
     float m_fFrameRate;
+    
+    bool m_isEnterBack;
     
     CCLabelAtlas *m_pFPSLabel;
     CCLabelAtlas *m_pSPFLabel;

@@ -138,7 +138,11 @@ function audio.playMusic(filename, isLoop)
     if DEBUG > 1 then
         printInfo("audio.playMusic() - filename: %s, isLoop: %s", tostring(filename), tostring(isLoop))
     end
+    local isSound=CCUserDefault:sharedUserDefault():getBoolForKey("isSound",true)
+
+    if isSound==true then
     sharedEngine:playBackgroundMusic(filename, isLoop)
+    end
 end
 
 --[[--
@@ -251,7 +255,12 @@ function audio.playSound(filename, isLoop)
     if DEBUG > 1 then
         printInfo("audio.playSound() - filename: %s, isLoop: %s", tostring(filename), tostring(isLoop))
     end
+    local isSound=CCUserDefault:sharedUserDefault():getBoolForKey("isSound",true)
+    if isSound==true then
     return sharedEngine:playEffect(filename, isLoop)
+    else
+      return false
+    end
 end
 
 --[[--

@@ -501,9 +501,22 @@ int CCLuaEngine::executeTableViewEvent(int nEventType,cocos2d::extension::CCTabl
             nRet = m_stack->executeFunctionByHandler(nHanlder, 1);
         }
             break;
-        case cocos2d::extension::CCTableView::kTableCellTouched:
         case cocos2d::extension::CCTableView::kTableCellHighLight:
-        case cocos2d::extension::CCTableView::kTableCellUnhighLight:
+        {
+            m_stack->pushCCObject(pTableView, "CCTableView");
+            m_stack->pushCCObject(static_cast<cocos2d::extension::CCTableViewCell*>(pValue), "CCTableViewCell");
+            nRet = m_stack->executeFunctionByHandler(nHanlder, 2);
+
+        }
+            break;
+         case cocos2d::extension::CCTableView::kTableCellUnhighLight:
+        {
+            m_stack->pushCCObject(pTableView, "CCTableView");
+            m_stack->pushCCObject(static_cast<cocos2d::extension::CCTableViewCell*>(pValue), "CCTableViewCell");
+            nRet = m_stack->executeFunctionByHandler(nHanlder, 2);
+        }
+            break;
+        case cocos2d::extension::CCTableView::kTableCellTouched:
         case cocos2d::extension::CCTableView::kTableCellWillRecycle:
         {
             m_stack->pushCCObject(pTableView, "CCTableView");
@@ -523,6 +536,20 @@ int CCLuaEngine::executeTableViewEvent(int nEventType,cocos2d::extension::CCTabl
             m_stack->pushCCObject(pTableView, "CCTableView");
             m_stack->pushInt(*((int*)pValue));
             nRet = m_stack->executeFunctionReturnArray(nHanlder, 2, 1, pResultArray);
+        }
+            break;
+        case cocos2d::extension::CCTableView::kTableCellDragLeft:
+        {
+            m_stack->pushCCObject(pTableView, "CCTableView");
+            m_stack->pushCCObject(static_cast<cocos2d::extension::CCTableViewCell*>(pValue), "CCTableViewCell");
+            nRet = m_stack->executeFunctionByHandler(nHanlder, 2);
+        }
+            break;
+        case cocos2d::extension::CCTableView::kTableCellDragRight:
+        {
+            m_stack->pushCCObject(pTableView, "CCTableView");
+            m_stack->pushCCObject(static_cast<cocos2d::extension::CCTableViewCell*>(pValue), "CCTableViewCell");
+            nRet = m_stack->executeFunctionByHandler(nHanlder, 2);
         }
             break;
         case cocos2d::extension::CCTableView::kNumberOfCellsInTableView:

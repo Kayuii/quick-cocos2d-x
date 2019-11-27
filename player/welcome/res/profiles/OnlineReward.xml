@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 
+在线奖励配置
+times:次数
+interval:时间间隔（S）
+reward:奖励游戏币
+ -->
+<DataList>
+    <item times="1" interval="60" reward="100"/>
+    <item times="2" interval="180" reward="200"/>
+    <item times="3" interval="480" reward="300"/>
+    <item times="4" interval="900" reward="400"/>
+    <item times="5" interval="1800" reward="500"/>
+    <item times="6" interval="1800" reward="500"/>
+    <item times="7" interval="1800" reward="500"/>
+    <item times="8" interval="1800" reward="500"/>
+    <item times="9" interval="1800" reward="500"/>
+    <item times="10" interval="1800" reward="500"/>
+    <item times="11" interval="1800" reward="500"/>
+    <item times="12" interval="1800" reward="500"/>
+    <item times="13" interval="1800" reward="500"/>
+    <item times="14" interval="1800" reward="500"/>
+    <item times="15" interval="1800" reward="500"/>
+    <item times="16" interval="1800" reward="500"/>
+    <item times="17" interval="1800" reward="500"/>
+    <item times="18" interval="1800" reward="500"/>
+    <item times="19" interval="1800" reward="500"/>
+    <item times="20" interval="1800" reward="500"/>
+    <item times="21" interval="1800" reward="500"/>
+    <item times="22" interval="1800" reward="500"/>
+    <item times="23" interval="1800" reward="500"/>
+    <item times="24" interval="1800" reward="500"/>
+    <item times="25" interval="1800" reward="500"/>
+    <item times="26" interval="1800" reward="500"/>
+    <item times="27" interval="1800" reward="500"/>
+    <item times="28" interval="1800" reward="500"/>
+    <item times="29" interval="1800" reward="500"/>
+    <item times="30" interval="1800" reward="500"/>
+    <item times="31" interval="1800" reward="500"/>
+    <item times="32" interval="1800" reward="500"/>
+    <item times="33" interval="1800" reward="500"/>
+    <item times="34" interval="1800" reward="500"/>
+    <item times="35" interval="1800" reward="500"/>
+    <item times="36" interval="1800" reward="500"/>
+    <item times="37" interval="1800" reward="500"/>
+    <item times="38" interval="1800" reward="500"/>
+    <item times="39" interval="1800" reward="500"/>
+    <item times="40" interval="1800" reward="500"/>
+    <item times="41" interval="1800" reward="500"/>
+    <item times="42" interval="1800" reward="500"/>
+    <item times="43" interval="1800" reward="500"/>
+    <item times="44" interval="1800" reward="500"/>
+    <item times="45" interval="1800" reward="500"/>
+    <item times="46" interval="1800" reward="500"/>
+    <item times="47" interval="1800" reward="500"/>
+    <item times="48" interval="1800" reward="500"/>
+    <item times="49" interval="1800" reward="500"/>
+    <item times="50" interval="1800" reward="500"/>
+    <item times="51" interval="1800" reward="500"/>
+    <item times="52" interval="1800" reward="500"/>
+</DataList>

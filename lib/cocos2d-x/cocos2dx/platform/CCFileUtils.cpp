@@ -31,6 +31,12 @@ THE SOFTWARE.
 #include "support/zip_support/unzip.h"
 #include <stack>
 
+#if (CC_TARGET_PALTFORM != CC_PLATFORM_WIN32)
+#include<sys/stat.h>
+#include<errno.h>
+#include<dirent.h>
+#endif
+
 using namespace std;
 
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_IOS) && (CC_TARGET_PLATFORM != CC_PLATFORM_MAC)
@@ -510,7 +516,7 @@ unsigned char* CCFileUtils::getFileData(const char* pszFileName, const char* psz
         std::string msg = "Get data from file(";
         msg.append(pszFileName).append(") failed!");
         
-        CCLOG("%s", msg.c_str());
+//        CCLOG("%s", msg.c_str());
     }
     return pBuffer;
 }
@@ -717,6 +723,23 @@ void CCFileUtils::addSearchPath(const char* path)
 }
 	}
 
+void CCFileUtils::deleteSearchPath(const char* path){
+    bool bFound = false;
+    for (std::vector<std::string>::iterator it = m_searchPathArray.begin(); it != m_searchPathArray.end(); ++it)
+    {
+        std::string opath = *it;
+        if (opath == path) {
+            bFound = true;
+            m_searchPathArray.erase(it);
+            break;
+        }
+    }
+    if (bFound)
+    {
+        updateSearchPathArrayCheck();
+    }
+}
+
 void CCFileUtils::setFilenameLookupDictionary(CCDictionary* pFilenameLookupDict)
 {
     m_fullPathCache.clear();
@@ -772,6 +795,33 @@ void CCFileUtils::setCachePath(const char *cachePath)
 bool CCFileUtils::isAbsolutePath(const std::string& strPath)
 {
     return strPath[0] == '/' ? true : false;
+}
+
+bool CCFileUtils::createDirectory(const char *path){
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
+    DIR *pDir = NULL;
+    pDir = opendir(path);
+    if (!pDir) {
+        mode_t processMask = umask(0);
+        int ret = mkdir(path, S_IRWXU | S_IRWXG | S_IRWXO);
+        umask(processMask);
+        if (ret != 0 && (errno != EEXIST))
+        {
+            return false;
+        }
+    } else {
+        closedir(pDir);
+    }
+    
+    return true;
+#else
+    BOOL ret = CreateDirectoryA(path, NULL);
+    if (!ret && ERROR_ALREADY_EXISTS != GetLastError())
+    {
+        return false;
+    }
+    return true;
+#endif
 }
 
 

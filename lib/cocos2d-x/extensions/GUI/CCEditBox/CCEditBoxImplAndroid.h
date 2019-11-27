@@ -70,6 +70,9 @@ public:
     virtual void doAnimationWhenKeyboardMove(float duration, float distance);
     virtual void openKeyboard();
     virtual void closeKeyboard();
+
+	//to csj  2017.05.11
+    virtual void setTextAlign(EditBoxTextAlignType align);
     
 private:
     CCLabelTTF* m_pLabel;

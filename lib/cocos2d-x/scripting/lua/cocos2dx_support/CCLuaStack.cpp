@@ -39,9 +39,9 @@ extern "C" {
 #include "platform/CCFileUtils.h"
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_MAC || (CC_TARGET_PLATFORM == CC_PLATFORM_QT && defined(Q_OS_MAC)))
-#include "platform/ios/CCLuaObjcBridge.h"
+    #include "platform/ios/CCLuaObjcBridge.h"
 #elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-#include "platform/android/CCLuaJavaBridge.h"
+    #include "platform/android/CCLuaJavaBridge.h"
 #endif
 
 #include "Cocos2dxLuaLoader.h"
@@ -51,46 +51,45 @@ extern "C" {
 #include "LuaCocos2d.h"
 
 #if CC_PHYSICS_ENABLED > 0
-// chipmunk
-#include "CCPhysicsWorld_luabinding.h"
+    // chipmunk
+    #include "CCPhysicsWorld_luabinding.h"
 #endif
 
 #if CC_CCB_ENABLED > 0
-// CCB
-#include "Lua_extensions_CCB.h"
+    // CCB
+    #include "Lua_extensions_CCB.h"
 #endif
 
 #include "lua_cocos2dx_manual.h"
 #if CC_CCSTUDIO_ENABLED > 0
-// Cocos Studio
-#include "LuaCocoStudio.h"
-#include "lua_cocos2dx_extensions_manual.h"
-#include "lua_cocos2dx_cocostudio_manual.h"
-#endif
-
-#if CC_CURL_ENABLED > 0
-#include "LuaCocos2dAssetsManager.h"
+    // Cocos Studio
+    #include "LuaCocoStudio.h"
+    #include "lua_cocos2dx_extensions_manual.h"
+    #include "lua_cocos2dx_cocostudio_manual.h"
 #endif
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     #include "cocos2dx_httprequest_luabinding.h"
-#elif (CC_CURL_ENABLED > 0)
+#else
+    #if CC_CURL_ENABLED > 0
+    #include "LuaCocos2dAssetsManager.h"
     #include "cocos2dx_httprequest_luabinding.h"
+    #endif
 #endif
 
 #if CC_FILTERS_ENABLED > 0
-#include "LuaCocos2dFilters.h"
+    #include "LuaCocos2dFilters.h"
 #endif
 
 #if CC_DRAGONBONES_ENABLED > 0
-#include "LuaCocos2dDragonBones.h"
+    #include "LuaCocos2dDragonBones.h"
 #endif
 
 // cocos2dx_extra luabinding
 #include "cocos2dx_extra_luabinding.h"
 #include "CZHelperFunc_luabinding.h"
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-#include "cocos2dx_extra_ios_iap_luabinding.h"
+    #include "cocos2dx_extra_ios_iap_luabinding.h"
 #endif
 // WebSockets luabinding
 #include "Lua_web_socket.h"
@@ -98,10 +97,12 @@ extern "C" {
 #include "lua_extensions.h"
 
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_IOS && CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
-// debugger
-#include "debugger/debugger.h"
+    // debugger
+    #include "debugger/debugger.h"
 #endif
-
+//spine
+#include "SkeletonAnimation_luabinding.h" 
+#include "SkeletonRenderer_luabinding.h"
 #include <string>
 
 using namespace std;
@@ -188,6 +189,10 @@ bool CCLuaStack::init(void)
     // register CCLuaLoadChunksFromZIP
     lua_pushcfunction(m_state, lua_loadChunksFromZIP);
     lua_setglobal(m_state, "CCLuaLoadChunksFromZIP");
+    
+    // register CCLuaXgLoadZIP
+    lua_pushcfunction(m_state, lua_xgLoadZIP);
+    lua_setglobal(m_state, "CCLuaXgLoadZIP");
 
     // register CCLuaStackSnapshot
     luaopen_snapshot(m_state);
@@ -204,17 +209,22 @@ bool CCLuaStack::init(void)
     luaopen_cocos2dx_extra_ios_iap_luabinding(m_state);
 #endif
 
-#if CC_CURL_ENABLED > 0
     // load assets manager
-    luaopen_ExtensionsAssetsManager(m_state);
-#endif
-    
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     luaopen_cocos2dx_httprequest_luabinding(m_state);
-#elif (CC_CURL_ENABLED > 0)
-    luaopen_cocos2dx_httprequest_luabinding(m_state);
+#else
+    #if CC_CURL_ENABLED > 0
+        luaopen_ExtensionsAssetsManager(m_state);
+        luaopen_cocos2dx_httprequest_luabinding(m_state);
+    #endif
 #endif
 
+//2017.5.16 csj:android也需要这个spine了
+// #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    //spine
+    luaopen_SkeletonRenderer_luabinding(m_state);
+    luaopen_SkeletonAnimation_luabinding(m_state);
+// #endif
     // load WebSockets luabinding
     tolua_web_socket_open(m_state);
     // lua extensions
@@ -477,6 +487,16 @@ int CCLuaStack::loadChunksFromZIP(const char *zipFilePath)
     return ret;
 }
 
+int CCLuaStack::xgLoadZIP(const char *zipFilePath, const char *dstPath)
+{
+    pushString(zipFilePath);
+    pushString(dstPath);
+    lua_xgLoadZIP(m_state);
+    int ret = lua_toboolean(m_state, -1);
+    lua_pop(m_state, 1);
+    return ret;
+}
+
 void CCLuaStack::setXXTEAKeyAndSign(const char *key, int keyLen, const char *sign, int signLen)
 {
     cleanupXXTEAKeyAndSign();
@@ -665,6 +685,172 @@ int CCLuaStack::lua_execute(lua_State *L, int numArgs, bool removeResult)
     }
 
     return ret;
+}
+
+int CCLuaStack::lua_xgLoadZIP(lua_State *L)
+{
+    if (lua_gettop(L) < 2){
+        CCLOG("lua_xgLoadZIP() - invalid arguments");
+        return 0;
+    }
+    if(!lua_isstring(L, 1)){
+        CCLOG("lua_xgLoadZIP() - argument 1 need string value");
+        return 0;
+    }
+    if(!lua_isstring(L, 2)){
+        CCLOG("lua_xgLoadZIP() - argument 2 need string value");
+        return 0;
+    }
+    const char *dstPath = lua_tostring(L, 2);
+    const char *zipPath = lua_tostring(L, 1);
+    lua_settop(L, 0);
+    CCLOG("lua_xgLoadZIP() - zipPath: %s", zipPath);
+    CCLOG("lua_xgLoadZIP() - dstPath: %s", dstPath);
+    
+    CCFileUtils *utils = CCFileUtils::sharedFileUtils();
+    string zipFilePath = utils->fullPathForFilename(zipPath);
+    zipPath = NULL;
+    
+    CCLOG("lua_xgLoadZIP() - zipFilePath: %s", zipFilePath.c_str());
+    
+    if(!utils->isFileExist(zipFilePath)){
+        CCLOG("lua_xgLoadZIP() - can't fond zip file:%s", zipFilePath.c_str());
+        return 0;
+    }
+    
+    CCLuaStack *stack = CCLuaStack::stack(L);
+    
+    void *buffer = NULL;
+    unsigned long size = 0;
+    unsigned char *zipFileData = utils->getFileData(zipFilePath.c_str(), "rb", &size);
+    unzFile zipFile = NULL;
+    
+    bool isXXTEA = stack && stack->m_xxteaEnabled && zipFileData;
+    for (unsigned int i = 0; isXXTEA && i < stack->m_xxteaSignLen && i < size; ++i){
+        isXXTEA = zipFileData[i] == stack->m_xxteaSign[i];
+    }
+    
+    if (isXXTEA){
+        // decrypt XXTEA
+        xxtea_long len = 0;
+        buffer = xxtea_decrypt(zipFileData + stack->m_xxteaSignLen,
+                               (xxtea_long)size - (xxtea_long)stack->m_xxteaSignLen,
+                               (unsigned char*)stack->m_xxteaKey,
+                               (xxtea_long)stack->m_xxteaKeyLen,
+                               &len);
+        delete []zipFileData;
+        zipFileData = NULL;
+        zipFile = unzOpenBuffer(buffer, len);
+    }
+    else{
+        if (zipFileData){
+            zipFile = unzOpenBuffer(zipFileData, size);
+        }
+    }
+    
+    unz_global_info g_unz_info;
+    if(unzGetGlobalInfo(zipFile, &g_unz_info) != UNZ_OK){
+        CCLOG("lua_xgLoadZIP() - can't read file global info of %s", zipFilePath.c_str());
+        unzClose(zipFile);
+        return 0;
+    }
+    
+    CCLOG("lua_xgLoadZIP() start uncompressing");
+    
+    // Buffer to hold data read from the zip file
+    char readBuffer[8192];
+    uLong i;
+    for (i = 0; i < g_unz_info.number_entry; ++i) {
+        // Get info about current file.
+        unz_file_info fileInfo;
+        char fileName[512];
+        if (unzGetCurrentFileInfo(zipFile,
+                                  &fileInfo,
+                                  fileName,
+                                  512,
+                                  NULL,
+                                  0,
+                                  NULL,
+                                  0) != UNZ_OK)
+        {
+            CCLOG("lua_xgLoadZIP() can not read file info");
+            unzClose(zipFile);
+            return 0;
+        }
+        
+        string stpath = dstPath;
+        string fullPath = stpath + fileName;
+        
+        // Check if this entry is a directory or a file.
+        const size_t filenameLength = strlen(fileName);
+        if (fileName[filenameLength-1] == '/'){
+            // get all dir
+            string fileNameStr = string(fileName);
+            size_t position = 0;
+            while((position=fileNameStr.find_first_of("/",position))!=string::npos){
+                string dirPath =stpath + fileNameStr.substr(0, position);
+                // Entry is a direcotry, so create it.
+                // If the directory exists, it will failed scilently.
+                if (!utils->createDirectory(dirPath.c_str())){
+                    CCLOG("lua_xgLoadZIP() create directory fail %s", dirPath.c_str());
+                }
+                position++;
+            }
+        }
+        else{
+            // Entry is a file, so extract it.
+            
+            // Open current file.
+            if (unzOpenCurrentFile(zipFile) != UNZ_OK){
+                CCLOG("lua_xgLoadZIP() can not open file %s", fileName);
+                unzClose(zipFile);
+                return 0;
+            }
+            
+            // Create a file to store current file.
+            FILE *out = fopen(fullPath.c_str(), "wb");
+            if (! out){
+                CCLOG("lua_xgLoadZIP() can not open destination file %s", fullPath.c_str());
+                unzCloseCurrentFile(zipFile);
+                unzClose(zipFile);
+                return 0;
+            }
+            
+            // Write current file content to destinate file.
+            int error = UNZ_OK;
+            do{
+                error = unzReadCurrentFile(zipFile, readBuffer, 8192);
+                if (error < 0){
+                    CCLOG("lua_xgLoadZIP() can not read zip file %s, error code is %d", fileName, error);
+                    unzCloseCurrentFile(zipFile);
+                    unzClose(zipFile);
+                    return 0;
+                }
+                
+                if (error > 0){
+                    fwrite(readBuffer, error, 1, out);
+                }
+            } while(error > 0);
+            
+            fclose(out);
+        }
+        
+        unzCloseCurrentFile(zipFile);
+        
+        // Goto next entry listed in the zip file.
+        if ((i+1) < g_unz_info.number_entry){
+            if (unzGoToNextFile(zipFile) != UNZ_OK){
+                CCLOG("lua_xgLoadZIP() can not read next file");
+                unzClose(zipFile);
+                return 0;
+            }
+        }
+    }
+    unzClose(zipFile);
+    lua_pushboolean(L, 1);
+    CCLOG("lua_xgLoadZIP() end uncompressing");
+    
+    return 1;
 }
 
 int CCLuaStack::lua_loadChunksFromZIP(lua_State *L)

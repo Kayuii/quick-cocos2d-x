@@ -127,6 +127,18 @@ class CCSprite : public CCNode
 
     /// @}  end of creators group
 
+    /**
+     * Initializes a sprite with an image filename.
+     *
+     * This method will find pszFilename from local file system, load its content to CCTexture2D,
+     * then use CCTexture2D to create a sprite.
+     * After initialization, the rect used will be the size of the image. The offset will be (0,0).
+     *
+     * @param   pszFilename The path to an image file in local file system
+     * @return  true if the sprite is initialized properly, false otherwise.
+     * @js init
+     */
+    bool initWithFile(const char *pszFilename);
 
     /// @{
     /// @name Functions inherited from CCTextureProtocol

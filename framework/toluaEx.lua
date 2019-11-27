@@ -1,4 +1,3 @@
-
 function tolua.cloneTable(src)
 	if type(src)~="table" then
 		return nil

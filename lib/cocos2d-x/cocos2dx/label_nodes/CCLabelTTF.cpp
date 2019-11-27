@@ -96,24 +96,6 @@ CCLabelTTF* CCLabelTTF::create(const char *string, const char *fontName, float f
     return NULL;
 }
 
-CCLabelTTF * CCLabelTTF::create(const char *string, const char *fontName, float fontSize,
-                           const CCSize& dimensions, CCTextAlignment hAlignment,
-                           CCVerticalTextAlignment vAlignment,
-                           const ccColor3B &strokeColor,float strokeSize)
-{
-    CCLabelTTF *pRet = new CCLabelTTF();
-    if (strokeSize && strokeSize > 0) {
-        pRet->enableStroke(strokeColor, strokeSize, false);
-    }
-    if (pRet && pRet->initWithString(string, fontName, fontSize, dimensions, hAlignment,vAlignment)) {
-        pRet->autorelease();
-        return pRet;
-    }
-    CC_SAFE_DELETE(pRet);
-    return NULL;
-}
-
-
 CCLabelTTF * CCLabelTTF::createWithFontDefinition(const char *string, ccFontDefinition &textDefinition)
 {
     CCLabelTTF *pRet = new CCLabelTTF();
@@ -307,6 +289,7 @@ void CCLabelTTF::setFontName(const char *fontName)
     }
 }
 
+
 // Helper
 bool CCLabelTTF::updateTexture()
 {
@@ -316,7 +299,7 @@ bool CCLabelTTF::updateTexture()
     if (!tex)
         return false;
     
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     
         ccFontDefinition texDef = _prepareTextDefinition(true);
         tex->initWithString( m_string.c_str(), &texDef );
@@ -410,7 +393,7 @@ void CCLabelTTF::disableShadow(bool updateTexture)
 
 void CCLabelTTF::enableStroke(const ccColor3B &strokeColor, float strokeSize, bool updateTexture)
 {
-   #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     
         bool valueChanged = false;
         
@@ -445,7 +428,7 @@ void CCLabelTTF::enableStroke(const ccColor3B &strokeColor, float strokeSize, bo
 
 void CCLabelTTF::disableStroke(bool updateTexture)
 {
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     
         if (m_strokeEnabled)
         {
@@ -463,8 +446,8 @@ void CCLabelTTF::disableStroke(bool updateTexture)
 
 void CCLabelTTF::setFontFillColor(const ccColor3B &tintColor, bool updateTexture)
 {
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
-        if (ccc3BEqual(tintColor, m_textFillColor) == false)
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+        if (m_textFillColor.r != tintColor.r || m_textFillColor.g != tintColor.g || m_textFillColor.b != tintColor.b)
         {
             m_textFillColor = tintColor;
             
@@ -482,24 +465,6 @@ void CCLabelTTF::setTextDefinition(ccFontDefinition *theDefinition)
     {
         _updateWithTextDefinition(*theDefinition, true);
     }
-}
-
-void CCLabelTTF::setColor(const ccColor3B& color3)
-{
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
-    setFontFillColor(color3,true);
-    #else
-    CCSprite::setColor(color3);
-    #endif
-}
-
-const ccColor3B& CCLabelTTF::getColor()
-{
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
-    return m_textFillColor;
-    #else
-    return CCSprite::getColor();
-    #endif
 }
 
 ccFontDefinition *CCLabelTTF::getTextDefinition()

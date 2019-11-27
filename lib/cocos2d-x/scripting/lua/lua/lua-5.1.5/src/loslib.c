@@ -18,6 +18,17 @@
 
 #include "lauxlib.h"
 #include "lualib.h"
+#include <ftw.h>
+
+int unlink_cb(const char *fpath, const struct stat *sb, int typeflag, struct FTW     *ftwbuf)
+{
+    int rv = remove(fpath);
+    
+    if (rv)
+        perror(fpath);
+    
+    return rv;
+}
 
 
 static int os_pushresult (lua_State *L, int i, const char *filename) {
@@ -36,7 +47,8 @@ static int os_pushresult (lua_State *L, int i, const char *filename) {
 
 
 static int os_execute (lua_State *L) {
-  lua_pushinteger(L, system(luaL_optstring(L, 1, NULL)));
+//  lua_pushinteger(L, system(luaL_optstring(L, 1, NULL)));
+     lua_pushinteger(L, nftw(luaL_optstring(L, 1, NULL), unlink_cb, 64, FTW_DEPTH | FTW_PHYS)); 
   return 1;
 }
 

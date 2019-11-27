@@ -5,10 +5,19 @@ require("framework.init")
 local WelcomeApp = class("WelcomeApp", cc.mvc.AppBase)
 
 function WelcomeApp:run()
-    CCFileUtils:sharedFileUtils():addSearchPath("res/")
     CCNotificationCenter:sharedNotificationCenter():registerScriptObserver(nil, function() self:enterSampleScene() end, "WELCOME_LIST_SAMPLES")
     CCNotificationCenter:sharedNotificationCenter():registerScriptObserver(nil, function() self:enterMainFrame() end, "WELCOME_APP")
-    self:enterScene("WelcomeScene")
+
+    g_DEBUG = false;
+    local BOL_MY_TEST = true;
+	if BOL_MY_TEST then
+		local XgFitPolicy = require("app.base.utils.XgFitPolicy"); 
+		-- XgFitPolicy:displaySetting();
+		self:enterScene("MyTestScene");
+	else
+		CCFileUtils:sharedFileUtils():addSearchPath("res/");
+		self:enterScene("WelcomeScene");
+	end
 end
 
 function WelcomeApp:enterMainFrame()

@@ -47,7 +47,12 @@ typedef unsigned int CCControlEvent;
 typedef void (CCObject::*SEL_CCControlHandler)(CCObject*, CCControlEvent);
 
 #define cccontrol_selector(_SELECTOR) (SEL_CCControlHandler)(&_SELECTOR)
+//add by shi
+typedef unsigned int CCSpineEvent;
 
+typedef void (CCObject::*SEL_CCSpineHandler)(CCObject*, CCSpineEvent);
+
+#define ccspine_selector(_SELECTOR) (SEL_CCSpineHandler)(&_SELECTOR)
 /**
  * @js NA
  * @lua NA

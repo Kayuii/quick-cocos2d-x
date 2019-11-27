@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+ <!-- 
+	宝石配置文件
+ -->
+<DataList>
+	<item id="102" name="绿宝石" haveTime="5" dayUseTimes="1" rewardFirst="5000"   rewardDay="4000"   price="20" desc1="使用当天送5千游戏币,"   desc2="之后每天使用送4千游戏币,"    desc3="共送5天,共送2.1万游戏币" />
+	<item id="103" name="蓝宝石" haveTime="7" dayUseTimes="1" rewardFirst="15000"  rewardDay="6500"   price="50" desc1="使用当天送1.5万游戏币," desc2="之后每天使用送6.5千游戏币,"  desc3="共送7天,共送5.4万游戏币" />
+	<item id="104" name="红宝石" haveTime="7" dayUseTimes="1" rewardFirst="30000"  rewardDay="13500"  price="100" desc1="使用当天送3万游戏币,"   desc2="之后每天使用送1.35万游戏币," desc3="共送7天,共送11.1万游戏币" />
+	<item id="105" name="黄宝石" haveTime="7" dayUseTimes="1" rewardFirst="100000" rewardDay="38000"  price="300" desc1="使用当天送10万游戏币,"  desc2="之后每天使用送3.8万游戏币,"  desc3="共送7天,共送32.8万游戏币" />
+	<item id="106" name="紫宝石" haveTime="7" dayUseTimes="1" rewardFirst="300000" rewardDay="136000" price="1000" desc1="使用当天送30万游戏币,"  desc2="之后每天使用送13.6万游戏币," desc3="共送7天,共送111.6万游戏币" />
+	<item id="400" name="绿宝石" haveTime="3" dayUseTimes="1" rewardFirst="6000"   rewardDay="9000"   thirdDay="15000" price="20" desc1="第一天使用获得奖励6千游戏币,"   desc2="第二天之后使用获得奖励9千游戏币,"    desc3="第三天之后使用获得奖励1.5万游戏币" />
+	<item id="401" name="蓝宝石" haveTime="3" dayUseTimes="1" rewardFirst="10000"   rewardDay="12000" thirdDay="15000" fourDay="18000" fiveDay="20000"  price="20" desc1="第一天使用获得奖励1万游戏币,"   desc2="第二天之后使用获得奖励2万游戏币,"    desc3="第三天之后使用获得奖励3万游戏币" />
+	<item id="410" name="VIP体验卡" haveTime="4" dayUseTimes="1" rewardFirst="10000"   rewardDay="12000" thirdDay="15000" fourDay="18000" fiveDay="20000"  price="20" desc1="第一天使用获得奖励1万游戏币,"   desc2="第二天之后使用获得奖励2万游戏币,"    desc3="第三天之后使用获得奖励3万游戏币" />
+</DataList>

@@ -208,6 +208,9 @@ class CCTexture2D : public CCObject
     bool hasPremultipliedAlpha();
 
     bool hasMipmaps();
+    //add by shi
+    static CCTexture2D* create();
+    bool initWithString(const char *text, const char *fontName, float fontSize);
 };
 
 // end of textures group

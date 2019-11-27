@@ -276,6 +276,9 @@ static BOOL configured = FALSE;
         if (!sharedManager) {
             if (!configured) {
                 //Set defaults here
+//                configuredMode = kAMM_FxOnly;
+                
+                // modified by ccb 2019/06/13
                 configuredMode = kAMM_FxPlusMusicIfNoOtherAudio;
             }
             sharedManager = [[CDAudioManager alloc] init:configuredMode];

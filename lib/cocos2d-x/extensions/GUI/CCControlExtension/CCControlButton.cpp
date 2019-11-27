@@ -32,6 +32,7 @@
 #include "label_nodes/CCLabelBMFont.h"
 #include "actions/CCAction.h"
 #include "actions/CCActionInterval.h"
+#include "SimpleAudioEngine.h"
 
 using namespace std;
 
@@ -57,6 +58,7 @@ CCControlButton::CCControlButton()
 , m_backgroundSpriteDispatchTable(NULL)
 , m_marginV(CCControlButtonMarginTB)
 , m_marginH(CCControlButtonMarginLR)
+, m_soundPath(NULL)
 {
 
 }
@@ -691,6 +693,25 @@ void CCControlButton::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
     if (isTouchInside(pTouch))
     {
         sendActionsForControlEvents(CCControlEventTouchUpInside);
+        
+        bool isSound = CCUserDefault::sharedUserDefault()->getBoolForKey("isSound",true);
+        //CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect("sound/clickbtn.mp3");
+//        CCLOG("CCControlButton::ccTouchEnded %s",m_soundPath);
+        //add by shi
+        if (!isSound)
+        {
+//            CCLOG("CCControlButton::ccTouchEnded isSound==false");
+            return;
+        }
+        if (m_soundPath != NULL && m_soundPath != "")
+        {
+            CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(m_soundPath);
+        }
+        else
+        {
+//            CCLOG("CCControlButton::ccTouchEnded  play default");
+            CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect("sound/lobby/ui_click_short_bloop_deal_01.wav");
+        }
     }
     else
     {
@@ -751,5 +772,9 @@ CCControlButton* CCControlButton::create()
     CC_SAFE_DELETE(pControlButton);
     return NULL;
 }
-
+void CCControlButton::setClickSound(const char* path)
+{
+//    CCLOG("CCControlButton::setClickSound: %s",path);
+    m_soundPath = path;
+}
 NS_CC_EXT_END

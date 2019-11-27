@@ -42,11 +42,11 @@ class CCControlSlider: public CCControl
     /** Contains the minimum value of the receiver.
     * The default value of this property is 0.0. */
     float getMinimumValue();
-    void setMinimumValue(float val);
+    void setMinimumValue(float val,bool changed);
     /** Contains the maximum value of the receiver.
     * The default value of this property is 1.0. */
     float getMaximumValue();
-    void setMaximumValue(float val);
+    void setMaximumValue(float val,bool changed);
 
     float getMinimumAllowedValue();
     void setMinimumAllowedValue(float v);

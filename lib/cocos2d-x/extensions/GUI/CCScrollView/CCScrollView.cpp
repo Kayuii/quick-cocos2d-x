@@ -27,8 +27,8 @@
 
 NS_CC_EXT_BEGIN
 
-#define SCROLL_DEACCEL_RATE  0.95f
-#define SCROLL_DEACCEL_DIST  1.0f
+#define SCROLL_DEACCEL_RATE  0.7f
+#define SCROLL_DEACCEL_DIST  1.2f
 #define BOUNCE_DURATION      0.15f
 #define INSET_RATIO          0.2f
 #define MOVE_INCH            7.0f/160.0f
@@ -47,6 +47,7 @@ CCScrollView::CCScrollView()
 , m_pDelegate(NULL)
 , m_eDirection(kCCScrollViewDirectionBoth)
 , m_bDragging(false)
+, m_bScroll(true)
 , m_pContainer(NULL)
 , m_bTouchMoved(false)
 , m_bBounceable(false)
@@ -100,9 +101,11 @@ bool CCScrollView::initWithViewSize(CCSize size, CCNode *container/* = NULL*/)
     if (CCLayer::init())
     {
         m_pContainer = container;
-
+        
+//        CCLOG("CCScrollView initWithViewSize");
         if (!this->m_pContainer)
         {
+//            CCLOG("CCScrollView initWithViewSize create container");
             m_pContainer = CCLayer::create();
             this->m_pContainer->ignoreAnchorPointForPosition(false);
             this->m_pContainer->setAnchorPoint(ccp(0.0f, 0.0f));
@@ -215,7 +218,7 @@ void CCScrollView::setContentOffset(CCPoint offset, bool animated/* = false*/)
 void CCScrollView::setContentOffsetInDuration(CCPoint offset, float dt)
 {
     CCFiniteTimeAction *scroll, *expire;
-
+    
     scroll = CCMoveTo::create(dt, offset);
     expire = CCCallFuncN::create(this, callfuncN_selector(CCScrollView::stoppedAnimatedScroll));
     m_pContainer->runAction(CCSequence::create(scroll, expire, NULL));
@@ -327,9 +330,11 @@ void CCScrollView::relocateContainer(bool animated)
 
     min = this->minContainerOffset();
     max = this->maxContainerOffset();
-
+    
     oldPoint = m_pContainer->getPosition();
-
+    printf("relocateContainer min (%f,%f)",min.x,min.y);
+    printf("relocateContainer max (%f,%f)",max.x,max.y);
+    printf("relocateContainer old (%f,%f)",oldPoint.x,oldPoint.y);
     newX     = oldPoint.x;
     newY     = oldPoint.y;
     if (m_eDirection == kCCScrollViewDirectionBoth || m_eDirection == kCCScrollViewDirectionHorizontal)
@@ -338,26 +343,46 @@ void CCScrollView::relocateContainer(bool animated)
         newX     = MIN(newX, max.x);
     }
 
-    if (m_eDirection == kCCScrollViewDirectionBoth || m_eDirection == kCCScrollViewDirectionVertical)
+    if (m_eDirection == kCCScrollViewDirectionBoth || m_eDirection == kCCScrollViewDirectionVertical || m_eDirection== kCCScrollViewDirectionTopToDown)
     {
         newY     = MIN(newY, max.y);
         newY     = MAX(newY, min.y);
+        printf("newY %f",newY);
     }
 
     if (newY != oldPoint.y || newX != oldPoint.x)
     {
         this->setContentOffset(ccp(newX, newY), animated);
     }
+    //add by shi
+    else
+    {
+        //this->sendScrollEvent("ScrollEnd");
+        
+    }
+    //-------------------------------
 }
 
 CCPoint CCScrollView::maxContainerOffset()
 {
-    return ccp(0.0f, 0.0f);
+    if (m_eDirection==kCCScrollViewDirectionTopToDown)
+    {
+        float maxY=m_tViewSize.height;
+        if (m_pContainer->getContentSize().height>m_tViewSize.height)
+            maxY=m_pContainer->getContentSize().height-m_tViewSize.height;
+        else
+            maxY=0;
+        return ccp(0.0f,maxY);
+    }else
+        return ccp(0.0f, 0.0f);
 }
 
 CCPoint CCScrollView::minContainerOffset()
 {
-    return ccp(m_tViewSize.width - m_pContainer->getContentSize().width*m_pContainer->getScaleX(),
+    if (m_eDirection==kCCScrollViewDirectionTopToDown)
+        return ccp(0.f,0.f);
+    else
+        return ccp(m_tViewSize.width - m_pContainer->getContentSize().width*m_pContainer->getScaleX(),
                m_tViewSize.height - m_pContainer->getContentSize().height*m_pContainer->getScaleY());
 }
 
@@ -418,11 +443,14 @@ void CCScrollView::stoppedAnimatedScroll(CCNode * node)
     {
         m_pDelegate->scrollViewDidScroll(this);
     }
+    //add by shi
+    this->sendScrollEvent("ScrollToBottomOrTop");
+    //-------------------------------
 }
 
 void CCScrollView::performedAnimatedScroll(float dt)
 {
-    if (m_bDragging)
+    if (!m_bDragging)
     {
         this->unschedule(schedule_selector(CCScrollView::performedAnimatedScroll));
         return;
@@ -601,6 +629,7 @@ void CCScrollView::visit()
 
 bool CCScrollView::ccTouchBegan(CCTouch* touch, CCEvent* event)
 {
+    CCLOG("CCScrollView touchbegan");
     if (!this->isVisible())
     {
         return false;
@@ -628,6 +657,7 @@ bool CCScrollView::ccTouchBegan(CCTouch* touch, CCEvent* event)
         m_bDragging     = true; //dragging started
         m_tScrollDistance = ccp(0.0f, 0.0f);
         m_fTouchLength    = 0.0f;
+        this->sendScrollEvent("ScrollBegan");
     }
     else if (m_pTouches->count() == 2)
     {
@@ -646,6 +676,12 @@ void CCScrollView::ccTouchMoved(CCTouch* touch, CCEvent* event)
     {
         return;
     }
+    
+    if (!m_bScroll)
+    {
+        return;
+    }
+//    CCLOG("CCScarollView TouchMove");
 
     if (m_pTouches->containsObject(touch))
     {
@@ -661,7 +697,7 @@ void CCScrollView::ccTouchMoved(CCTouch* touch, CCEvent* event)
             moveDistance = ccpSub(newPoint, m_tTouchPoint);
 
             float dis = 0.0f;
-            if (m_eDirection == kCCScrollViewDirectionVertical)
+            if (m_eDirection == kCCScrollViewDirectionVertical || m_eDirection== kCCScrollViewDirectionTopToDown)
             {
                 dis = moveDistance.y;
             }
@@ -679,6 +715,16 @@ void CCScrollView::ccTouchMoved(CCTouch* touch, CCEvent* event)
                 //CCLOG("Invalid movement, distance = [%f, %f], disInch = %f", moveDistance.x, moveDistance.y);
                 return;
             }
+            //add by shi
+            float angle = atan2f(moveDistance.y, moveDistance.x) * 180 / 3.141592654;
+            
+            angle = fabsf(angle);
+            //CCLOGERROR("-------------------angle=%f", angle);//水平滑动
+            if( m_eDirection == kCCScrollViewDirectionVertical &&  (angle >= 0&& angle<35) || (angle <= 180 &&angle >150) && fabsf(moveDistance.x - moveDistance.y) >= 40)
+            {
+                return;
+            }
+            //-------------------------
 
             if (!m_bTouchMoved)
             {
@@ -693,6 +739,7 @@ void CCScrollView::ccTouchMoved(CCTouch* touch, CCEvent* event)
                 switch (m_eDirection)
                 {
                     case kCCScrollViewDirectionVertical:
+                    case kCCScrollViewDirectionTopToDown:
                         moveDistance = ccp(0.0f, moveDistance.y);
                         break;
                     case kCCScrollViewDirectionHorizontal:
@@ -723,6 +770,7 @@ void CCScrollView::ccTouchMoved(CCTouch* touch, CCEvent* event)
 
 void CCScrollView::ccTouchEnded(CCTouch* touch, CCEvent* event)
 {
+    CCLOG("CCScrollView Touch End");
     if (!this->isVisible())
     {
         return;
@@ -735,12 +783,13 @@ void CCScrollView::ccTouchEnded(CCTouch* touch, CCEvent* event)
         }
         m_pTouches->removeObject(touch);
     }
-
+   
     if (m_pTouches->count() == 0)
     {
         m_bDragging = false;
         m_bTouchMoved = false;
     }
+    this->sendScrollEvent("ScrollEnd");
 }
 
 void CCScrollView::ccTouchCancelled(CCTouch* touch, CCEvent* event)
@@ -782,6 +831,23 @@ CCRect CCScrollView::getViewRect()
     }
 
     return CCRectMake(screenPos.x, screenPos.y, m_tViewSize.width*scaleX, m_tViewSize.height*scaleY);
+}
+void CCScrollView::sendScrollEvent(const char * eventName)
+{
+    //add by shi
+    CCLOG("eventName %s",eventName);
+    int handler=0;
+    if(strcmp(eventName,"ScrollEnd")==0){
+        handler=this->getScriptHandler(1001);
+    }else if(strcmp(eventName, "ScrollBegan")==0){
+        handler=this->getScriptHandler(1002);
+    }
+    
+    CCLOG("handler %d",handler);
+    if(handler > 0)
+    {
+        CCScriptEngineManager::sharedManager()->getScriptEngine()->executeEvent(handler,eventName,this);
+    }
 }
 
 void CCScrollView::registerScriptHandler(int nFunID,int nScriptEventType)

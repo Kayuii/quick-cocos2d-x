@@ -1,0 +1,17 @@
+<!--
+ 
+	bringInClip 入场携带金额
+	bringMin 最小携带
+	bringMax 最大携带
+	loseMax 一局最大输多少封顶
+ 
+ -->
+
+<DataList>
+    <item id="12" type="1" name="免费场" list="100,200,300,500" bringInClip="500" bringMin="0" bringMax="99999999" loseMax="90000" desc="免费场补充的虚拟币，需通过消耗游戏币才可获得，兑换比例为1:100"/>
+    <item id="12" type="2" name="初级场" list="100,200,300,500" bringInClip="500" bringMin="250" bringMax="1000" loseMax="9999999" desc=""/>
+    <item id="12" type="3" name="中级场" list="3000,5000,10000,30000" bringInClip="30000" bringMin="15000" bringMax="60000" loseMax="99999999" desc=""/>
+    <item id="12" type="4" name="高级场" list="5000,10000,20000,50000" bringInClip="40000" bringMin="20000" bringMax="80000" loseMax="90000" desc=""/>
+    <item id="12" type="5" name="至尊场" list="20000,50000,100000,150000" bringInClip="100000" bringMin="50000" bringMax="200000" loseMax="90000" desc=""/>
+    <item id="12" type="6" name="至尊场2" list="40000,100000,200000,300000" bringInClip="200000" bringMin="100000" bringMax="400000" loseMax="200000" desc=""/>
+</DataList>

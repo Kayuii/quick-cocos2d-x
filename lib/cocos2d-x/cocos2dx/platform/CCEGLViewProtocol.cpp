@@ -245,7 +245,7 @@ void CCEGLViewProtocol::handleTouchesMove(int num, int ids[], float xs[], float 
     for (int i = 0; i < num; ++i)
     {
         int id = ids[i];
-        float x = xs[i];
+        float x = xs[i]; 
         float y = ys[i];
 
         CCInteger* pIndex = (CCInteger*)s_TouchesIntergerDict.objectForKey(id);

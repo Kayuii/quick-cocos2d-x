@@ -1,4 +1,4 @@
-#include "network/CCHTTPRequest.h"
+ #include "network/CCHTTPRequest.h"
 #include <stdio.h>
 #include <iostream>
 
@@ -64,6 +64,8 @@ bool CCHTTPRequest::initWithUrl(const char *url, int method)
 
     curl_easy_setopt(m_curl, CURLOPT_FOLLOWLOCATION, 1L);
     curl_easy_setopt(m_curl, CURLOPT_SSL_VERIFYPEER, 0L);
+    //add by shi
+    curl_easy_setopt(m_curl, CURLOPT_SSL_VERIFYHOST, 0L);
 
     if (method == kCCHTTPRequestMethodPOST)
     {
@@ -72,7 +74,7 @@ bool CCHTTPRequest::initWithUrl(const char *url, int method)
     }
     
     ++s_id;
-    CCLOG("CCHTTPRequest[0x%04x] - create request with url: %s", s_id, url);
+//    CCLOG("CCHTTPRequest[0x%04x] - create request with url: %s", s_id, url);
     return true;
 #else
     return false;
@@ -86,7 +88,7 @@ CCHTTPRequest::~CCHTTPRequest(void)
     {
         CCLuaEngine::defaultEngine()->removeScriptHandler(m_listener);
     }
-    CCLOG("CCHTTPRequest[0x%04x] - request removed", s_id);
+//    CCLOG("CCHTTPRequest[0x%04x] - request removed", s_id);
 }
 
 void CCHTTPRequest::setRequestUrl(const char *url)

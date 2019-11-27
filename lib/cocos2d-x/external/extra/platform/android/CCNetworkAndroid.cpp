@@ -11,6 +11,7 @@ NS_CC_EXTRA_BEGIN
 
 bool CCNetwork::isLocalWiFiAvailable(void)
 {
+    printf("CCNetwork::isLocalWiFiAvailable");
 	JniMethodInfo methodInfo;
     if (JniHelper::getStaticMethodInfo(methodInfo, "org/cocos2dx/utils/PSNetwork", "isLocalWiFiAvailable", 
         "()Z"))

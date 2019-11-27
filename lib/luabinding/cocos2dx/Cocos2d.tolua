@@ -100,3 +100,7 @@ $pfile "cocos2dx/menu_nodes/CCMenuItem.tolua"
 $pfile "cocos2dx/CCDirector.tolua"
 $pfile "cocos2dx/CCScheduler.tolua"
 $pfile "cocos2dx/CCConfiguration.tolua"
+
+
+
+$pfile "cocos2dx/page_turn/PageTurn.tolua"

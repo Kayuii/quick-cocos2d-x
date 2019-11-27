@@ -36,6 +36,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <errno.h>
+#include <dirent.h>
 #endif
 
 #include "support/zip_support/unzip.h"
@@ -132,8 +133,12 @@ bool AssetsManager::checkUpdate()
     CURLcode res;
     curl_easy_setopt(_curl, CURLOPT_URL, _versionFileUrl.c_str());
     curl_easy_setopt(_curl, CURLOPT_SSL_VERIFYPEER, 0L);
+    //add by shi
+    curl_easy_setopt(_curl, CURLOPT_SSL_VERIFYHOST, 0L);
+
     curl_easy_setopt(_curl, CURLOPT_WRITEFUNCTION, getVersionCode);
     curl_easy_setopt(_curl, CURLOPT_WRITEDATA, &_version);
+    curl_easy_setopt(_curl, CURLOPT_FOLLOWLOCATION, 1);
     if (_connectionTimeout) curl_easy_setopt(_curl, CURLOPT_CONNECTTIMEOUT, _connectionTimeout);
     res = curl_easy_perform(_curl);
     
@@ -362,12 +367,18 @@ bool AssetsManager::uncompress()
 bool AssetsManager::createDirectory(const char *path)
 {
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)
-    mode_t processMask = umask(0);
-    int ret = mkdir(path, S_IRWXU | S_IRWXG | S_IRWXO);
-    umask(processMask);
-    if (ret != 0 && (errno != EEXIST))
-    {
-        return false;
+    DIR *pDir = NULL;
+    pDir = opendir(path);
+    if (!pDir) {
+        mode_t processMask = umask(0);
+        int ret = mkdir(path, S_IRWXU | S_IRWXG | S_IRWXO);
+        umask(processMask);
+        if (ret != 0 && (errno != EEXIST))
+        {
+            return false;
+        }
+    } else {
+        closedir(pDir);
     }
     
     return true;
@@ -398,6 +409,11 @@ static size_t downLoadPackage(void *ptr, size_t size, size_t nmemb, void *userda
 
 int assetsManagerProgressFunc(void *ptr, double totalToDownload, double nowDownloaded, double totalToUpLoad, double nowUpLoaded)
 {
+    //CCLOG("assetsManagerProgressFunc%f,%f",nowDownloaded,totalToDownload);
+    if (totalToDownload <= 0)
+    {
+        return 0;
+    }
     AssetsManager* manager = (AssetsManager*)ptr;
     AssetsManager::Message *msg = new AssetsManager::Message();
     msg->what = ASSETSMANAGER_MESSAGE_PROGRESS;
@@ -409,13 +425,14 @@ int assetsManagerProgressFunc(void *ptr, double totalToDownload, double nowDownl
     
     manager->_schedule->sendMessage(msg);
     
-    CCLOG("downloading... %d%%", (int)(nowDownloaded/totalToDownload*100));
+//    CCLOG("downloading... %d%%", (int)(nowDownloaded/totalToDownload*100));
     
     return 0;
 }
 
 bool AssetsManager::downLoad()
 {
+    CCLOG("AssetsManager::downLoad()");
     // Create a file to save package.
     string outFileName = _storagePath + TEMP_PACKAGE_FILE_NAME;
     FILE *fp = fopen(outFileName.c_str(), "wb");
@@ -434,6 +451,7 @@ bool AssetsManager::downLoad()
     curl_easy_setopt(_curl, CURLOPT_NOPROGRESS, false);
     curl_easy_setopt(_curl, CURLOPT_PROGRESSFUNCTION, assetsManagerProgressFunc);
     curl_easy_setopt(_curl, CURLOPT_PROGRESSDATA, this);
+    curl_easy_setopt(_curl, CURLOPT_FOLLOWLOCATION, 1);//是否抓取跳转后的页面
     res = curl_easy_perform(_curl);
     curl_easy_cleanup(_curl);
     if (res != 0)
@@ -566,9 +584,14 @@ void AssetsManager::Helper::update(float dt)
     }
     
     // Gets message
-    msg = *(_messageQueue->begin());
-    _messageQueue->pop_front();
-    pthread_mutex_unlock(&_messageQueueMutex);
+    //modify by shi
+    list<Message*>::iterator iter;
+    for(iter = _messageQueue->begin(); iter != _messageQueue->end(); iter++)
+    {
+    msg = *iter;
+    //msg = *(_messageQueue->begin());
+    //_messageQueue->pop_front();
+    //pthread_mutex_unlock(&_messageQueueMutex);
     
     switch (msg->what) {
         case ASSETSMANAGER_MESSAGE_UPDATE_SUCCEED:
@@ -638,6 +661,9 @@ void AssetsManager::Helper::update(float dt)
     }
     
     delete msg;
+    }///------
+    _messageQueue->clear();
+    pthread_mutex_unlock(&_messageQueueMutex);
 }
 
 void AssetsManager::Helper::handleUpdateSucceed(Message *msg)

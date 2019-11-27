@@ -414,9 +414,9 @@ void Button::onPressStateChangedToPressed()
         {
             _buttonNormalRenderer->stopAllActions();
             _buttonClickedRenderer->stopAllActions();
-            CCAction *zoomAction = CCScaleTo::create(0.05f, _pressedTextureScaleXInSize + 0.1f, _pressedTextureScaleYInSize + 0.1f);
+            CCAction *zoomAction = CCScaleTo::create(0.05f, _pressedTextureScaleXInSize , _pressedTextureScaleYInSize );
             _buttonClickedRenderer->runAction(zoomAction);
-            _buttonNormalRenderer->setScale(_pressedTextureScaleXInSize + 0.1f, _pressedTextureScaleYInSize + 0.1f);
+            _buttonNormalRenderer->setScale(_pressedTextureScaleXInSize , _pressedTextureScaleYInSize );
         }
     }
     else
@@ -431,7 +431,7 @@ void Button::onPressStateChangedToPressed()
         else
         {
             _buttonNormalRenderer->stopAllActions();
-            _buttonNormalRenderer->setScale(_normalTextureScaleXInSize + 0.1f, _normalTextureScaleYInSize + 0.1f);
+            _buttonNormalRenderer->setScale(_normalTextureScaleXInSize , _normalTextureScaleYInSize );
         }
     }
 }

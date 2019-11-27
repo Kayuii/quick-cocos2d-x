@@ -261,7 +261,7 @@ void CCActionManager::removeAction(CCAction *pAction)
     }
     else
     {
-        CCLOG("cocos2d: removeAction: Target not found");
+        //CCLOG("cocos2d: removeAction: Target not found");
     }
 }
 

@@ -1,16 +1,16 @@
 /* tolua: functions to push C values.
-** Support code for Lua bindings.
-** Written by Waldemar Celes
-** TeCGraf/PUC-Rio
-** Apr 2003
-** $Id: $
-*/
+ ** Support code for Lua bindings.
+ ** Written by Waldemar Celes
+ ** TeCGraf/PUC-Rio
+ ** Apr 2003
+ ** $Id: $
+ */
 
 /* This code is free software; you can redistribute it and/or modify it.
-** The software provided hereunder is on an "as is" basis, and
-** the author has no obligation to provide maintenance, support, updates,
-** enhancements, or modifications.
-*/
+ ** The software provided hereunder is on an "as is" basis, and
+ ** the author has no obligation to provide maintenance, support, updates,
+ ** enhancements, or modifications.
+ */
 
 #include "tolua++.h"
 #include "lauxlib.h"
@@ -90,7 +90,7 @@ void tolua_pushusertype_internal (lua_State* L, void* value, const char* type, i
             lua_pushvalue(L, -1);
             tolua_add_value_to_root(L, value);
         }
-    } 
+    }
 }
 
 TOLUA_API void tolua_pushvalue (lua_State* L, int lo)
@@ -214,4 +214,3 @@ TOLUA_API void tolua_pushfieldusertype_and_takeownership (lua_State* L, int lo, 
     tolua_register_gc(L,lua_gettop(L));
     lua_settable(L,lo);
 }
-

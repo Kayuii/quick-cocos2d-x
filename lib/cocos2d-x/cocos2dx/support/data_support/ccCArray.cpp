@@ -188,7 +188,7 @@ void ccArrayRemoveAllObjects(ccArray *arr)
 		(arr->arr[--arr->num])->release();
     }
 }
-
+//CCLOG("removeAction: Target not found");
 /** Removes object at specified index and pushes back all subsequent objects.
  Behavior undefined if index outside [0, num-1]. */
 void ccArrayRemoveObjectAtIndex(ccArray *arr, unsigned int index, bool bReleaseObj/* = true*/)

@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 
+	兑换 exchange.xml
+	goodsType 1.游戏币（虚拟币） 2.实物
+	priceType 1.游戏币  2.点卷   3.积分  4.话费  5.实物
+	price 购买的价格
+	getPrice 购买后，购买数量为1的单价，如买了1五币=100金币 （price=1,getPrice=100）
+	getPriceType = priceType
+ -->
+<DataList>
+	<item id="1" goodsType="2" name="Mac Pro 13.3寸" price="1393200000" priceType="3" desc="兑换成功后获得Mac Pro 13.3寸一台" />
+	<item id="2" goodsType="2" name="Iphone6 Plus(16G)" price="838200000" priceType="3" desc="兑换成功后获得Iphone6 Plus(16G)一部" />
+	<item id="3" goodsType="2" name="Iphone6(16G)" price="718200000" priceType="3" desc="兑换成功后获得Iphone6(16G)一部" />
+	<item id="4" goodsType="2" name="Ipad Air2" price="523200000" priceType="3" desc="兑换成功后获得Ipad Air2一部" />
+    <item id="5" goodsType="2" name="Apple watch(42)" price="448200000" priceType="3" desc="兑换成功后获得Apple watch(42)一部" />
+    <item id="6" goodsType="2" name="Ipad mini3(16G)" price="418200000" priceType="3" desc="兑换成功后获得Ipad mini3(16G)一部" />
+    <item id="7" goodsType="2" name="Apple watch(38)" price="388200000" priceType="3" desc="兑换成功后获得Apple watch(38)一部" />
+	<item id="8" goodsType="2" name="2000元京东卡" price="250000000" priceType="3" desc="兑换成功后获得2000元京东卡" />
+	<item id="9" goodsType="2" name="500元京东卡" price="62500000" priceType="3" desc="兑换成功后获得500元京东卡" />
+	<item id="10" goodsType="1" name="888万游戏币" price="55500000" priceType="3" desc="兑换成功后获得888万游戏币" />
+	<item id="11" goodsType="1" name="288万游戏币" price="18000000" priceType="3" desc="兑换成功后获得288万游戏币" />
+	<item id="12" goodsType="2" name="100元Q币" price="12500000" priceType="3" desc="兑换成功后获得100元Q币" />
+	<item id="13" goodsType="2" name="50元Q币" price="6250000" priceType="3" desc="兑换成功后获得50元Q币" />
+	<item id="14" goodsType="1" name="88万游戏币" price="5500000" priceType="3" desc="兑换成功后获得88万游戏币" />
+    <item id="15" goodsType="1" name="28万游戏币" price="1750000" priceType="3" desc="兑换成功后获得28万游戏币" />
+    <item id="16" goodsType="2" name="10元Q币" price="1250000" priceType="3" desc="兑换成功后获得10元Q币" />
+    <item id="17" goodsType="1" name="5万游戏币" price="312500" priceType="3" desc="兑换成功后获得5万游戏币" />
+    <item id="18" goodsType="1" name="2万游戏币" price="125000" priceType="3" desc="兑换成功后获得2万游戏币" />
+</DataList>

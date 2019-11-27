@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 
+	taskType  0.每日任务   1.每周任务
+	sceneId   0.所有地方   1.德州  2.斗地主 3.中发白  
+    reward  负值表示 五币
+ -->
+<DataList>
+    <item taskType="0" taskId="200" progressMax="5"    sceneId="1" reward="300"    name="初来乍到" desc="德州扑克玩牌5局" />
+    <item taskType="0" taskId="201" progressMax="10"	   sceneId="1" reward="400" 	name="乐此不彼" desc="德州扑克玩牌10局" />
+    <item taskType="0" taskId="202" progressMax="30"    sceneId="1" reward="1000" 	name="战意磅礴" desc="德州扑克玩牌30局" />
+    <item taskType="0" taskId="203" progressMax="3"    sceneId="1" reward="800" 	name="小试身手" desc="德州玩牌获胜3局" />
+    <item taskType="0" taskId="204" progressMax="10"    sceneId="1" reward="2000" 	name="大显神威"   desc="德州玩牌获胜10局" />
+    <item taskType="0" taskId="205" progressMax="1"    sceneId="1" reward="5000" name="甜蜜亲吻" desc="对他人使用互动道具香吻" />
+    <item taskType="0" taskId="206" progressMax="5"  sceneId="1" reward="-2" 	name="一见钟情" desc="累计使用5次互动道具" />
+    <item taskType="0" taskId="207" progressMax="1"  sceneId="1" reward="500" 	name="四处留情" desc="德州单局赢得1万游戏币" />
+    <item taskType="0" taskId="208" progressMax="1"  sceneId="1" reward="1000" 	name="小赌怡情" desc="德州单局赢得5万游戏币" />
+    <item taskType="0" taskId="209" progressMax="1" sceneId="1" reward="2000"	name="赌神传人" desc="德州单局赢得20万游戏币" />
+    <item taskType="0" taskId="210" progressMax="1" sceneId="2" reward="500" 	name="赌仙传人" desc="任意百人场玩牌1局" />
+    <item taskType="0" taskId="211" progressMax="10" sceneId="2" reward="1000" 	name="蜻蜓点水"   desc="任意百人场玩牌10局" />
+    <item taskType="0" taskId="212" progressMax="1"   sceneId="2" reward="-2" 	name="其乐融融" desc="任意百人场单局赢得20万游戏币" />
+    <item taskType="0" taskId="213" progressMax="1"   sceneId="2" reward="-2" 	name="一代宗师" desc="任意百人场坐庄一局" />
+    <item taskType="0" taskId="214" progressMax="3"  sceneId="0" reward="-2" 	name="魅力达人"   desc="累计赠送三个礼物" />
+    <item taskType="0" taskId="300" progressMax="12"   sceneId="0" reward="-2"   name="任务达人" desc="每天完成12个任务" />
+    <item taskType="0" taskId="301" progressMax="7"  sceneId="0" reward="-2"    name="超级任务"   desc="连续7天获得任务达人" />
+</DataList> 

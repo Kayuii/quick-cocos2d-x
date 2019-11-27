@@ -88,12 +88,40 @@ CCEditBox::~CCEditBox(void)
 void CCEditBox::touchDownAction(CCObject *sender, CCControlEvent controlEvent)
 {
     m_pEditBoxImpl->openKeyboard();
+    //this->scheduleOnce(schedule_selector(CCEditBox::delayOpen), 0.017f);
+    //CCLOG("touchDownAction");
 }
-
+void CCEditBox::delayOpen()
+{
+    m_pEditBoxImpl->openKeyboard();
+}
+//add by shi
+void CCEditBox::hideKeyboard()
+{
+    if (m_pEditBoxImpl != NULL)
+    {
+        m_pEditBoxImpl->closeKeyboard();
+    }
+}
+void CCEditBox::openKeyboard()
+{
+    if (m_pEditBoxImpl != NULL)
+    {
+        m_pEditBoxImpl->openKeyboard();
+    }
+}
+bool CCEditBox::isEditing()
+{
+    if (m_pEditBoxImpl != NULL)
+    {
+        return m_pEditBoxImpl->isEditing();
+    }
+    return false;
+}
+//-------
 CCEditBox* CCEditBox::create(const CCSize& size, CCScale9Sprite* pNormal9SpriteBg, CCScale9Sprite* pPressed9SpriteBg/* = NULL*/, CCScale9Sprite* pDisabled9SpriteBg/* = NULL*/)
 {
     CCEditBox* pRet = new CCEditBox();
-    
     if (NULL == pNormal9SpriteBg) {
         pNormal9SpriteBg = newTransParentSprite();
     }
@@ -158,6 +186,14 @@ void CCEditBox::setText(const char* pText)
         {
             m_pEditBoxImpl->setText(pText);
         }
+    }
+}
+
+void CCEditBox::setTextAlign(EditBoxTextAlignType align)
+{
+    if(m_pEditBoxImpl!=NULL)
+    {
+        m_pEditBoxImpl->setTextAlign(align);
     }
 }
 
@@ -327,6 +363,13 @@ void CCEditBox::setPosition(const CCPoint& pos)
     }
 }
 
+/* override function */
+void CCEditBox::setPosition(float x, float y)
+{
+    self:setPosition(CCPoint(x,y));
+}
+
+
 void CCEditBox::setVisible(bool visible)
 {
     CCControlButton::setVisible(visible);
@@ -415,7 +458,9 @@ void CCEditBox::keyboardWillShow(CCIMEKeyboardNotificationInfo& info)
 
 void CCEditBox::keyboardDidShow(CCIMEKeyboardNotificationInfo& info)
 {
-	
+	//CCLOG("CCEditBox::keyboardDidShow");
+    //add by shi
+    CCNotificationCenter::sharedNotificationCenter()->postNotification("keyboardDidShow", NULL);
 }
 
 void CCEditBox::keyboardWillHide(CCIMEKeyboardNotificationInfo& info)
@@ -429,7 +474,9 @@ void CCEditBox::keyboardWillHide(CCIMEKeyboardNotificationInfo& info)
 
 void CCEditBox::keyboardDidHide(CCIMEKeyboardNotificationInfo& info)
 {
-	
+	//CCLOG("CCEditBox::keyboardDidHide");
+    //add by shi
+    CCNotificationCenter::sharedNotificationCenter()->postNotification("keyboardDidHide", NULL);
 }
 
 void CCEditBox::registerScriptEditBoxHandler(int handler)

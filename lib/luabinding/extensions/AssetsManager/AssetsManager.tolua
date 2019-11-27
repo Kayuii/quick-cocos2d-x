@@ -72,6 +72,9 @@ class AssetsManager
      */
     std::string getVersion();
 
+
+    bool uncompress();
+
     /* @brief Deletes recorded version code.
      */
     void deleteVersion();

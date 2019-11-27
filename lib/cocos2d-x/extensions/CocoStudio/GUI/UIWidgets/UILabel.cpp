@@ -74,11 +74,18 @@ void Label::initRenderer()
     _labelRenderer = CCLabelTTF::create();
     CCNode::addChild(_labelRenderer, LABEL_RENDERER_Z, -1);
 }
+    
+ 
 
 void Label::setText(const std::string& text)
 {
     _labelRenderer->setString(text.c_str());
     labelScaleChangedWithSize();
+}
+    
+void Label::setString(const std::string& text)
+{
+    setText(text);
 }
 
 const char* Label::getStringValue()

@@ -57,7 +57,23 @@ public:
      * @param cell  cell that is touched
      */
     virtual void tableCellTouched(CCTableView* table, CCTableViewCell* cell) = 0;
+    
+    /**
+     * Delegate to respond left drag event
+     *
+     * @param table table contains the given cell
+     * @param cell  cell that is touched
+     */
+    virtual void tableCellDragLeft(CCTableView* table, CCTableViewCell* cell) = 0;
 
+    /**
+     * Delegate to respond right drag event
+     *
+     * @param table table contains the given cell
+     * @param cell  cell that is touched
+     */
+    virtual void tableCellDragRight(CCTableView* table, CCTableViewCell* cell) = 0;
+    
     /**
      * Delegate to respond a table cell press event.
      *
@@ -270,6 +286,11 @@ protected:
     CCTableViewDelegate* m_pTableViewDelegate;
 
 	CCScrollViewDirection m_eOldDirection;
+    
+    CCPoint m_dragPoint;
+    
+    float _dragMoveX;
+    float _dragMoveY;
 
     int __indexFromOffset(CCPoint offset);
     unsigned int _indexFromOffset(CCPoint offset);
@@ -289,6 +310,8 @@ public:
         kTableViewScroll   = 0,
         kTableViewZoom,
         kTableCellTouched,
+        kTableCellDragLeft,
+        kTableCellDragRight,
         kTableCellHighLight,
         kTableCellUnhighLight,
         kTableCellWillRecycle,

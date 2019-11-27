@@ -1,0 +1,371 @@
+{
+"skeleton": { "hash": "LH/GUfG1b3s/JLaE3NiZREGRgrc", "spine": "2.1.27", "width": 114.99, "height": 136.43, "images": "./assets/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "cloud", "parent": "root", "length": 31.15, "x": -0.36, "y": -61.83, "rotation": 89.54 },
+	{ "name": "eyes", "parent": "root", "x": -0.7, "y": 20.57 },
+	{ "name": "halo", "parent": "root", "length": 35.51, "x": -0.03, "y": 31.62, "rotation": 90.9 },
+	{ "name": "smile", "parent": "root", "x": -0.7, "y": -16.27 },
+	{ "name": "eyeballs", "parent": "eyes", "x": -15.74, "y": -0.67 }
+],
+"slots": [
+	{ "name": "halo", "bone": "halo", "attachment": "emoticon_halo" },
+	{ "name": "shine", "bone": "halo" },
+	{ "name": "head", "bone": "root", "attachment": "emoticon_head" },
+	{ "name": "smile", "bone": "smile", "attachment": "emoticon_mouth_smile" },
+	{ "name": "cloud", "bone": "cloud", "attachment": "emoticon_cloud" },
+	{ "name": "eyes", "bone": "eyes", "attachment": "emoticon_eyes_normal" },
+	{ "name": "eyeball01", "bone": "eyeballs", "attachment": "emoticon_eyeball" },
+	{ "name": "eyeball02", "bone": "eyeballs", "attachment": "emoticon_eyeball" },
+	{ "name": "eyes_close", "bone": "eyes" }
+],
+"skins": {
+	"default": {
+		"cloud": {
+			"emoticon_cloud": { "x": 17.42, "y": -0.23, "rotation": -89.54, "width": 115, "height": 40 }
+		},
+		"eyeball01": {
+			"emoticon_eyeball": { "x": -0.33, "y": 0.33, "width": 14, "height": 14 }
+		},
+		"eyeball02": {
+			"emoticon_eyeball": { "x": 32.82, "y": 0.33, "width": 14, "height": 14 }
+		},
+		"eyes": {
+			"emoticon_eyes_normal": { "x": 0.7, "y": -0.57, "width": 73, "height": 34 }
+		},
+		"eyes_close": {
+			"emoticon_eyes_close01": { "x": 0.7, "y": -0.57, "width": 62, "height": 25 },
+			"emoticon_eyes_close02": { "x": 0.7, "y": -0.57, "width": 64, "height": 25 },
+			"emoticon_eyes_close03": { "x": 0.7, "y": -0.57, "width": 64, "height": 25 }
+		},
+		"halo": {
+			"emoticon_halo": { "x": 18.36, "y": -0.32, "rotation": -90.9, "width": 105, "height": 44 }
+		},
+		"head": {
+			"emoticon_head": { "width": 114, "height": 114 }
+		},
+		"shine": {
+			"emoticon_halo_shine": { "x": 18.36, "y": -0.32, "rotation": -90.9, "width": 105, "height": 44 }
+		},
+		"smile": {
+			"emoticon_mouth_smile": { "x": 0.7, "y": 8.9, "width": 74, "height": 27 }
+		}
+	}
+},
+"animations": {
+	"emoticon": {
+		"slots": {
+			"cloud": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_cloud" },
+					{ "time": 1.1666, "name": "emoticon_cloud" },
+					{ "time": 2, "name": "emoticon_cloud" }
+				]
+			},
+			"eyeball01": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_eyeball" },
+					{ "time": 1.1, "name": "emoticon_eyeball" },
+					{ "time": 2, "name": "emoticon_eyeball" }
+				]
+			},
+			"eyeball02": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_eyeball" },
+					{ "time": 1.1, "name": "emoticon_eyeball" },
+					{ "time": 2, "name": "emoticon_eyeball" }
+				]
+			},
+			"eyes": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_eyes_normal" },
+					{ "time": 1.1, "name": "emoticon_eyes_normal" },
+					{ "time": 2, "name": "emoticon_eyes_normal" }
+				]
+			},
+			"eyes_close": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.8333, "name": "emoticon_eyes_close01" },
+					{ "time": 0.8666, "name": "emoticon_eyes_close02" },
+					{ "time": 0.9, "name": "emoticon_eyes_close03" },
+					{ "time": 0.9666, "name": "emoticon_eyes_close02" },
+					{ "time": 1, "name": "emoticon_eyes_close01" },
+					{ "time": 1.0333, "name": null },
+					{ "time": 1.1, "name": null },
+					{ "time": 2, "name": null }
+				]
+			},
+			"halo": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_halo" },
+					{ "time": 1.3333, "name": "emoticon_halo" },
+					{ "time": 2, "name": "emoticon_halo" }
+				]
+			},
+			"head": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_head" },
+					{ "time": 1, "name": "emoticon_head" },
+					{ "time": 2, "name": "emoticon_head" }
+				]
+			},
+			"shine": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_halo_shine" },
+					{ "time": 1.3333, "name": "emoticon_halo_shine" },
+					{ "time": 2, "name": "emoticon_halo_shine" }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 0.3333,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.4,
+						"color": "ffffff68",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5333, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 1.4333,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.5,
+						"color": "ffffff75",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.6333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2, "color": "ffffff00" }
+				]
+			},
+			"smile": {
+				"attachment": [
+					{ "time": 0, "name": "emoticon_mouth_smile" },
+					{ "time": 1.1, "name": "emoticon_mouth_smile" },
+					{ "time": 2, "name": "emoticon_mouth_smile" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"x": 0,
+						"y": 7.48,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"cloud": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.1666, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1666,
+						"x": 0,
+						"y": 2.31,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1666,
+						"x": 0.934,
+						"y": 1.015,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"eyes": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.1, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1,
+						"x": 0,
+						"y": 1.5,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.1, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"halo": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.3333, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.3333,
+						"x": 0,
+						"y": 6.35,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{
+						"time": 0.3333,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.4,
+						"x": 0.932,
+						"y": 1.107,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5333, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.3333, "x": 1, "y": 1, "curve": "stepped" },
+					{
+						"time": 1.4333,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.5,
+						"x": 0.932,
+						"y": 1.107,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.6333, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"smile": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.1, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1,
+						"x": 0,
+						"y": 5.88,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1,
+						"x": 1.081,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			},
+			"eyeballs": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.1, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 3.9,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1,
+						"x": 0,
+						"y": 3.39,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "x": 0, "y": 3.9 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.1, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 2, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 1 },
+			{ "time": 2 }
+		]
+	}
+}
+}

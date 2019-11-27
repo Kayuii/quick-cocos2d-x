@@ -41,6 +41,12 @@ enum KeyboardReturnType {
     kKeyboardReturnTypeGo
 };
 
+enum EditBoxTextAlignType{
+        kEditBoxTextAlignLeft=0,
+        kEditBoxTextAlignRight,
+        kEditBoxTextAlignCenter
+};
+
 
 /**
  * \brief The EditBoxInputMode defines the type of text that the user is allowed
@@ -264,6 +270,11 @@ public:
 	 */
 	void setFont(const char* pFontName, int fontSize);
     
+    /**
+     *Set the text align:left,right,center
+     */
+    void setTextAlign(EditBoxTextAlignType align);
+    
 	/**
 	 * Set the font name.
 	 * @param pFontName The font name.
@@ -356,6 +367,7 @@ public:
     
     /* override functions */
     virtual void setPosition(const CCPoint& pos);
+    virtual void setPosition(float x, float y);
     virtual void setVisible(bool visible);
     virtual void setContentSize(const CCSize& size);
 	virtual void setAnchorPoint(const CCPoint& anchorPoint);
@@ -398,7 +410,12 @@ public:
      *  @js NA
      */
     void touchDownAction(CCObject *sender, CCControlEvent controlEvent);
-    
+    //-------
+    void hideKeyboard();
+    void openKeyboard();
+    void delayOpen();
+    bool isEditing();
+    //--------
 protected:
     CCEditBoxImpl*      m_pEditBoxImpl;
     CCEditBoxDelegate*  m_pDelegate;

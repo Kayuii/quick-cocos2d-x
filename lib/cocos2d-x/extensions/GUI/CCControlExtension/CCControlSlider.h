@@ -51,11 +51,11 @@ class CC_DLL CCControlSlider: public CCControl
     /** Contains the minimum value of the receiver.
     * The default value of this property is 0.0. */
     CC_SYNTHESIZE_READONLY(float, m_minimumValue, MinimumValue);
-    virtual void setMinimumValue(float val);
+    virtual void setMinimumValue(float val,bool changed=true);
     /** Contains the maximum value of the receiver.
     * The default value of this property is 1.0. */
     CC_SYNTHESIZE_READONLY(float, m_maximumValue, MaximumValue);
-    virtual void setMaximumValue(float val);
+    virtual void setMaximumValue(float val,bool changed=true);
     virtual void setEnabled(bool enabled);
     virtual bool isTouchInside(CCTouch * touch);
     CCPoint locationFromTouch(CCTouch* touch);
@@ -67,7 +67,15 @@ class CC_DLL CCControlSlider: public CCControl
     CC_SYNTHESIZE_RETAIN(CCSprite*, m_thumbSprite, ThumbSprite);
     CC_SYNTHESIZE_RETAIN(CCSprite*, m_progressSprite, ProgressSprite);
     CC_SYNTHESIZE_RETAIN(CCSprite*, m_backgroundSprite, BackgroundSprite);
-
+    //add by shi
+    float m_startX;
+    float m_startY;
+    bool  m_isClick;
+    float interval;
+    bool  isUpdateBar;
+    bool  isActionPlaying;
+    void update(float delta);
+    void updatePosition();
 public:
     CCControlSlider();
     virtual ~CCControlSlider();

@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 
+	VIP等级 vip
+ 升级累计需要VIP点数 upNeedPoit
+ VIP标识和昵称颜色 isVipColor
+ 永久保险箱 isSafeBox
+ 登录签到奖励加成 qdRewardGrowth
+ 在线时长奖励加成 olRewardGrowth
+ 每日赠送金钥匙个数 goldenKeyNum
+ 上线全服广播 isFlashy
+ VIP商城内购买任意东西的折扣 saleNum
+ 全服聊天 isFullChat
+ Vip有效期 validity
+
+ -->
+<DataList>
+    <item vip="0" upNeedPoit="1" isVipColor="true" isSafeBox="false" qdRewardGrowth="1" olRewardGrowth="1" goldenKeyNum="0" isFlashy="false" saleNum="10" isFullChat="true"
+    validity="7"/>
+    
+    <item vip="1" upNeedPoit="10" isVipColor="true" isSafeBox="false" qdRewardGrowth="2" olRewardGrowth="2" goldenKeyNum="1" isFlashy="false" saleNum="9.9" isFullChat="true"
+    validity="-1"/>
+    
+    <item vip="2" upNeedPoit="30" isVipColor="true" isSafeBox="false" qdRewardGrowth="3" olRewardGrowth="3" goldenKeyNum="1" isFlashy="false" saleNum="9.9" isFullChat="true"
+    validity="-1"/>
+    
+    <item vip="3" upNeedPoit="100" isVipColor="true" isSafeBox="true" qdRewardGrowth="4" olRewardGrowth="4" goldenKeyNum="2" isFlashy="false" saleNum="9.7" isFullChat="true"
+    validity="-1"/>
+    
+    <item vip="4" upNeedPoit="500" isVipColor="true" isSafeBox="true" qdRewardGrowth="5" olRewardGrowth="5" goldenKeyNum="2" isFlashy="false" saleNum="9.7" isFullChat="true"
+    validity="-1"/>
+    
+    <item vip="5" upNeedPoit="1000" isVipColor="true" isSafeBox="true" qdRewardGrowth="6" olRewardGrowth="6" goldenKeyNum="3" isFlashy="true" saleNum="9.5" isFullChat="true"
+    validity="-1"/>
+    
+    <item vip="6" upNeedPoit="2000" isVipColor="true" isSafeBox="true" qdRewardGrowth="7" olRewardGrowth="7" goldenKeyNum="3" isFlashy="true" saleNum="9.5" isFullChat="true"
+    validity="-1"/>
+    
+    <item vip="7" upNeedPoit="5000" isVipColor="true" isSafeBox="true" qdRewardGrowth="8" olRewardGrowth="8" goldenKeyNum="4" isFlashy="true" saleNum="9.3" isFullChat="true"
+    validity="-1"/>
+    
+    <item vip="8" upNeedPoit="10000" isVipColor="true" isSafeBox="true" qdRewardGrowth="9" olRewardGrowth="9" goldenKeyNum="5" isFlashy="true" saleNum="9.3" isFullChat="true"
+    validity="-1"/>
+    
+    <item vip="9" upNeedPoit="50000" isVipColor="true" isSafeBox="true" qdRewardGrowth="10" olRewardGrowth="10" goldenKeyNum="6" isFlashy="true" saleNum="9.1" isFullChat="true"
+    validity="-1"/>
+    
+    <item vip="10" upNeedPoit="100000" isVipColor="true" isSafeBox="true" qdRewardGrowth="11" olRewardGrowth="11" goldenKeyNum="7" isFlashy="true" saleNum="8.9" isFullChat="true"
+    validity="-1"/>
+    
+    <item vip="11" upNeedPoit="150000" isVipColor="true" isSafeBox="true" qdRewardGrowth="12" olRewardGrowth="12" goldenKeyNum="8" isFlashy="true" saleNum="8.7" isFullChat="true"
+    validity="-1"/>
+    
+    <item vip="12" upNeedPoit="200000" isVipColor="true" isSafeBox="true" qdRewardGrowth="13" olRewardGrowth="13" goldenKeyNum="9" isFlashy="true" saleNum="8.5" isFullChat="true"
+    validity="-1"/>
+    
+    
+</DataList>

@@ -14,18 +14,13 @@ LOCAL_SRC_FILES := \
     extra/platform/android/CCNativeAndroid.cpp \
     extra/platform/android/CCNetworkAndroid.cpp \
     extra/luabinding/cocos2dx_extra_luabinding.cpp \
-    extra/luabinding/CZHelperFunc_luabinding.cpp
+    extra/luabinding/CZHelperFunc_luabinding.cpp \
+    extra/luabinding/SkeletonRenderer_luabinding.cpp \
+    extra/luabinding/SkeletonAnimation_luabinding.cpp
 
-LOCAL_SRC_FILES += \
-    extra/luabinding/cocos2dx_httprequest_luabinding.cpp
-
-ifeq ($(CC_CURL_ENABLED),1)
-LOCAL_SRC_FILES += extra/network/CCHTTPRequest.cpp
-else
 LOCAL_SRC_FILES += \
     extra/platform/android/CCHTTPRequestAndroid.cpp \
-    extra/crypto/md5/md5.c
-endif
+    extra/luabinding/cocos2dx_httprequest_luabinding.cpp
 
 ifeq ($(CC_PHYSICS_ENABLED),1)
 LOCAL_SRC_FILES += \

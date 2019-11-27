@@ -817,6 +817,7 @@ void CCScheduler::update(float dt)
         {
             pEntry->target->update(dt);
         }
+        
     }
 
     // Iterate over all the custom selectors

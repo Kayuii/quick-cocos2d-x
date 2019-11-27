@@ -1,0 +1,35 @@
+<!--
+礼物
+charm 获得魅力
+charmToOther 对单一玩家每日最多增加魅力
+rebate 美女认证返利（游戏币）
+priceType 1.游戏币 2五币
+
+ -->
+
+<DataList>
+<!--        <item id="101" name="七彩玫瑰" charm="20" charmToOther="200" rebate="600" priceType="1" price="2000" day="1" tab="1"/>-->
+    <item id="300" name="七彩玫瑰" charm="20" charmToOther="200" rebate="600" priceType="1" price="2000" day="1" tab="1"/>
+    <item id="301" name="奥迪" charm="500" charmToOther="5000" rebate="15000" priceType="1" price="50000" day="2" tab="1"/>
+    <item id="302" name="别墅" charm="5000" charmToOther="50000" rebate="150000" priceType="1" price="500000" day="3" tab="1"/>
+    <item id="303" name="招财猫" charm="300" charmToOther="-1" rebate="9000" priceType="2" price="30" day="2" tab="1"/>
+    <item id="304" name="扎啤" charm="50" charmToOther="500" rebate="1500" priceType="1" price="5000" day="1" tab="1"/>
+    <item id="305" name="香槟" charm="10" charmToOther="-1" rebate="3000" priceType="2" price="10" day="1" tab="1"/>
+    <item id="306" name="芝士蛋糕" charm="80" charmToOther="8000" rebate="24000" priceType="1" price="8000" day="1" tab="1"/>
+    <item id="307" name="聚宝盆" charm="500" charmToOther="-1" rebate="15000" priceType="2" price="50" day="2" tab="1"/>
+    <item id="308" name="尊贵钻戒" charm="500" charmToOther="5000" rebate="15000" priceType="1" price="50000" day="2" tab="1"/>
+    <item id="309" name="幸运符" charm="20" charmToOther="200" rebate="600" priceType="1" price="2000" day="1" tab="1"/>
+    <item id="310" name="摇钱树" charm="1000" charmToOther="10000" rebate="30000" priceType="1" price="100000" day="3" tab="1"/>
+    
+    <item id="330" name="性感女郎" charm="300" charmToOther="3000" rebate="9000" priceType="1" price="30000" day="2" tab="2"/>
+    <item id="331" name="热吻" charm="50" charmToOther="500" rebate="1500" priceType="1" price="5000" day="1" tab="2"/>
+    <item id="332" name="雪茄" charm="200" charmToOther="2000" rebate="6000" priceType="1" price="20000" day="2" tab="2"/>
+    <item id="333" name="鸿运当头" charm="100" charmToOther="1000" rebate="3000" priceType="1" price="10000" day="1" tab="2"/>
+    <item id="334" name="火麒麟" charm="200" charmToOther="-1" rebate="6000" priceType="2" price="20" day="2" tab="2"/>
+    <item id="335" name="金蟾" charm="800" charmToOther="8000" rebate="24000" priceType="1" price="80000" day="2" tab="2"/>
+    <item id="336" name="貔貅" charm="100" charmToOther="-1" rebate="3000" priceType="2" price="10" day="1" tab="2"/>
+    <item id="337" name="红酒" charm="50" charmToOther="-1" rebate="1500" priceType="2" price="5" day="1" tab="2"/>
+    <item id="338" name="游轮" charm="2000" charmToOther="20000" rebate="60000" priceType="1" price="200000" day="3" tab="2"/>
+    <item id="339" name="皇冠" charm="1000" charmToOther="-1" rebate="30000" priceType="2" price="100" day="3" tab="2"/>
+    <item id="340" name="手表" charm="500" charmToOther="5000" rebate="15000" priceType="1" price="50000" day="2" tab="2"/>
+</DataList>

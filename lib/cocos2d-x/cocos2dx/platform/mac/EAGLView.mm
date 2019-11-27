@@ -94,7 +94,6 @@ static EAGLView *view;
     frameZoomFactor_ = 1.0f;
     originalWinRect_ = frameRect;
 	
-    [self prepareOpenGL];
 	view = self;
 	return self;
 }
@@ -110,8 +109,7 @@ static EAGLView *view;
     cocos2d::CCEGLView::sharedOpenGLView()->setFrameSize(frameRect.size.width, frameRect.size.height);
     frameZoomFactor_ = 1.0f;
     originalWinRect_ = frameRect;
-
-    [self prepareOpenGL];
+	
 	view = self;
     return self;
 }

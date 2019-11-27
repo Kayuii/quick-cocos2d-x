@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>保险说明</title>
+		<style type="text/css">
+			*{margin:0;padding:0}
+			body{background-color:transparent}
+			#ss{margin:0 5.555555555555556%}
+			h1{position:relative;color:#fff;font-size: 14px; text-align:center;color:#00bde6;margin-top:33px;margin-bottom:22px}
+			h2,p{font-size:12px;font-family:"微软雅黑";color:#62788f;line-height:2em}
+			h2{color:#fff;font-weight:400}
+			img{width:100%;margin-top:8px;}
+			
+			.title{position: relative;width:200px;margin: 0 auto;}
+			.b{position:absolute;border-top:1px solid #00bde6;width:60px;left:1em;top:0.6em;}
+			.b.b2{position: absolute; right:1em;left: auto;}
+		</style>
+	</head>
+
+	<body>
+		<div id="ss">
+			<h1>
+				<div class="title">
+					<div class="b"></div>保险<div class="b b2"></div>
+				</div>
+			</h1>
+			<h2>概述</h2>
+			<p>1、当牌局中玩家全部All in之后，由当前牌型最大的玩家，获得购买保险的机会。</p>
+			<p>2、当保险涉及的底池中超过3个玩家的时候，保险不激活。</p>
+			<p>3、保险超过14个Outs不激活</p>
+			<p>4、造成玩家平分底池的Outs不会计入购买保险的Outs数量；如果河牌存在平分Outs，那么玩家购买保险的最大额度不能超过他向底池内投入的总额。</p>
+			<p>5、存在多个底池时，可以选择1个或多个参与的底池购买保险。</p>
+			<p>6、Flop三张不可购买保险，Turn牌保险投保额不得超过0.25*底池，River保险投保额不得超过0.5*底池。</p>
+			<p>7、如果购买了Turn牌的保险且没有中，那么系统会强制玩家购买River牌的少量保险，背回Turn牌的保险投入。</p>
+			<p>8、当前牌型最大的玩家有多个时，存在Outs的玩家可以购买保险，其参保底池计算为：参与的底池/最大牌型玩家数量。</p>
+			<h2>操作</h2>
+			<p>1、保本：保险赔付额=玩家投入金额。</p>
+			<p>2、等利：保险赔付额=玩家参保底池。</p>
+			<p>3、在购买保险界面，可以通过点击正在购买保险的玩家列表，切换到观看界面。</p>
+			<p>4、 购买保险的玩家，只需滑动对应底池中的投保额滑动条，即可选择需要购买的投保额度。</p>
+			<p>5、确定好投保额后，点击购买按钮，即成功购买保险</p>
+			<p>6、购买保险的结算：如果买中，系统会根据赔率，直接赔付筹码到玩家手中；如果没中，则系统从底池中收走购买保险消耗的筹码。</p>
+			<p>7、保险结束后，在牌桌内的“实时战绩”和“上局回顾”中，均可查看保险的相关数据。</p>
+			<h2>赔率</h2>
+			<img src="pl.png" />
+			
+			<h1 style="margin-top: 50px;">
+				<div class="title">
+					<div class="b"></div>straddle<div class="b b2"></div>
+				</div>
+			</h1>
+			<h2>说明</h2>
+			<p>每局开始的时候，枪口位玩家必须投入2倍大盲到底池中。</p>
+		</div>
+	</body>
+
+</html>

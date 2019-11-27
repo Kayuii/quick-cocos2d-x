@@ -1,8 +1,11 @@
 enum CCScrollViewDirection {
+
     kCCScrollViewDirectionNone = -1,
     kCCScrollViewDirectionHorizontal = 0,
-    kCCScrollViewDirectionVertical = 1,
-    kCCScrollViewDirectionBoth = 2,
+    kCCScrollViewDirectionVertical=1,
+    kCCScrollViewDirectionTopToDown=2,
+    kCCScrollViewDirectionBoth
+    
 };
 
 class CCScrollView : public CCLayer
@@ -30,6 +33,7 @@ class CCScrollView : public CCLayer
     bool isTouchMoved();
     bool isBounceable();
     void setBounceable(bool bBounceable);
+    void setScrollable(bool bScrollable);
 
     CCSize getViewSize();
     void setViewSize(CCSize size);
@@ -64,6 +68,7 @@ class CCScrollView : public CCLayer
         kScrollViewZoom,
     };
 
+    void registerScriptHandler(int nFunID,int nScriptEventType);
     void unregisterScriptHandler(int scriptHandlerType);
     int  getScriptHandler(int scriptHandlerType);
 };

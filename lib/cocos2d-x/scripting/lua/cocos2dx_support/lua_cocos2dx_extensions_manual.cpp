@@ -158,14 +158,27 @@ public:
         }
     }
     
-    virtual void tableCellHighlight(CCTableView* table, CCTableViewCell* cell)
+    virtual void tableCellDragLeft(CCTableView* table, CCTableViewCell* cell)
     {
         if (NULL != table && NULL != cell)
         {
-            int nHandler = table->getScriptHandler(CCTableView::kTableCellHighLight);
+            int nHandler = table->getScriptHandler(CCTableView::kTableCellDragLeft);
             if (0 != nHandler)
             {
-                CCLuaEngine::defaultEngine()->executeTableViewEvent(CCTableView::kTableCellHighLight, table,cell);
+                CCLuaEngine::defaultEngine()->executeTableViewEvent(CCTableView::kTableCellDragLeft, table,cell);
+            }
+        }
+    }
+    
+    
+    virtual void tableCellDragRight(CCTableView* table, CCTableViewCell* cell)
+    {
+        if (NULL != table && NULL != cell)
+        {
+            int nHandler = table->getScriptHandler(CCTableView::kTableCellDragRight);
+            if (0 != nHandler)
+            {
+                CCLuaEngine::defaultEngine()->executeTableViewEvent(CCTableView::kTableCellDragRight, table,cell);
             }
         }
     }

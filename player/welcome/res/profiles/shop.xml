@@ -1,0 +1,13 @@
+<!-- 
+ goodsType 1:游戏币 2:5币 3:实物
+ priceType 1:游戏币 2:5币 3:积分
+ -->
+
+<DataList>
+<item id="1" goodsType="1" goods="60000" name="6万游戏币" price="60" priceType="2" ishot="true"/>
+<item id="2" goodsType="1" goods="180000" name="18万游戏币" price="180" priceType="2" ishot="true"/>
+<item id="3" goodsType="1" goods="680000" name="68万游戏币" price="680" priceType="2" ishot="false"/>
+<item id="4" goodsType="1" goods="1280000" name="128万游戏币" price="1280" priceType="2" ishot="true"/>
+<item id="5" goodsType="1" goods="3280000" name="328万游戏币" price="3280" priceType="2" ishot="false"/>
+<item id="6" goodsType="1" goods="6480000" name="648万游戏币" price="6480" priceType="2" ishot="true"/>
+</DataList>

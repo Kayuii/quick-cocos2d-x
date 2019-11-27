@@ -1,0 +1,76 @@
+
+xiayu.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuaFengXiaYu_rain_0
+  rotate: false
+  xy: 2, 1505
+  size: 479, 499
+  orig: 479, 499
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_rain_1
+  rotate: false
+  xy: 2, 1004
+  size: 479, 499
+  orig: 479, 499
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_rain_2
+  rotate: false
+  xy: 483, 1505
+  size: 479, 499
+  orig: 479, 499
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_rain_3
+  rotate: false
+  xy: 2, 503
+  size: 479, 499
+  orig: 479, 499
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_rain_4
+  rotate: false
+  xy: 483, 1004
+  size: 479, 499
+  orig: 479, 499
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_rain_5
+  rotate: false
+  xy: 964, 1505
+  size: 479, 499
+  orig: 479, 499
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_rain_6
+  rotate: false
+  xy: 2, 2
+  size: 479, 499
+  orig: 479, 499
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_rain_7
+  rotate: false
+  xy: 483, 503
+  size: 479, 499
+  orig: 479, 499
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_rain_8
+  rotate: false
+  xy: 964, 1004
+  size: 479, 499
+  orig: 479, 499
+  offset: 0, 0
+  index: -1
+GuaFengXiaYu_rain_9
+  rotate: false
+  xy: 1445, 1505
+  size: 479, 499
+  orig: 479, 499
+  offset: 0, 0
+  index: -1

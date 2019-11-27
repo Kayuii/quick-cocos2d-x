@@ -272,6 +272,8 @@ public:
       * @since v2.1
       */
      void addSearchPath(const char* path);
+    
+    void deleteSearchPath(const char* path);
 
     /**
       * Removes all paths.
@@ -341,6 +343,12 @@ public:
      */
     virtual void setPopupNotify(bool bNotify);
     virtual bool isPopupNotify();
+    
+    /**
+     * create directory
+     * add by ccb 2019/09/25
+     */
+    bool createDirectory(const char *path);
 
 protected:
     /**

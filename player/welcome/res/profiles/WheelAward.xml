@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 
+轮盘抽奖配置表
+
+ awardType奖励类型:1游戏币 2五币 3兑换券
+ 
+ -->
+<DataList>
+    <item id="1" awardType="1" amount="888"/>
+    <item id="2" awardType="1" amount="88800"/>
+    <item id="3" awardType="1" amount="6660000"/>
+    <item id="4" awardType="1" amount="88880000"/>
+    <item id="5" awardType="3" amount="1"/>
+    <item id="6" awardType="3" amount="2"/>
+    <item id="7" awardType="3" amount="5"/>
+    <item id="8" awardType="2" amount="5"/>
+    <item id="9" awardType="2" amount="30"/>
+    <item id="10" awardType="2" amount="150"/>
+</DataList>

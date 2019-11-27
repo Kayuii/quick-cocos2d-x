@@ -89,6 +89,12 @@ function WelcomeScene:createButtons()
     local left = display.left + 114
     local top = display.top - 386
 
+    if audio and type(audio.playNormalButtonSound) ~= "function" then
+        audio.playNormalButtonSound = function()
+            -- body
+        end
+    end
+
     local newProjectButton = cc.ui.UIPushButton.new("NewProjectButton_zh.png")
         :onButtonClicked(function()
             CCNotificationCenter:sharedNotificationCenter():postNotification("WELCOME_NEW_PROJECT")

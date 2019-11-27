@@ -67,6 +67,7 @@ THE SOFTWARE.
 
 
 
+
 /**
  Position of the FPS
  
@@ -250,6 +251,11 @@ void CCDirector::drawScene(void)
 {
     // calculate "global" dt
     calculateDeltaTime();
+    
+    if (m_fDeltaTime<FLT_EPSILON)
+    {
+        return;
+    }
 
     //tick before glClear: issue #533
     if (! m_bPaused)
@@ -803,6 +809,13 @@ void CCDirector::pause(void)
     // when paused, don't consume CPU
     setAnimationInterval(1 / 4.0);
     m_bPaused = true;
+    
+    CCNotificationCenter::sharedNotificationCenter()->postNotification("APP_PAUSE_COCOS2D_EVENT");
+}
+
+void CCDirector::setIsEnterBack(bool flag)
+{
+    m_isEnterBack=flag;
 }
 
 void CCDirector::resume(void)
@@ -821,6 +834,13 @@ void CCDirector::resume(void)
 
     m_bPaused = false;
     m_fDeltaTime = 0;
+    setNextDeltaTimeZero(true);
+    if (!m_isEnterBack)
+    {
+        CCLOG("CCDirector:resume");
+        CCNotificationCenter::sharedNotificationCenter()->postNotification("APP_RESUME_COCOS2D_EVENT");
+    }
+    m_isEnterBack=false;
 }
 
 // display the FPS using a LabelAtlas
@@ -1062,6 +1082,7 @@ CCAccelerometer* CCDirector::getAccelerometer()
 // so we now only support DisplayLinkDirector
 void CCDisplayLinkDirector::startAnimation(void)
 {
+    printf("CCDisplayLinkDirector startAnimation");
     if (CCTime::gettimeofdayCocos2d(m_pLastUpdate, NULL) != 0)
     {
         CCLOG("cocos2d: DisplayLinkDirector: Error on gettimeofday");

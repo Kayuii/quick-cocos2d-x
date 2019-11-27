@@ -28,6 +28,8 @@ public class QuickHTTPInterface {
     static String NEWLINE = "\r\n";
 
     static HttpURLConnection createURLConnect(String strURL) {
+    	Log.d("csj","HttpURLConnection:createURLConnect strUrl = "+strURL);
+    	
         URL url;
         HttpURLConnection urlConnection;
         try {
@@ -44,10 +46,10 @@ public class QuickHTTPInterface {
     }
 
     static void setRequestMethod(HttpURLConnection http, String strMedthod) {
+    	Log.d("csj","HttpURLConnection http, String strMedthod strMedthod = "+strMedthod);
         try {
             if ("POST".equalsIgnoreCase(strMedthod)) {
                 http.setDoOutput(true);
-                http.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
             }
             http.setRequestMethod(strMedthod);
         } catch (ProtocolException e) {
@@ -85,14 +87,13 @@ public class QuickHTTPInterface {
             DataOutputStream out = new DataOutputStream(http.getOutputStream());
             String content = null;
             if (null == name || 0 == name.length()) {
-                content = java.net.URLEncoder.encode(value, "utf-8");
+                content = value;
             } else {
-                content = java.net.URLEncoder.encode(name, "utf-8") + "=" + java.net.URLEncoder.encode(value, "utf-8");
+                content = name + "=" + value;
             }
             if (bNeedConnectSym) {
                 content = "&" + content;
             }
-
             out.write(content.getBytes());
             out.flush();
         } catch (IOException e) {
@@ -325,15 +326,8 @@ public class QuickHTTPInterface {
 
     static byte[] getResponedString(HttpURLConnection http) {
         try {
-            int statusCode = http.getResponseCode(); 
-            
-            DataInputStream in = null;
-            if(statusCode != 200 && statusCode != 201) {
-                in = new DataInputStream(http.getErrorStream());
-            }else{
-                in = new DataInputStream(http.getInputStream());
-            }
-                        
+            DataInputStream in = new DataInputStream(http.getInputStream());
+
             byte[] buffer = new byte[1024];
             byte[] retBuf = null;
             int len = in.read(buffer);
@@ -406,6 +400,9 @@ public class QuickHTTPInterface {
                 		strValue = "";
                 	}
                 	bFirst = false;
+                }
+                if(item.length < 2){ // add by leeass
+                    continue;
                 }
                 if ("expires".equalsIgnoreCase(item[0].trim())) {
                     strExpire = str2Seconds(item[1].trim());

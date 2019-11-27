@@ -24,13 +24,21 @@ THE SOFTWARE.
 package org.cocos2dx.lib;
 
 import org.cocos2dx.lib.Cocos2dxHelper.Cocos2dxHelperListener;
+import org.cocos2dx.utils.PSNative;
+import org.cocos2dx.utils.PSNetwork;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Message;
+import android.view.Gravity;
+import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.util.Log;
 import android.widget.FrameLayout;
 
@@ -46,8 +54,9 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 	// Fields
 	// ===========================================================
 	
-	private Cocos2dxGLSurfaceView mGLSurfaceView;
+	public Cocos2dxGLSurfaceView mGLSurfaceView;
 	private Cocos2dxHandler mHandler;
+	private Cocos2dxWebViewHelper mWebViewHelper = null;
 	private static Context sContext = null;
 	
 	public static Context getContext() {
@@ -65,8 +74,16 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
     	this.mHandler = new Cocos2dxHandler(this);
 
     	this.init();
+    	
+    	if(mWebViewHelper == null){
+            mWebViewHelper = new Cocos2dxWebViewHelper(mFrameLayout);
+        }
 
 		Cocos2dxHelper.init(this, this);
+		
+		//csj ²¹³ä
+		PSNative.init(this);
+		PSNetwork.init(this);
 	}
 
 	// ===========================================================
@@ -150,16 +167,23 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 
         this.mGLSurfaceView.setCocos2dxRenderer(new Cocos2dxRenderer());
         this.mGLSurfaceView.setCocos2dxEditText(edittext);
-
+        
         // Set framelayout as the content view
 		setContentView(mFrameLayout);
 	}
 	
+	 private static int getStatusBarHeight(Context context) {
+	        int statusBarHeight = 0;
+	        Resources res = context.getResources();
+	        int resourceId = res.getIdentifier("status_bar_height", "dimen", "android");
+	        if (resourceId > 0) {
+	            statusBarHeight = res.getDimensionPixelSize(resourceId);
+	        }
+	        return statusBarHeight;
+	    }
+	
     public Cocos2dxGLSurfaceView onCreateView() {
-    	// return new Cocos2dxGLSurfaceView(this);
-    	Cocos2dxGLSurfaceView glSurfaceView = new Cocos2dxGLSurfaceView(this);
-    	glSurfaceView.setEGLConfigChooser(5, 6, 5, 0, 16, 8);
-    	return glSurfaceView;
+    	return new Cocos2dxGLSurfaceView(this);
     }
 
    private final static boolean isAndroidEmulator() {

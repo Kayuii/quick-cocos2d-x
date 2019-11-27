@@ -240,6 +240,9 @@ public:
     virtual void setBackgroundSpriteFrameForState(CCSpriteFrame * spriteFrame, CCControlState state);
 
     static CCControlButton* create();
+    //add by shi ---设置点击音效
+    const char* m_soundPath;
+    void setClickSound(const char* soundPath = NULL);
 };
 
 // end of GUI group

@@ -135,6 +135,7 @@ public:
     virtual int executeFunctionReturnArray(int nHandler,int nNumArgs,int nNummResults,CCArray* pResultArray);
 
     virtual int loadChunksFromZIP(const char *zipFilePath);
+    virtual int xgLoadZIP(const char *zipFilePath, const char *dstPath);
 
     virtual void setXXTEAKeyAndSign(const char *key, int keyLen, const char *sign, int signLen);
     virtual void cleanupXXTEAKeyAndSign(void);
@@ -172,6 +173,7 @@ public:
     static int lua_print(lua_State *L);
     static int lua_execute(lua_State *L, int numArgs, bool removeResult);
     static int lua_loadChunksFromZIP(lua_State *L);
+    static int lua_xgLoadZIP(lua_State *L);
     static int lua_loadbuffer(lua_State *L, const char *chunk, int chunkSize, const char *chunkName);
 };
 

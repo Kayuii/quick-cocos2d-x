@@ -213,7 +213,7 @@
 - (IBAction) onScreenOrientationChanged:(id)sender
 {
     projectConfig.setFrameSize(CCSize([textFieldScreenSizeWidth intValue], [textFieldScreenSizeHeight intValue]));
-    id button = [matrixScreenOrientation selectedCell];
+    NSButton *button = [matrixScreenOrientation selectedCell];
     if (([button tag] == 1 && projectConfig.isLandscapeFrame()) || ([button tag] == 2 && !projectConfig.isLandscapeFrame()))
     {
         projectConfig.changeFrameOrientation();

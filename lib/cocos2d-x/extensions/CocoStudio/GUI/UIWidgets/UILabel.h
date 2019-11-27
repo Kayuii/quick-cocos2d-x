@@ -62,6 +62,8 @@ public:
      */
     void setText(const std::string& text);
     
+    
+    void setString(const std::string& text);
     /**
      * Gets the string value of label.
      *

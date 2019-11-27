@@ -1,4 +1,4 @@
-/*
+    /*
 
 ===== IMPORTANT =====
 
@@ -393,12 +393,12 @@ static EAGLView *view = 0;
 #pragma mark EAGLView - Touch Delegate
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+
     if (isKeyboardShown_)
     {
         [self handleTouchesAfterKeyboardShow];
-        return;
+        //return;
     }
-    
     int ids[IOS_MAX_TOUCHES_COUNT] = {0};
     float xs[IOS_MAX_TOUCHES_COUNT] = {0.0f};
     float ys[IOS_MAX_TOUCHES_COUNT] = {0.0f};
@@ -411,13 +411,14 @@ static EAGLView *view = 0;
         ++i;
     }
     cocos2d::CCEGLView::sharedOpenGLView()->handleTouchesBegin(i, ids, xs, ys);
+    
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     if (isKeyboardShown_)
     {
-        return;
+        //return;
     }
     int ids[IOS_MAX_TOUCHES_COUNT] = {0};
     float xs[IOS_MAX_TOUCHES_COUNT] = {0.0f};
@@ -447,8 +448,13 @@ static EAGLView *view = 0;
         ++i;
     }
     cocos2d::CCEGLView::sharedOpenGLView()->handleTouchesEnd(i, ids, xs, ys);
+    /*if (isKeyboardShown_)
+    {
+        //WARNING:commented by shi.点触背景隐藏软键盘
+        [self handleTouchesAfterKeyboardShow];
+    }*/
 }
-    
+
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
     int ids[IOS_MAX_TOUCHES_COUNT] = {0};
@@ -742,6 +748,10 @@ UIInterfaceOrientation getFixedOrientation(UIInterfaceOrientation statusBarOrien
     CGSize viewSize = self.frame.size;
     CGFloat tmp;
     
+//    NSLog(@"%@",NSStringFromCGRect(begin));
+//    NSLog(@"%@",NSStringFromCGRect(end));
+//    NSLog(@"%@",NSStringFromCGRect(self.frame));
+    
     switch (getFixedOrientation([[UIApplication sharedApplication] statusBarOrientation]))
     {
         case UIInterfaceOrientationPortrait:
@@ -904,6 +914,10 @@ UIInterfaceOrientation getFixedOrientation(UIInterfaceOrientation statusBarOrien
     {
         [[NSNotificationCenter defaultCenter]postNotification:self.keyboardShowNotification];
     }
+}
+
+-(void) setOriginalRect:(CGRect)rect{
+    originalRect_ = rect;
 }
 
 @end

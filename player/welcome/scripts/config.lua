@@ -1,9 +1,9 @@
 
 -- 0 - disable debug info, 1 - less debug info, 2 - verbose debug info
-DEBUG = 1
+DEBUG = 0
 
 -- display FPS stats on screen
-DEBUG_FPS = false
+DEBUG_FPS = true
 
 -- dump memory info every 10 seconds
 DEBUG_MEM = false
@@ -14,12 +14,20 @@ LOAD_DEPRECATED_API = false
 -- load shortcodes API
 LOAD_SHORTCODES_API = true
 
+-- -- screen orientation
+-- CONFIG_SCREEN_ORIENTATION = "portrait"
+
+-- -- design resolution
+-- CONFIG_SCREEN_WIDTH  = 720
+-- CONFIG_SCREEN_HEIGHT = 1280
+
 -- screen orientation
 CONFIG_SCREEN_ORIENTATION = "landscape"
 
 -- design resolution
-CONFIG_SCREEN_WIDTH  = 960
-CONFIG_SCREEN_HEIGHT = 640
+CONFIG_SCREEN_WIDTH  = 1280
+CONFIG_SCREEN_HEIGHT = 720
 
 -- auto scale mode
-CONFIG_SCREEN_AUTOSCALE = "FIXED_HEIGHT"
+CONFIG_SCREEN_AUTOSCALE = nil;
+-- CONFIG_SCREEN_AUTOSCALE = "FIXED_HEIGHT"

@@ -1,0 +1,18 @@
+<!--
+互动道具表
+charm 增加/减少魅力
+charmToOther 对单一玩家每日最多增加/减少魅力
+ -->
+
+<DataList>
+    <item id="200" name="一朵玫瑰花" charm="1" charmToOther="10" priceType="1" price="100"/>
+    <item id="201" name="蓝色花海" charm="9999" charmToOther="-1" priceType="2" price="999"/>
+    <item id="202" name="粉红浪漫" charm="999" charmToOther="9999" priceType="1" price="99999"/>
+    <item id="203" name="香吻" charm="50" charmToOther="-1" priceType="2" price="5"/>
+    <item id="204" name="香烟" charm="2" charmToOther="20" priceType="1" price="200"/>
+    <item id="205" name="烟斗" charm="100" charmToOther="1000" priceType="1" price="10000"/>
+    <item id="206" name="放狗" charm="-100" charmToOther="-1" priceType="2" price="10"/>
+    <item id="207" name="炸弹" charm="-10" charmToOther="100" priceType="1" price="1000"/>
+    <item id="208" name="顶级红酒" charm="300" charmToOther="-1" priceType="2" price="30"/>
+    <item id="209" name="毒药" charm="-1000" charmToOther="-1" priceType="2" price="100"/>
+</DataList>

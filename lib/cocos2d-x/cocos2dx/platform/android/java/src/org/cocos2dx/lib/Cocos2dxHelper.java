@@ -60,27 +60,31 @@ public class Cocos2dxHelper {
 	// ===========================================================
 	// Constructors
 	// ===========================================================
-
+	private static boolean sInited = false;
 	public static void init(final Context pContext, final Cocos2dxHelperListener pCocos2dxHelperListener) {
-		final ApplicationInfo applicationInfo = pContext.getApplicationInfo();
-		
-		Cocos2dxHelper.sContext = pContext;
-		Cocos2dxHelper.sCocos2dxHelperListener = pCocos2dxHelperListener;
-
-		Cocos2dxHelper.sPackageName = applicationInfo.packageName;
-		Cocos2dxHelper.sFileDirectory = pContext.getFilesDir().getAbsolutePath();
-		Cocos2dxHelper.nativeSetApkPath(applicationInfo.sourceDir);
-
-		Cocos2dxHelper.sCocos2dxAccelerometer = new Cocos2dxAccelerometer(pContext);
-		Cocos2dxHelper.sCocos2dMusic = new Cocos2dxMusic(pContext);
-		int simultaneousStreams = Cocos2dxSound.MAX_SIMULTANEOUS_STREAMS_DEFAULT;
-		if (Cocos2dxHelper.getDeviceModel().indexOf("GT-I9100") != -1) {
-			simultaneousStreams = Cocos2dxSound.MAX_SIMULTANEOUS_STREAMS_I9100;
+		if (!sInited) {
+			final ApplicationInfo applicationInfo = pContext.getApplicationInfo();
+			
+			Cocos2dxHelper.sContext = pContext;
+			Cocos2dxHelper.sCocos2dxHelperListener = pCocos2dxHelperListener;
+	
+			Cocos2dxHelper.sPackageName = applicationInfo.packageName;
+			Cocos2dxHelper.sFileDirectory = pContext.getFilesDir().getAbsolutePath();
+			Cocos2dxHelper.nativeSetApkPath(applicationInfo.sourceDir);
+	
+			Cocos2dxHelper.sCocos2dxAccelerometer = new Cocos2dxAccelerometer(pContext);
+			Cocos2dxHelper.sCocos2dMusic = new Cocos2dxMusic(pContext);
+			Cocos2dxHelper.sCocos2dSound = new Cocos2dxSound(pContext);
+//			int simultaneousStreams = Cocos2dxSound.MAX_SIMULTANEOUS_STREAMS_DEFAULT;
+//			if (Cocos2dxHelper.getDeviceModel().indexOf("GT-I9100") != -1) {
+//				simultaneousStreams = Cocos2dxSound.MAX_SIMULTANEOUS_STREAMS_I9100;
+//			}
+//			Cocos2dxHelper.sCocos2dSound = new Cocos2dxSound(pContext, simultaneousStreams);
+			Cocos2dxHelper.sAssetManager = pContext.getAssets();
+			Cocos2dxBitmap.setContext(pContext);
+			Cocos2dxETCLoader.setContext(pContext);
+			sInited = true;
 		}
-		Cocos2dxHelper.sCocos2dSound = new Cocos2dxSound(pContext, simultaneousStreams);
-		Cocos2dxHelper.sAssetManager = pContext.getAssets();
-		Cocos2dxBitmap.setContext(pContext);
-		Cocos2dxETCLoader.setContext(pContext);
 	}
 
 	// ===========================================================
@@ -185,10 +189,13 @@ public class Cocos2dxHelper {
 		Cocos2dxHelper.sCocos2dSound.preloadEffect(path);
 	}
 
+//	public static int playEffect(final String path, final boolean isLoop) {
+//		return Cocos2dxHelper.sCocos2dSound.playEffect(path, isLoop);
+//	}
 	public static int playEffect(final String path, final boolean isLoop) {
-		return Cocos2dxHelper.sCocos2dSound.playEffect(path, isLoop);
-	}
-
+        return Cocos2dxHelper.sCocos2dSound.playEffect(path, isLoop, 1, 1, 1);
+    }
+	
 	public static void resumeEffect(final int soundId) {
 		Cocos2dxHelper.sCocos2dSound.resumeEffect(soundId);
 	}
@@ -224,6 +231,10 @@ public class Cocos2dxHelper {
 	public static void stopAllEffects() {
 		Cocos2dxHelper.sCocos2dSound.stopAllEffects();
 	}
+	
+//	public static void vibrate(long time){
+//		Cocos2dxHelper.sCocos2dSound.vibrate(time);
+//	}
 
 	public static void end() {
 		Cocos2dxHelper.sCocos2dMusic.end();
@@ -268,6 +279,17 @@ public class Cocos2dxHelper {
 			/* Nothing. */
 		}
 	}
+	
+	public static void excuteEditBoxCallbackActionSend(){
+		Cocos2dxHelper.sCocos2dxHelperListener.runOnGLThread(new Runnable() {
+			@Override
+			public void run() {
+				Cocos2dxHelper.nativeEditBoxCallbackActionSend();
+			}
+		});
+	}
+	
+	private static native void nativeEditBoxCallbackActionSend();
 
     public static int getDPI()
     {

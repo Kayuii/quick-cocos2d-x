@@ -1,3 +1,4 @@
+
 /****************************************************************************
  Copyright (c) 2012 cocos2d-x.org
  Copyright (c) 2010 Sangwoo Im
@@ -203,6 +204,11 @@ void CCTableView::insertCellAtIndex(unsigned  int idx)
 
     this->_updateCellPositions();
     this->_updateContentSize();
+    //----------------------------
+    if (m_pDataSource->numberOfCellsInTableView(this) > 0)
+    {
+        this->scrollViewDidScroll(this);
+    }
 }
 
 void CCTableView::removeCellAtIndex(unsigned int idx)
@@ -566,6 +572,11 @@ void CCTableView::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
     if (!this->isVisible()) {
         return;
     }
+    
+    
+    CCPoint _point=this->convertTouchToNodeSpace(pTouch);
+    _dragMoveX=_point.x-m_dragPoint.x;
+    _dragMoveY=_point.y-m_dragPoint.y;
 
     if (m_pTouchedCell){
 		CCRect bb = this->boundingBox();
@@ -573,8 +584,20 @@ void CCTableView::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 
 		if (bb.containsPoint(pTouch->getLocation()) && m_pTableViewDelegate != NULL)
         {
-            m_pTableViewDelegate->tableCellUnhighlight(this, m_pTouchedCell);
-            m_pTableViewDelegate->tableCellTouched(this, m_pTouchedCell);
+            
+            if(_dragMoveX<-40)
+                m_pTableViewDelegate->tableCellDragLeft(this, m_pTouchedCell);
+            else if(_dragMoveX>40)
+                m_pTableViewDelegate->tableCellDragRight(this, m_pTouchedCell);
+            else{
+                m_pTableViewDelegate->tableCellUnhighlight(this, m_pTouchedCell);
+                m_pTableViewDelegate->tableCellTouched(this, m_pTouchedCell);
+            }
+                
+            _dragMoveX=0.f;
+            _dragMoveY=0.f;
+
+  
         }
 
         m_pTouchedCell = NULL;
@@ -590,7 +613,9 @@ bool CCTableView::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
     }
 
     bool touchResult = CCScrollView::ccTouchBegan(pTouch, pEvent);
-
+    
+    m_dragPoint=this->convertTouchToNodeSpace(pTouch);
+    
     if(m_pTouches->count() == 1) {
         unsigned int        index;
         CCPoint           point;
@@ -638,10 +663,14 @@ void CCTableView::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
 void CCTableView::ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent)
 {
     CCScrollView::ccTouchCancelled(pTouch, pEvent);
-
+    
+    
+    
+    
+    
     if (m_pTouchedCell) {
         if(m_pTableViewDelegate != NULL) {
-            m_pTableViewDelegate->tableCellUnhighlight(this, m_pTouchedCell);
+           m_pTableViewDelegate->tableCellUnhighlight(this, m_pTouchedCell);
         }
 
         m_pTouchedCell = NULL;
@@ -653,6 +682,8 @@ void CCTableView::unregisterAllScriptHandler()
     unregisterScriptHandler(kTableViewScroll);
     unregisterScriptHandler(kTableViewZoom);
     unregisterScriptHandler(kTableCellTouched);
+    unregisterScriptHandler(kTableCellDragLeft);
+    unregisterScriptHandler(kTableCellDragRight);
     unregisterScriptHandler(kTableCellHighLight);
     unregisterScriptHandler(kTableCellUnhighLight);
     unregisterScriptHandler(kTableCellWillRecycle);

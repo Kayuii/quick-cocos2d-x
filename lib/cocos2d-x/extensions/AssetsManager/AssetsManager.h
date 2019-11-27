@@ -148,11 +148,12 @@ public:
      */
     friend void* assetsManagerDownloadAndUncompress(void*);
     friend int assetsManagerProgressFunc(void *, double, double, double, double);
+
+    virtual bool uncompress();
     
 protected:
     bool downLoad();
     void checkStoragePath();
-    bool uncompress();
     bool createDirectory(const char *path);
     void setSearchPath();
     void sendErrorMessage(ErrorCode code);

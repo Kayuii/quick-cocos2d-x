@@ -132,14 +132,13 @@ ccLanguageType CCApplication::getCurrentLanguage()
 
 TargetPlatform CCApplication::getTargetPlatform()
 {
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) // idiom for iOS <= 3.2, otherwise: [UIDevice userInterfaceIdiom] is faster.
-    {
+    NSString *deviceType=[UIDevice currentDevice].model;
+    NSString *str=@"iPad";
+    
+    if([deviceType rangeOfString:str].location!=NSNotFound)
         return kTargetIpad;
-    }
-    else 
-    {
+    else
         return kTargetIphone;
-    }
 }
 
 NS_CC_END

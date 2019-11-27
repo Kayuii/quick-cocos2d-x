@@ -31,7 +31,8 @@
 #include "support/CCPointExtension.h"
 #include "touch_dispatcher/CCTouch.h"
 #include "CCDirector.h"
-
+#include "math.h"
+// #include "CCActionInterval.h"
 NS_CC_EXT_BEGIN
 
 CCControlSlider::CCControlSlider()
@@ -43,6 +44,12 @@ CCControlSlider::CCControlSlider()
 , m_thumbSprite(NULL)
 , m_progressSprite(NULL)
 , m_backgroundSprite(NULL)
+, m_startX(0.0f)
+, m_startY(0.0f)
+, m_isClick(false)
+,isUpdateBar(false)
+,isActionPlaying(false)
+,interval(0.0f)
 {
 
 }
@@ -115,6 +122,7 @@ CCControlSlider* CCControlSlider::create(CCSprite * backgroundSprite, CCSprite* 
         m_maximumValue                   = 1.0f;
 
         setValue(m_minimumValue);
+         this->scheduleUpdate();
         return true;
      }
      else
@@ -122,7 +130,24 @@ CCControlSlider* CCControlSlider::create(CCSprite * backgroundSprite, CCSprite* 
          return false;
      }
  }
+void CCControlSlider::update(float delta)
+{
+    //CCLOGERROR("--------%f",delta);
+    if(isUpdateBar && isActionPlaying)
+    {
+        CCPoint pos = m_thumbSprite->getPosition();
+        // Stretches content proportional to newLevel
+        CCRect textureRect          = m_progressSprite->getTextureRect();
+        textureRect                 = CCRectMake(textureRect.origin.x, textureRect.origin.y, pos.x, textureRect.size.height);
+        m_progressSprite->setTextureRect(textureRect, m_progressSprite->isTextureRectRotated(), textureRect.size);
 
+        //setValue(valueForLocation(pos));
+    }
+}
+void updateBar(float delta)
+{
+    
+}
 
 void CCControlSlider::setEnabled(bool enabled)
 {
@@ -147,13 +172,13 @@ void CCControlSlider::setEnabled(bool enabled)
      }
 
      m_value = value;
-
+     
      this->needsLayout();
-
      this->sendActionsForControlEvents(CCControlEventValueChanged);
+     
  }
 
- void CCControlSlider::setMinimumValue(float minimumValue)
+ void CCControlSlider::setMinimumValue(float minimumValue,bool changed)
  {
      m_minimumValue=minimumValue;
      m_minimumAllowedValue = minimumValue;
@@ -161,10 +186,11 @@ void CCControlSlider::setEnabled(bool enabled)
      {
         m_maximumValue   = m_minimumValue + 1.0f;
      }
-     setValue(m_value);
+     if (changed)
+      setValue(m_value);
  }
 
- void CCControlSlider::setMaximumValue(float maximumValue)
+ void CCControlSlider::setMaximumValue(float maximumValue,bool changed)
  {
      m_maximumValue=maximumValue;
      m_maximumAllowedValue = maximumValue;
@@ -172,7 +198,8 @@ void CCControlSlider::setEnabled(bool enabled)
      {
         m_minimumValue   = m_maximumValue - 1.0f;
      }
-     setValue(m_value);
+     if (changed)
+        setValue(m_value);
  }
 
 bool CCControlSlider::isTouchInside(CCTouch * touch)
@@ -210,7 +237,8 @@ bool CCControlSlider::ccTouchBegan(CCTouch* touch, CCEvent* pEvent)
     {
         return false;
     }
-
+    m_startX = touch->getLocation().x;
+    m_startY = touch->getLocation().y;
     CCPoint location = locationFromTouch(touch);
     sliderBegan(location);
     return true;
@@ -218,54 +246,129 @@ bool CCControlSlider::ccTouchBegan(CCTouch* touch, CCEvent* pEvent)
 
 void CCControlSlider::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
 {
-    CCPoint location = locationFromTouch(pTouch);
-    sliderMoved(location);
+    float dx = pTouch->getLocation().x - m_startX;
+    float dy = pTouch->getLocation().y - m_startY;
+    
+    float hypotenuse = sqrtf(powf(dx,2) + powf(dy,2));
+
+    float angle = atan2f(dy, dx) * 180 / 3.141592654;
+
+    angle = fabsf(angle);
+    //CCLOGERROR("-------------------angle=%f", angle);
+    if( (angle >= 0&& angle<35) || (angle <= 180 &&angle >145) && fabsf(dx - dy) > 25)
+    {
+            //CCLOGERROR("CCControlSlider angle=%f", angle);
+            CCPoint location = locationFromTouch(pTouch);
+            setValue(valueForLocation(location));
+    }
+    m_isClick = false;
+
+    
+    //sliderMoved(location);
 }
 
 void CCControlSlider::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 {
-    sliderEnded(CCPointZero);
+     sliderEnded(locationFromTouch(pTouch));
+    /*if(m_isClick && isTouchInside(pTouch))
+    {
+       
+    }
+    else
+    {
+        sliderEnded(CCPointZero);
+    }*/
 }
-
+void CCControlSlider::updatePosition()
+{
+    CCPoint pos                 = m_thumbSprite->getPosition();
+    setValue(valueForLocation(pos));
+    
+    isUpdateBar = false;
+    isActionPlaying = false;
+    this->sendActionsForControlEvents(CCControlEventTouchDragExit);
+}
 void CCControlSlider::needsLayout()
 {
     if (NULL == m_thumbSprite || NULL == m_backgroundSprite || NULL == m_progressSprite)
     {
         return;
     }
+
+    
     // Update thumb position for new value
     float percent               = (m_value - m_minimumValue) / (m_maximumValue - m_minimumValue);
 
     CCPoint pos                 = m_thumbSprite->getPosition();
     pos.x                       = percent * m_backgroundSprite->getContentSize().width;
+    //
+    //CCAction * action = CCMoveTo::create(0.2f, pos);
+    if(isActionPlaying)
+    {
+        return;
+    }
+    
+    
     m_thumbSprite->setPosition(pos);
-
+    
     // Stretches content proportional to newLevel
     CCRect textureRect          = m_progressSprite->getTextureRect();
     textureRect                 = CCRectMake(textureRect.origin.x, textureRect.origin.y, pos.x, textureRect.size.height);
     m_progressSprite->setTextureRect(textureRect, m_progressSprite->isTextureRectRotated(), textureRect.size);
+    
+    
 }
 
 void CCControlSlider::sliderBegan(CCPoint location)
 {
+    //modify by shi
     this->setSelected(true);
-    this->getThumbSprite()->setColor(ccGRAY);
-    setValue(valueForLocation(location));
+
+    //CCLOGERROR("m_startX=%f",m_startX);
+    //CCLOGERROR("m_startY=%f",m_startY);
+    m_isClick = true;
+    //this->getThumbSprite()->setColor(ccGRAY);
+    //setValue(valueForLocation(location));
 }
 
 void CCControlSlider::sliderMoved(CCPoint location)
 {
-    setValue(valueForLocation(location));
+    
 }
 
 void CCControlSlider::sliderEnded(CCPoint location)
 {
-    if (this->isSelected())
+    
+    
+    //modify by shi
+    m_startX = 0.0f;
+    m_startY = 0.0f;
+    if(m_isClick && !isActionPlaying)
+    {
+         m_isClick = false;
+        // Update thumb position for new value
+        float percent               = (valueForLocation(location) - m_minimumValue) / (m_maximumValue - m_minimumValue);
+        
+        CCPoint pos                 = m_thumbSprite->getPosition();
+        pos.x                       = percent * m_backgroundSprite->getContentSize().width;
+        //CCLOGERROR("runAction!");
+        CCAction * action = CCSequence::create(CCMoveTo::create(0.18f, pos),
+                                               CCCallFunc::create(this, callfunc_selector(CCControlSlider::updatePosition)),
+                                               NULL);
+        m_thumbSprite->runAction(action);
+        isUpdateBar = true;
+        isActionPlaying = true;
+        
+    }
+    
+    else if (this->isSelected())
     {
         setValue(valueForLocation(m_thumbSprite->getPosition()));
     }
-    this->getThumbSprite()->setColor(ccWHITE);
+    //this->getThumbSprite()->setColor(ccWHITE);
     this->setSelected(false);
+    this->sendActionsForControlEvents(CCControlEventTouchDragExit);
+    //m_isClick = false;
 }
 
 float CCControlSlider::valueForLocation(CCPoint location)

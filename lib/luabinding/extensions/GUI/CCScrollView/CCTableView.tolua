@@ -48,6 +48,8 @@ class CCTableView : public CCScrollView
         kTableViewScroll   = 0,
         kTableViewZoom,
         kTableCellTouched,
+        kTableCellDragLeft,
+        kTableCellDragRight,
         kTableCellHighLight,
         kTableCellUnhighLight,
         kTableCellWillRecycle,
