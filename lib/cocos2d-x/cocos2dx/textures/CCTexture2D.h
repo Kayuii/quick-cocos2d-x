@@ -112,6 +112,8 @@ class CC_DLL CCTexture2D : public CCObject
 #endif // EMSCRIPTEN
 {
 public:
+    //add by shi lua ctor
+    static CCTexture2D* create();
     /**
      * @js ctor
      */

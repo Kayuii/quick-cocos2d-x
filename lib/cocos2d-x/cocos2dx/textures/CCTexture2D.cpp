@@ -73,7 +73,11 @@ CCTexture2D::CCTexture2D()
 , m_pShaderProgram(NULL)
 {
 }
-
+//add by shi
+CCTexture2D* CCTexture2D::create()
+{
+    return new CCTexture2D();
+}
 CCTexture2D::~CCTexture2D()
 {
 #if CC_ENABLE_CACHE_TEXTURE_DATA
@@ -511,7 +515,7 @@ bool CCTexture2D::initWithString(const char *text, const char *fontName, float f
 
 bool CCTexture2D::initWithString(const char *text, ccFontDefinition *textDefinition)
 {
-    // #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) || (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     
     #if CC_ENABLE_CACHE_TEXTURE_DATA
         // cache the texture data
@@ -568,16 +572,12 @@ bool CCTexture2D::initWithString(const char *text, ccFontDefinition *textDefinit
         if ( textDefinition->m_stroke.m_strokeEnabled )
         {
             strokeEnabled = true;
-            strokeColorR = textDefinition->m_stroke.m_strokeColor.r;
-            strokeColorG = textDefinition->m_stroke.m_strokeColor.g;
-            strokeColorB = textDefinition->m_stroke.m_strokeColor.b;
+            strokeColorR = textDefinition->m_stroke.m_strokeColor.r / 255.0f;
+            strokeColorG = textDefinition->m_stroke.m_strokeColor.g / 255.0f;
+            strokeColorB = textDefinition->m_stroke.m_strokeColor.b / 255.0f;
             strokeSize   = textDefinition->m_stroke.m_strokeSize;
         }
-
-        float fillColorR = textDefinition->m_fontFillColor.r;
-        float fillColorG = textDefinition->m_fontFillColor.g;
-        float fillColorB = textDefinition->m_fontFillColor.b;        
-
+        
         CCImage* pImage = new CCImage();
         do
         {
@@ -589,9 +589,9 @@ bool CCTexture2D::initWithString(const char *text, ccFontDefinition *textDefinit
                                                       eAlign,
                                                       textDefinition->m_fontName.c_str(),
                                                       textDefinition->m_fontSize,
-                                                      fillColorR,
-                                                      fillColorG,
-                                                      fillColorB,
+                                                      textDefinition->m_fontFillColor.r / 255.0f,
+                                                      textDefinition->m_fontFillColor.g / 255.0f,
+                                                      textDefinition->m_fontFillColor.b / 255.0f,
                                                       shadowEnabled,
                                                       shadowDX,
                                                       shadowDY,
@@ -614,12 +614,12 @@ bool CCTexture2D::initWithString(const char *text, ccFontDefinition *textDefinit
         return bRet;
     
     
-    // #else
+    #else
     
-    //     CCAssert(false, "Currently only supported on iOS, Mac and Android!");
-    //     return false;
+        CCAssert(false, "Currently only supported on iOS and Android!");
+        return false;
     
-    // #endif
+    #endif
 }
 
 
