@@ -63,6 +63,10 @@
 		2EBAD93D1918BBDC00FF9BD6 /* ccFilterShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EBAD92A1918BBDC00FF9BD6 /* ccFilterShaders.cpp */; };
 		49832215187FE2C000733BFB /* CZHelperFunc_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49832213187FE2C000733BFB /* CZHelperFunc_luabinding.cpp */; };
 		49832219187FE2DF00733BFB /* HelperFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49832217187FE2DF00733BFB /* HelperFunc.cpp */; };
+		6BA27FE823950282007F6EC0 /* PageTurn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA27FE423950282007F6EC0 /* PageTurn.cpp */; };
+		6BA27FE923950282007F6EC0 /* MyGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA27FE723950282007F6EC0 /* MyGrid.cpp */; };
+		6BA27FF423950855007F6EC0 /* PageTurn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA27FF223950855007F6EC0 /* PageTurn.cpp */; };
+		6BA27FF523950855007F6EC0 /* MyGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA27FF323950855007F6EC0 /* MyGrid.cpp */; };
 		849849531B3CDF520081A913 /* UIWebView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8498494D1B3CDF520081A913 /* UIWebView.mm */; };
 		849849551B3CDF520081A913 /* UIWebViewImpl-ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 849849511B3CDF520081A913 /* UIWebViewImpl-ios.mm */; };
 		84AE51751D1A62C4008435E8 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AE51731D1A62C4008435E8 /* libcrypto.a */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -659,6 +663,14 @@
 		49832214187FE2C000733BFB /* CZHelperFunc_luabinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZHelperFunc_luabinding.h; sourceTree = "<group>"; };
 		49832217187FE2DF00733BFB /* HelperFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelperFunc.cpp; sourceTree = "<group>"; };
 		49832218187FE2DF00733BFB /* HelperFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperFunc.h; sourceTree = "<group>"; };
+		6BA27FE423950282007F6EC0 /* PageTurn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PageTurn.cpp; sourceTree = "<group>"; };
+		6BA27FE523950282007F6EC0 /* MyGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGrid.h; sourceTree = "<group>"; };
+		6BA27FE623950282007F6EC0 /* PageTurn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTurn.h; sourceTree = "<group>"; };
+		6BA27FE723950282007F6EC0 /* MyGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyGrid.cpp; sourceTree = "<group>"; };
+		6BA27FF023950855007F6EC0 /* PageTurn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTurn.h; sourceTree = "<group>"; };
+		6BA27FF123950855007F6EC0 /* MyGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGrid.h; sourceTree = "<group>"; };
+		6BA27FF223950855007F6EC0 /* PageTurn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PageTurn.cpp; sourceTree = "<group>"; };
+		6BA27FF323950855007F6EC0 /* MyGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyGrid.cpp; sourceTree = "<group>"; };
 		8409ACDA1D4F220800C5420F /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
 		8409ACDB1D4F220800C5420F /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
 		8409ACDC1D4F220800C5420F /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
@@ -1939,6 +1951,28 @@
 			path = apptools;
 			sourceTree = "<group>";
 		};
+		6BA27FE323950282007F6EC0 /* page_turn */ = {
+			isa = PBXGroup;
+			children = (
+				6BA27FE423950282007F6EC0 /* PageTurn.cpp */,
+				6BA27FE523950282007F6EC0 /* MyGrid.h */,
+				6BA27FE623950282007F6EC0 /* PageTurn.h */,
+				6BA27FE723950282007F6EC0 /* MyGrid.cpp */,
+			);
+			path = page_turn;
+			sourceTree = "<group>";
+		};
+		6BA27FEF23950806007F6EC0 /* page_turn */ = {
+			isa = PBXGroup;
+			children = (
+				6BA27FF323950855007F6EC0 /* MyGrid.cpp */,
+				6BA27FF123950855007F6EC0 /* MyGrid.h */,
+				6BA27FF223950855007F6EC0 /* PageTurn.cpp */,
+				6BA27FF023950855007F6EC0 /* PageTurn.h */,
+			);
+			path = page_turn;
+			sourceTree = "<group>";
+		};
 		8409ACD91D4F220800C5420F /* openssl */ = {
 			isa = PBXGroup;
 			children = (
@@ -2768,6 +2802,7 @@
 		F45A2BC1166B15CA00760194 /* cocos2dx */ = {
 			isa = PBXGroup;
 			children = (
+				6BA27FE323950282007F6EC0 /* page_turn */,
 				F4E88183177015C300577406 /* actions */,
 				F4E8819E177015C400577406 /* base_nodes */,
 				F42823EA17575D87001479DC /* CCCamera.cpp */,
@@ -2851,8 +2886,8 @@
 		F45A2DA0166B16A100760194 /* lua */ = {
 			isa = PBXGroup;
 			children = (
-				F4FDD03E1A1DF70B00DD4C0B /* lua */,
 				F45A2DA1166B16B100760194 /* cocos2dx_support */,
+				F4FDD03E1A1DF70B00DD4C0B /* lua */,
 				F459EB1C180D0513006CBDF1 /* lua_extensions */,
 				F45A2DE1166B16B100760194 /* tolua */,
 			);
@@ -2862,6 +2897,7 @@
 		F45A2DA1166B16B100760194 /* cocos2dx_support */ = {
 			isa = PBXGroup;
 			children = (
+				6BA27FEF23950806007F6EC0 /* page_turn */,
 				F40118BB180C9E57002A74D5 /* CCBProxy.cpp */,
 				F40118BC180C9E57002A74D5 /* CCBProxy.h */,
 				F40AFDCC16BD152900565A5E /* CCLuaBridge.cpp */,
@@ -4322,6 +4358,7 @@
 				F428259117575DA8001479DC /* CCEGLViewProtocol.cpp in Sources */,
 				F459EB10180D04E1006CBDF1 /* cpSpace.c in Sources */,
 				E5C463501987A250001192EA /* SoundEventManager.cpp in Sources */,
+				6BA27FE823950282007F6EC0 /* PageTurn.cpp in Sources */,
 				F4D26E93196321AE0087295D /* CCDecorativeDisplay.cpp in Sources */,
 				F428259217575DA8001479DC /* CCFileUtils.cpp in Sources */,
 				F428259317575DA8001479DC /* CCImageCommonWebp.cpp in Sources */,
@@ -4429,6 +4466,7 @@
 				F4ABAD86191A8A7700FEA3CD /* SimulatorConfig.cpp in Sources */,
 				F459EA8D180D04D8006CBDF1 /* CCStoreProduct.cpp in Sources */,
 				F459EB0A180D04E1006CBDF1 /* cpBBTree.c in Sources */,
+				6BA27FF423950855007F6EC0 /* PageTurn.cpp in Sources */,
 				F4E882C5177015C400577406 /* CCGrabber.cpp in Sources */,
 				265996991E1A3C0700DBBBE8 /* IMYWebView.m in Sources */,
 				F4E882C6177015C400577406 /* CCGrid.cpp in Sources */,
@@ -4632,6 +4670,7 @@
 				F4E8833A177015FF00577406 /* CCDevice.mm in Sources */,
 				2EBAD9371918BBDC00FF9BD6 /* CCRGBFilter.cpp in Sources */,
 				F459EB80180D0513006CBDF1 /* except.c in Sources */,
+				6BA27FF523950855007F6EC0 /* MyGrid.cpp in Sources */,
 				F4E8833B177015FF00577406 /* CCDirectorCaller.mm in Sources */,
 				F459EAFA180D04E1006CBDF1 /* CCPhysicsWorld_luabinding.cpp in Sources */,
 				F4D26ECB196321AE0087295D /* TriggerBase.cpp in Sources */,
@@ -4671,6 +4710,7 @@
 				F4E883851770162500577406 /* CCBReader.cpp in Sources */,
 				F4E883861770162500577406 /* CCBSequence.cpp in Sources */,
 				F4FDD0961A1DF75200DD4C0B /* lzio.c in Sources */,
+				6BA27FE923950282007F6EC0 /* MyGrid.cpp in Sources */,
 				F4E883871770162500577406 /* CCBSequenceProperty.cpp in Sources */,
 				49832215187FE2C000733BFB /* CZHelperFunc_luabinding.cpp in Sources */,
 				F4E883881770162500577406 /* CCBValue.cpp in Sources */,
